@@ -41,10 +41,10 @@ games.each do |game|
 end
 
 users = [
-  { email: "", password: ""},
-  { email: "", password: ""},
-  { email: "", password: ""},
-  { email: "", password: ""}
+  { email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
+  { email: "theophiledesaintbon@gmail.com", password: "123456"},
+  { email: "gabrielle.simha@gmail.com", password: "123456"},
+  { email: "antonindanto@gmail.com", password: "123456"}
 ]
 
 users.each do |user|
