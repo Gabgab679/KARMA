@@ -13,9 +13,9 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   resources :events do
-    resources :participations, only: [:create, :update, :destroy]
+    resources :participations, only: [:create, :update, :destroy] #new and edit views
   end
 
-resources :games, only: [:index, :show]
-resources :favorites, only: [:index, :create, :destroy, :update]
+resources :games, only: [:index, :show] # index show
+resources :favorites, only: [:index, :create, :destroy, :update] #index new and edit
 end
