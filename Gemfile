@@ -48,9 +48,10 @@ gem "bootsnap", require: false
 gem "bootstrap", "~> 5.2"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
-gem "simple_form", github: "heartcombo/simple_form"
+gem "simple_form"
 gem "sassc-rails"
 gem "faker"
+gem 'activestorage', '~> 7.1', '>= 7.1.3.2'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
