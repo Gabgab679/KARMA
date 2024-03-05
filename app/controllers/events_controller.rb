@@ -31,7 +31,7 @@ class EventsController < ApplicationController
     redirect_to dashboard_path(@event)
   end
 
-  # 2 routes possible qui envoie vers edit, depuis le dashboard
+  # 2 routes possible qui envoie vers edit, 1 depuis l'index des events et l'autre depuis le dashboard peut être
   def edit
     # verifier que l'event correspond bien a current user ?
   end
