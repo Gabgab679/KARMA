@@ -3,8 +3,9 @@ class EventsController < ApplicationController
 
   # link_to de la show de GamesController qui envoie vers la Route "/events"
   def index
-    @game = Game.find(params[:id]) # On cherche la game correspondant à l'id passé en params du link to de la show de games/:id
-    @events = @game.events
+    game_ids = current_user.game_ids
+    @games = get_user_favorite_games
+    @events = get_events_for_each_game(@games)
   end
 
   # Link_to de l'action index juste au dessus et qui envoie vers l'évènements correspondant sur /events/:id
@@ -45,6 +46,17 @@ class EventsController < ApplicationController
   end
 
   private
+
+  def get_user_favorite_games
+    Game.all.select { |game| game_ids.include?(game.id) }
+  end
+
+  def get_events_for_each_game(games)
+    events = []
+    games.each do |game|
+      events << game.events
+    end
+  end
 
   def set_events
     @event = Event.find(params[:id])

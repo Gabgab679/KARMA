@@ -55,12 +55,12 @@ games.each do |game|
 end
 
 users = [
-  { email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
-  { email: "theophiledesaintbon@gmail.com", password: "123456"},
-  { email: "gabrielle.simha@gmail.com", password: "123456"},
-  { email: "antonindanto@gmail.com", password: "123456"}
+  { username: "alexrz", email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
+  { username: "toufik2flex", email: "theophiledesaintbon@gmail.com", password: "123456"},
+  { username: "ladyGabGab", email: "gabrielle.simha@gmail.com", password: "123456"},
+  { username: "anton1", email: "antonindanto@gmail.com", password: "123456"}
 ]
 
 users.each do |user|
-  User.create!(email: user[:email], password: user[:password])
+  User.create!(username: user[:username], email: user[:email], password: user[:password])
 end
