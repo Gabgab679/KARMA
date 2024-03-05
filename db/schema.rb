@@ -69,7 +69,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_05_101517) do
     t.string "name"
     t.text "description"
     t.string "image_url"
-    t.integer "min_player"
+    t.integer "min_players"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -90,10 +90,20 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_05_101517) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "username", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "bio"
+    t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["bio"], name: "index_users_on_bio"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["first_name"], name: "index_users_on_first_name"
+    t.index ["last_name"], name: "index_users_on_last_name"
+    t.index ["photo"], name: "index_users_on_photo"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

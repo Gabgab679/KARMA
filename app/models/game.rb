@@ -1,4 +1,4 @@
 class Game < ApplicationRecord
-  has_many :users, trough: :favorite
+  has_many :favorites
   has_many :events
 end
