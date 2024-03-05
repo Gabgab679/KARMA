@@ -13,14 +13,6 @@ class PagesController < ApplicationController
   def dashboard
   end
 
-  private
-
-  def timeout
-    sleep(5)
-    # Attendre 3 secondes
-  end
-  def redirection_to_game_index
-    timeout
-    redirect_to events_path
+  def leaderboard
   end
 end
