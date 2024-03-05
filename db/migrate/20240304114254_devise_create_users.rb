@@ -38,7 +38,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.string :bio
       t.string :photo
 
-
       t.timestamps null: false
     end
     add_index :users, :first_name
