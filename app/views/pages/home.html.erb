@@ -1,2 +1,5 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% if @user_is_connected %>
+  <%= link_to "Browse events", events_path %>
+<% else %>
+  <%= link_to "Log-in", new_user_session_path %>
+<% end %>
