@@ -1,12 +1,13 @@
 <h1>Pages#dashboard</h1>
 <p>Find me in app/views/pages/dashboard.html.erb</p>
 
-<%# bouton pour aller vers le form %>
-<%= current_user.email %>
-
+<%# bouton pour aller vers le form_user.html.erb à faire quand on est sur le dashboard%>
+<%# bouton stylo avec grosse photo du user %>
+<%#
 <% if current_user.photo.attached? %>
-  <%= cl_image_tag current_user.photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
-<%# stylo %>
+  <%# <%= cl_image_tag current_user.photo.key, height: 300, width: 400, crop: :fill %>
+<%# <% else %>
+  <%# <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
+<%# <% end %>
 
-<%# <%= render 'form_user' %> %>
+<%# <%= render 'form_user' %>
