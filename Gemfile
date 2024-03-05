@@ -49,9 +49,10 @@ gem "bootsnap", require: false
 gem "bootstrap", "~> 5.2"
 gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
-gem "simple_form", github: "heartcombo/simple_form"
+gem "simple_form"
 gem "sassc-rails"
 gem "faker"
+gem 'activestorage', '~> 7.1', '>= 7.1.3.2'
 
 # NE PAS RETIRER
 gem "nokogiri"
