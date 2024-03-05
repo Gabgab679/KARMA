@@ -9,6 +9,5 @@ class PagesController < ApplicationController
   end
 
   def leaderboard
-    
   end
 end
