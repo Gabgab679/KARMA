@@ -1,2 +1,10 @@
 <h1>Pages#dashboard</h1>
 <p>Find me in app/views/pages/dashboard.html.erb</p>
+
+<%# bouton pour aller vers le form %>
+<%= current_user.email %>
+
+<% if @user && @user.photo.attached? %>
+  <%= cl_image_tag @user.photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>
+<%# stylo %>
