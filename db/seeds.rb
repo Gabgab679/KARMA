@@ -30,7 +30,7 @@ html_file = URI.open(url).read
 html_doc = Nokogiri::HTML.parse(html_file)
 
 result = []
-html_doc.search("item name, item image, item comment").each do |elements|
+html_doc.search("item name, item image, item comment").each do |element|
   #Faire une itération sur elements de item pour aller chercher le nom, l'image, le comment et le min players
   result << element.text.strip
 end
