@@ -50,7 +50,7 @@ games = [
 ]
 
 games.each do |game|
-  Game.create!(name: game[:name], description: game[:description], min_players: game[:min_players])
+  Game.create!(name: game[:name], image_url: game[:image_url], description: game[:description], min_players: game[:min_players])
 end
 
 users = [
@@ -59,6 +59,10 @@ users = [
   { username: "ladyGabGab", email: "gabrielle.simha@gmail.com", password: "123456"},
   { username: "anton1", email: "antonindanto@gmail.com", password: "123456"}
 ]
+
+users.each do |user|
+  User.create!(username: user[:username], email: user[:email], password: user[:password])
+end
 
 favorites = [
   { game_id: '6', user_id: '3'},
@@ -69,12 +73,3 @@ favorites = [
   { game_id: '3', user_id: '1'},
   { game_id: '4', user_id: '1'}
 ]
-
-
-users.each do |user|
-  User.create!(username: user[:username], email: user[:email], password: user[:password])
-end
-
-Game.first(4).each do |game|
-  Favorite.create!(game: game, user: User.first)
-end
