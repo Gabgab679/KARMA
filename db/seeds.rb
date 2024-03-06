@@ -7,6 +7,12 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require_relative "seeds/paris_address_generator"
+
+event_addresses = ParisAddressGenerator.generate(number: 40)
+p event_addresses
+
 Event.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Events                 "
@@ -19,6 +25,7 @@ Game.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Games"
 puts "------------------    ---------------------- "
+
 User.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Users"
@@ -43,7 +50,7 @@ html_doc.root.xpath("item").first(2).each do |element|
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
     image_url: element.xpath('image').text,
-    min_players: element.xpath('stats').attr('minplayers').value
+    min_players: rand(2..4)
   )
 end
 
