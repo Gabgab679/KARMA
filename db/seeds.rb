@@ -19,7 +19,7 @@ puts "               Delete Events                 "
 puts "------------------    ---------------------- "
 Favorite.delete_all
 puts "------------------    ---------------------- "
-puts "             Delete Favorites"
+puts "               Delete Favorites              "
 puts "------------------    ---------------------- "
 Game.delete_all
 puts "------------------    ---------------------- "
@@ -43,8 +43,10 @@ url = "https://api.geekdo.com/xmlapi/collection/mkgray"
 xml_file = URI.open(url).read
 html_doc = Nokogiri::XML.parse(xml_file)
 
-html_doc.root.xpath("item").first(40).each do |element|
-  Game.create!(
+games = []
+
+html_doc.root.xpath("item").first(2).each do |element|
+  games << Game.create!(
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
     image_url: element.xpath('image').text,
@@ -53,7 +55,7 @@ html_doc.root.xpath("item").first(40).each do |element|
 end
 
 # seeds.rb
-games = [
+games_attributes = [
   { name: "Uno", description: "Uno is a classic card game where players aim to be the first to get rid of all their cards by matching colors or numbers.", image_url: "https://www.godisageek.com/wp-content/uploads/Uno-review1.jpg", min_players: 2 },
   { name: "Poker", description: "Poker is a popular card game that involves betting and strategy, with variations like Texas Hold'em and Omaha.", image_url: "https://monmouthjetcenter.com/wp-content/uploads/2015/04/cose-poker.jpg", min_players: 2 },
   { name: "Monopoly", description: "Monopoly is a classic board game where players buy, sell, and trade properties to become the wealthiest player.", image_url: "https://vignette.wikia.nocookie.net/board-games-galore/images/6/66/Monopoly_cover.jpg/revision/latest/scale-to-width-down/2000?cb=20160719170933", min_players: 2 },
@@ -63,36 +65,61 @@ games = [
   { name: "Blood on the Clock Tower", description: "Blood on the Clock Tower is a mystery board game where players work together to solve a murder that has occurred in a clock tower.", image_url: "https://images.saymedia-content.com/.image/t_share/MTc0NDYxMTIwMzI0MjQ4OTM2/blood-on-the-clock-tower-review.png", min_players: 5 }
 ]
 
-games.each do |game|
-  Game.create!(name: game[:name], image_url: game[:image_url], description: game[:description], min_players: game[:min_players])
+games_attributes.each do |game_attribute|
+  games << Game.create!(name: game_attribute[:name], description: game_attribute[:description], min_players: game_attribute[:min_players])
 end
 
-users = [
+users = []
+
+users_attributes = [
   { username: "alexrz", email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
   { username: "toufik2flex", email: "theophiledesaintbon@gmail.com", password: "123456"},
   { username: "ladyGabGab", email: "gabrielle.simha@gmail.com", password: "123456"},
   { username: "anton1", email: "antonindanto@gmail.com", password: "123456"}
 ]
 
-users.each do |user|
-  User.create!(username: user[:username], email: user[:email], password: user[:password])
+users_attributes.each do |user_attribute|
+  users << User.create!(username: user_attribute[:username], email: user_attribute[:email], password: user_attribute[:password])
 end
 
-Game.first(7).each do |game|
-  Favorite.create!(game: game, user: User.first, level: %w[beginner intermediate expert].sample)
+favorites = [
+  { game: games[6], user: users[2] },
+  { game: games[3], user: users[1] },
+  { game: games[2], user: users[3] },
+  { game: games[1], user: users[0] },
+  { game: games[2], user: users[0] },
+  { game: games[3], user: users[0] },
+  { game: games[4], user: users[0] }
+]
+
+# seed events a ne surtout pas faire manuellement
+# time
+
+# dates = []
+
+# 2.times do
+#   dates << (Date.today + rand(0..60)).to_datetime
+# end
+
+# utiliser faker pour créer le name, l'adresse et la description
+
+Game.first(4).each do |game|
+  Favorite.create!(game: game, user: User.first)
 end
 
-40.times do |n|
-  game = Game.all.sample
-  user = User.all.sample
+
+2.times do
+  game = games.sample
+  user = users.sample
+
   Event.create!(
-    event_type: %w[Casual Tournament].sample,
-    name: "Partie de #{game.name} par #{user.username}",
+    event_type: Event::EVENT_TYPE.sample,
+    name: "Partie de #{game.name} proposée par #{user.username}",
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
-    address: event_addresses[n],
-    description: Faker::GreekPhilosophers.quote, # description à générer par faker
-    status: ['Open', 'Cancelled', 'Fully booked'].sample,
+    address: "26 rue de rivoli, Paris", # addresse a générer par faker autour de paris
+    description: "oeoeoeoe", # description à générer par faker
+    status: Event::STATUS.sample,
     game: game,
     max_players: rand(6..12)
   )
