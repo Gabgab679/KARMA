@@ -43,12 +43,12 @@ url = "https://api.geekdo.com/xmlapi/collection/mkgray"
 xml_file = URI.open(url).read
 html_doc = Nokogiri::XML.parse(xml_file)
 
-html_doc.root.xpath("item").first(2).each do |element|
+html_doc.root.xpath("item").first(40).each do |element|
   Game.create!(
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
     image_url: element.xpath('image').text,
-    min_players: element.xpath('stats').attr('minplayers').value
+    min_players: rand(2..4)
   )
 end
 
@@ -78,30 +78,16 @@ users.each do |user|
   User.create!(username: user[:username], email: user[:email], password: user[:password])
 end
 
-favorites = [
-  { game_id: '6', user_id: '3'},
-  { game_id: '3', user_id: '2'},
-  { game_id: '2', user_id: '4'},
-  { game_id: '1', user_id: '1'},
-  { game_id: '2', user_id: '1'},
-  { game_id: '3', user_id: '1'},
-  { game_id: '4', user_id: '1'}
-]
-
-users.each do |user|
-  User.create!(username: user[:username], email: user[:email], password: user[:password])
-end
-
-Game.first(4).each do |game|
-  Favorite.create!(game: game, user: User.first)
+Game.first(7).each do |game|
+  Favorite.create!(game: game, user: User.first, level: %w[beginner intermediate expert].sample)
 end
 
 40.times do |n|
-  user = User.all.sample
   game = Game.all.sample
+  user = User.all.sample
   Event.create!(
     event_type: %w[Casual Tournament].sample,
-    name: "Partie de #{game} par #{user}",
+    name: "Partie de #{game.name} par #{user.username}",
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
     address: event_addresses[n],
