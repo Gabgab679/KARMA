@@ -7,14 +7,25 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require_relative "seeds/paris_address_generator"
+
+event_addresses = ParisAddressGenerator.generate(number: 40)
+p event_addresses
+
 Event.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Events                 "
+puts "------------------    ---------------------- "
+Favorite.delete_all
+puts "------------------    ---------------------- "
+puts "             Delete Favorites"
 puts "------------------    ---------------------- "
 Game.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Games"
 puts "------------------    ---------------------- "
+
 User.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Users"
@@ -73,28 +84,6 @@ favorites = [
   { game_id: '4', user_id: '1'}
 ]
 
-# seed events a ne surtout pas faire manuellement
-# time
-
-# dates = []
-
-# 2.times do
-#   dates << (Date.today + rand(0..60)).to_datetime
-# end
-
-def generate_int_for_events(index) # generates int for events
-  int_attr_array = []
-
-  int_attr_array << (Date.today + rand(0..60)).to_datetime
-  int_attr_array << rand(1..4)
-  int_attr_array << rand(0..20)
-  int_attr_array << rand(6..12)
-
-  int_attr_array[index]
-end
-
-# utiliser faker pour créer le name, l'adresse et la description
-
 users.each do |user|
   User.create!(username: user[:username], email: user[:email], password: user[:password])
 end
@@ -103,18 +92,19 @@ Game.first(4).each do |game|
   Favorite.create!(game: game, user: User.first)
 end
 
-
-2.times do
+40.times do |n|
+  user = User.all.sample
+  game = Game.all.sample
   Event.create!(
     event_type: %w[Casual Tournament].sample,
-    name: "Partie de #{Game.find(rand(0..20))} proposée par #{User.find(rand(0..4))}",
-    user_id: generate_int_for_events(1),
-    date: generate_int_for_events(0),
-    address: "26 boulevard les marquises", # addresse a générer par faker autour de paris
-    description: "oeoeoeoe", # description à générer par faker
-    status: %w[Open Cancelled Fully booked].sample,
-    game_id: generate_int_for_events(2),
-    max_players: generate_int_for_events(3)
+    name: "Partie de #{game} par #{user}",
+    user: user,
+    date: (Date.today + rand(0..60)).to_datetime,
+    address: event_addresses[n],
+    description: Faker::GreekPhilosophers.quote, # description à générer par faker
+    status: ['Open', 'Cancelled', 'Fully booked'].sample,
+    game: game,
+    max_players: rand(6..12)
   )
   # creation d'event avec faker et "generate"
 end

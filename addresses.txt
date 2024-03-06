@@ -1,0 +1,40 @@
+76, Rue Lamarck
+85, Rue de Grenelle
+CLJT Didot, 41, Rue Didot
+3, Boulevard de Grenelle
+1, Avenue de Bouvines
+5, Rue Amyot
+4, Rue Portalis
+38, Rue du Hameau
+2, Impasse Delaunay
+2, Rue de Rungis
+3b, Rue Dosne
+46, Rue de Turenne
+10, Rue du Commandant Rivière
+UGC Ciné Cité Paris 19, 166, Boulevard Macdonald
+32, Quai d'Orléans
+4, Rue Abel-Truchet
+126, Rue de Javel
+74, Rue des Plantes
+20, Rue de Tlemcen
+5, Rue des Périchaux
+6, Square de Port-Royal
+50, Rue Chapon
+99, Rue des Amandiers
+129, Boulevard Malesherbes
+3, Rue de Chablis
+9, Rue du Professeur Hyacinthe Vincent
+60, Avenue de Gravelle
+10, Rue Lécuyer
+50, Rue Chapon
+16, Rue du Hameau
+25, Rue Berzélius
+Sorbonne Université - Faculté des Lettres, Campus Malesherbes, 108, Boulevard Malesherbes
+11, Rue Jacques Kellner
+1, Villa Boléro
+12, Rue Coustou
+Centre de Recherche des Cordeliers, 15, Rue de l'École de Médecine
+53, Rue Saint-Placide
+8, Rue Nicolo
+41, Rue Fondary
+13, Rue de la Banque
