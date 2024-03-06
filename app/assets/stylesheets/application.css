@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "avatar.scss";
+ @import "navbar";
+ @import "footer";
+
+
+ body {
+  background-color: #32153F; /* Couleur de fond de secours */
+}

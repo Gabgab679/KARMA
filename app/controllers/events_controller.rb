@@ -7,9 +7,17 @@ class EventsController < ApplicationController
     @favorite_events = get_events_for_favorite_games(@games) # evenements des jeux fav
     @other_events = Event.all.reject { |event| @favorite_events.include?(event) }
 
+
+    @events = Event.all
+    #search-bar and filters query below
+    @events = @events.global_search(params[:query]) if params[:query].present?
+    @events = @events.global_search(params[:event_type]) if params[:event_type].present?
+    @events = @events.global_search(params[:dates]) if params[:dates].present?
+    @events = @events.global_search(params[:location]) if params[:location].present?
+
     # The `geocoded` scope filters only events with coordinates
-    @favorite_markers = fetch_markers(@favorite_events)
-    @other_events_markers = fetch_markers(@other_events)
+    # @favorite_markers = fetch_markers(@favorite_events)
+    # @other_events_markers = fetch_markers(@other_events)
 
   end
 
@@ -53,7 +61,6 @@ class EventsController < ApplicationController
   private
 
   def fetch_markers(events)
-    debugger
     events.geocoded.map do |event|
       {
         lat: event.latitude,
