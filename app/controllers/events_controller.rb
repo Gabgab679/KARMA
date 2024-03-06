@@ -5,6 +5,7 @@ class EventsController < ApplicationController
   def index
     @games = current_user.games
     @events = get_events_for_each_game(@games)
+    raise
   end
 
   # Link_to de l'action index juste au dessus et qui envoie vers l'évènements correspondant sur /events/:id

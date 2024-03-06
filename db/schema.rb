@@ -51,8 +51,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_05_101517) do
     t.integer "max_players"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["game_id"], name: "index_events_on_game_id"
-    t.index ["user_id"], name: "index_events_on_user_id"
+    t.index ["game_id"], name: "index_events_on_game_id" #events.game
+    t.index ["user_id"], name: "index_events_on_user_id" #current_user.events
   end
 
   create_table "favorites", force: :cascade do |t|
