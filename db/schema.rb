@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_05_101517) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_06_101617) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -51,6 +51,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_05_101517) do
     t.integer "max_players"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "latitude"
+    t.float "longitude"
     t.index ["game_id"], name: "index_events_on_game_id"
     t.index ["user_id"], name: "index_events_on_user_id"
   end
@@ -90,7 +92,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_05_101517) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "username", null: false
+    t.string "username", default: "", null: false
     t.string "first_name"
     t.string "last_name"
     t.string "bio"

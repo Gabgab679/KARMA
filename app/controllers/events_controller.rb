@@ -3,8 +3,19 @@ class EventsController < ApplicationController
 
   # link_to de la show de GamesController qui envoie vers la Route "/events"
   def index
-    @games = current_user.games
-    @events = get_events_for_each_game(@games)
+    @games = current_user.games # jeux favoris du current_user
+    @events_favorites = get_events_for_each_game(@games)  # evenements des jeux fav
+
+    @events = Event.all
+    # The `geocoded` scope filters only events with coordinates
+    @markers = @events.geocoded.map do |event|
+      {
+        lat: event.latitude,
+        lng: event.longitude,
+        info_window_html: render_to_string(partial: 'info_window', locals: {event: event}),
+        marker_html: render_to_string(partial: 'marker', locals: {event: event})
+      }
+    end
   end
 
   # Link_to de l'action index juste au dessus et qui envoie vers l'évènements correspondant sur /events/:id

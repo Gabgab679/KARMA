@@ -53,6 +53,7 @@ gem "simple_form"
 gem "sassc-rails"
 gem "faker"
 gem 'activestorage', '~> 7.1', '>= 7.1.3.2'
+gem "geocoder"
 
 # NE PAS RETIRER
 gem "nokogiri"
