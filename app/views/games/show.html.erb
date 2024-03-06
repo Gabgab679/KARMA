@@ -1,2 +1,7 @@
-<%= @game.name %>
-<%= @game.description %>
+<div class="">
+  <div class="card">
+    <h1><%= @game.name %></h1>
+    <%= image_tag(@game.image_url) %>
+    <%= @game.description %>
+  </div>
+</div>

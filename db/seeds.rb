@@ -64,7 +64,7 @@ games = [
 ]
 
 games.each do |game|
-  Game.create!(name: game[:name], description: game[:description], min_players: game[:min_players])
+  Game.create!(name: game[:name], image_url: game[:image_url], description: game[:description], min_players: game[:min_players])
 end
 
 users = [
@@ -73,6 +73,10 @@ users = [
   { username: "ladyGabGab", email: "gabrielle.simha@gmail.com", password: "123456"},
   { username: "anton1", email: "antonindanto@gmail.com", password: "123456"}
 ]
+
+users.each do |user|
+  User.create!(username: user[:username], email: user[:email], password: user[:password])
+end
 
 favorites = [
   { game_id: '6', user_id: '3'},
