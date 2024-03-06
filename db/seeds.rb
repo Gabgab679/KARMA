@@ -7,7 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-
+Event.delete_all
+puts "------------------    ---------------------- "
+puts "               Delete Events                 "
+puts "------------------    ---------------------- "
 Game.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Games"
@@ -70,6 +73,27 @@ favorites = [
   { game_id: '4', user_id: '1'}
 ]
 
+# seed events a ne surtout pas faire manuellement
+# time
+
+# dates = []
+
+# 2.times do
+#   dates << (Date.today + rand(0..60)).to_datetime
+# end
+
+def generate_int_for_events(index) # generates int for events
+  int_attr_array = []
+
+  int_attr_array << (Date.today + rand(0..60)).to_datetime
+  int_attr_array << rand(1..4)
+  int_attr_array << rand(0..20)
+  int_attr_array << rand(6..12)
+
+  int_attr_array[index]
+end
+
+# utiliser faker pour créer le name, l'adresse et la description
 
 users.each do |user|
   User.create!(username: user[:username], email: user[:email], password: user[:password])
@@ -80,15 +104,17 @@ Game.first(4).each do |game|
 end
 
 
-
-#gab : pour faire mes tests sur la map j'ai hardcodé un bout de seed pour les events, on peut bien sûr virer
-Event.delete_all
-events = [
-  { user_id: '1', game_id: '4', name: "test1", address: "3 rue des boulets, 75011", event_type: "Tournament", description: "test", date: "01/01/2024", status: "Open"},
-  { user_id: '2', game_id: '3', name: "test2", address: "3 rue de rivoli, 75001", event_type: "Tournament", description: "test", date: "01/01/2024", status: "Open"},
-  { user_id: '3', game_id: '2', name: "test3", address: "3 rue pouchet, 75017", event_type: "Casual", description: "test", date: "01/01/2024", status: "Cancelled"},
-  { user_id: '4', game_id: '1', name: "test4", address: "3 rue servan, 75011", event_type: "Casual", description: "test", date: "01/01/2024", status: "Cancelled"}
-]
-events.each do |event|
-  Event.create!(user_id: event[:user_id], game_id: event[:game_id], name: event[:name], address: event[:address], event_type: event[:event_type], description: event[:description], date: event[:date], status: event[:status])
+2.times do
+  Event.create!(
+    event_type: %w[Casual Tournament].sample,
+    name: "Partie de #{Game.find(rand(0..20))} proposée par #{User.find(rand(0..4))}",
+    user_id: generate_int_for_events(1),
+    date: generate_int_for_events(0),
+    address: "26 boulevard les marquises", # addresse a générer par faker autour de paris
+    description: "oeoeoeoe", # description à générer par faker
+    status: %w[Open Cancelled Fully booked].sample,
+    game_id: generate_int_for_events(2),
+    max_players: generate_int_for_events(3)
+  )
+  # creation d'event avec faker et "generate"
 end
