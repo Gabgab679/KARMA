@@ -11,6 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2024_03_06_125752) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -42,12 +45,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_125752) do
   create_table "events", force: :cascade do |t|
     t.string "event_type"
     t.string "name"
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "date"
     t.string "address"
     t.text "description"
     t.string "status"
-    t.integer "game_id", null: false
+    t.bigint "game_id", null: false
     t.integer "max_players"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -58,8 +61,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_125752) do
   end
 
   create_table "favorites", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "game_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "game_id", null: false
     t.string "level"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -77,8 +80,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_125752) do
   end
 
   create_table "participations", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "event_id", null: false
+    t.bigint "user_id", null: false
+    t.bigint "event_id", null: false
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -89,7 +92,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_125752) do
   create_table "pg_search_documents", force: :cascade do |t|
     t.text "content"
     t.string "searchable_type"
-    t.integer "searchable_id"
+    t.bigint "searchable_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["searchable_type", "searchable_id"], name: "index_pg_search_documents_on_searchable"

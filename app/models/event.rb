@@ -17,10 +17,12 @@ class Event < ApplicationRecord
   after_validation :geocode, if: :will_save_change_to_address?
 
   include PgSearch::Model
-  pg_search_scope :global_search, against: [:name], associated_against: {
-    game: [:name]
-  },
-  using: {
-    tsearch: { prefix: true }
-  }
+  pg_search_scope :global_search,
+    against: [:name],
+    associated_against: {
+      game: [:name]
+    },
+    using: {
+      tsearch: { prefix: true }
+   }
 end
