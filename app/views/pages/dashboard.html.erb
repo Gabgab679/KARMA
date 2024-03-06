@@ -1,6 +1,3 @@
-<h1>Pages#dashboard</h1>
-<p>Find me in app/views/pages/dashboard.html.erb</p>
-
 <%# bouton pour aller vers le form_user.html.erb à faire quand on est sur le dashboard%>
 <%# bouton stylo avec grosse photo du user %>
 <%#
@@ -11,3 +8,20 @@
 <%# <% end %>
 
 <%# <%= render 'form_user' %>
+
+<div class="d-flex">
+  <div class="row">
+  <div class="col-6">
+    <h2>my events</h2>
+    <% current_user.events_participations.each do |event| %>
+      <%= event.name %>
+    <% end %>
+  </div>
+  <div class="col-6">
+    <h2>my games</h2>
+    <% current_user.games.each do |game| %>
+      <%= game.name %>
+    <% end %>
+  </div>
+  </div>
+</div>

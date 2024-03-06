@@ -53,8 +53,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_101617) do
     t.datetime "updated_at", null: false
     t.float "latitude"
     t.float "longitude"
-    t.index ["game_id"], name: "index_events_on_game_id" #events.game
-    t.index ["user_id"], name: "index_events_on_user_id" #current_user.events
+    t.index ["game_id"], name: "index_events_on_game_id"
+    t.index ["user_id"], name: "index_events_on_user_id"
   end
 
   create_table "favorites", force: :cascade do |t|
@@ -92,7 +92,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_06_101617) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "username", null: false
+    t.string "username", default: "", null: false
     t.string "first_name"
     t.string "last_name"
     t.string "bio"
