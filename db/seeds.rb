@@ -20,14 +20,14 @@ puts "------------------    ---------------------- "
 puts "               Delete Users"
 puts "------------------    ---------------------- "
 
-# Uno
-# Poker
-# Monopoly
-# Yu-gi-yoh
-# Pokemon
-# Werewolves
-# Blood on the tower clock
-#
+# # Uno
+# # Poker
+# # Monopoly
+# # Yu-gi-yoh
+# # Pokemon
+# # Werewolves
+# # Blood on the tower clock
+# #
 url = "https://api.geekdo.com/xmlapi/collection/mkgray"
 xml_file = URI.open(url).read
 html_doc = Nokogiri::XML.parse(xml_file)
@@ -102,6 +102,7 @@ end
 Game.first(4).each do |game|
   Favorite.create!(game: game, user: User.first)
 end
+
 
 2.times do
   Event.create!(
