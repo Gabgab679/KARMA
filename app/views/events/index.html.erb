@@ -1,6 +1,6 @@
 <% @events.each do |event| %>
-  <%= game.name %>
-  <%= link_to "see event", event_path(game.event) %>
+  <%= event.name %>
+  <%= link_to "see event", event_path(event) %>
 <% end %>
 
 <div style="width: 100%; height: 600px;"
