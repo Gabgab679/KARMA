@@ -1,7 +1,7 @@
 <% if @user_is_connected %>
   <%= link_to "Browse events", events_path %>
 <% else %>
-  <%= link_to "Log-in", new_user_session_path %>
+  <%= image_tag("home_page_page-0001.jpg", class: "w-100") %>
 <% end %>
 
   <%= link_to "games", games_path %>

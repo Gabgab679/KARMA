@@ -8,34 +8,47 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+require_relative "seeds/paris_address_generator"
+
+event_addresses = ParisAddressGenerator.generate(number: 40)
+p event_addresses
+
+Event.delete_all
+puts "------------------    ---------------------- "
+puts "               Delete Events                 "
+puts "------------------    ---------------------- "
+Favorite.delete_all
+puts "------------------    ---------------------- "
+puts "             Delete Favorites"
+puts "------------------    ---------------------- "
 Game.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Games"
 puts "------------------    ---------------------- "
+
 User.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Users"
 puts "------------------    ---------------------- "
 
-# Uno
-# Poker
-# Monopoly
-# Yu-gi-yoh
-# Pokemon
-# Werewolves
-# Blood on the tower clock
-#
+# # Uno
+# # Poker
+# # Monopoly
+# # Yu-gi-yoh
+# # Pokemon
+# # Werewolves
+# # Blood on the tower clock
+# #
 url = "https://api.geekdo.com/xmlapi/collection/mkgray"
 xml_file = URI.open(url).read
 html_doc = Nokogiri::XML.parse(xml_file)
 
-result = []
-html_doc.root.xpath("item").first(2).each do |element|
+html_doc.root.xpath("item").first(40).each do |element|
   Game.create!(
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
     image_url: element.xpath('image').text,
-    min_players: element.xpath('stats').attr('minplayers').value
+    min_players: rand(2..4)
   )
 end
 
@@ -51,7 +64,7 @@ games = [
 ]
 
 games.each do |game|
-  Game.create!(name: game[:name], description: game[:description], min_players: game[:min_players])
+  Game.create!(name: game[:name], image_url: game[:image_url], description: game[:description], min_players: game[:min_players])
 end
 
 users = [
@@ -63,4 +76,25 @@ users = [
 
 users.each do |user|
   User.create!(username: user[:username], email: user[:email], password: user[:password])
+end
+
+Game.first(7).each do |game|
+  Favorite.create!(game: game, user: User.first, level: %w[beginner intermediate expert].sample)
+end
+
+40.times do |n|
+  game = Game.all.sample
+  user = User.all.sample
+  Event.create!(
+    event_type: %w[Casual Tournament].sample,
+    name: "Partie de #{game.name} par #{user.username}",
+    user: user,
+    date: (Date.today + rand(0..60)).to_datetime,
+    address: event_addresses[n],
+    description: Faker::GreekPhilosophers.quote, # description à générer par faker
+    status: ['Open', 'Cancelled', 'Fully booked'].sample,
+    game: game,
+    max_players: rand(6..12)
+  )
+  # creation d'event avec faker et "generate"
 end
