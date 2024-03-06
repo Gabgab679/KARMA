@@ -10,7 +10,8 @@ class EventsController < ApplicationController
     @markers = @events.geocoded.map do |event|
       {
         lat: event.latitude,
-        lng: event.longitude
+        lng: event.longitude,
+        info_window_html: render_to_string(partial: 'info_window', locals: {event: event})
       }
     end
   end
