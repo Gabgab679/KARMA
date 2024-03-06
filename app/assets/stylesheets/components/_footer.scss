@@ -1,0 +1,35 @@
+.footer {
+  position: fixed; /* Positionnement fixe */
+  bottom: 20px; /* Alignement en bas de la page */
+  left: 20px; /* Marge à gauche */
+  width: 350px; /* Largeur du footer */
+  height: 50px; /* Hauteur du footer */
+  background-color: #F72585; /* Couleur de fond du footer */
+  display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 20px; /* Centrage vertical */
+}
+
+.footer-nav {
+  display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+}
+
+.footer-icon {
+  width: 30px; /* Largeur de l'icône */
+  height: 30px; /* Hauteur de l'icône */
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;/* Marge autour des icônes */
+}
+/*
+.current-page-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #9E13F9;
+  margin-bottom: 5px;
+}
+*/
