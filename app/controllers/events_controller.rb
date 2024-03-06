@@ -3,8 +3,7 @@ class EventsController < ApplicationController
 
   # link_to de la show de GamesController qui envoie vers la Route "/events"
   def index
-    game_ids = current_user.game_ids
-    @games = get_user_favorite_games
+    @games = current_user.games
     @events = get_events_for_each_game(@games)
   end
 
@@ -46,10 +45,6 @@ class EventsController < ApplicationController
   end
 
   private
-
-  def get_user_favorite_games
-    Game.all.select { |game| game_ids.include?(game.id) }
-  end
 
   def get_events_for_each_game(games)
     events = []
