@@ -54,6 +54,7 @@ gem "sassc-rails"
 gem "faker"
 gem 'activestorage', '~> 7.1', '>= 7.1.3.2'
 gem "geocoder"
+gem "pg_search"
 
 # NE PAS RETIRER
 gem "nokogiri"
