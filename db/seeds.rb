@@ -17,14 +17,14 @@ puts "------------------    ---------------------- "
 puts "               Delete Users"
 puts "------------------    ---------------------- "
 
-# Uno
-# Poker
-# Monopoly
-# Yu-gi-yoh
-# Pokemon
-# Werewolves
-# Blood on the tower clock
-#
+# # Uno
+# # Poker
+# # Monopoly
+# # Yu-gi-yoh
+# # Pokemon
+# # Werewolves
+# # Blood on the tower clock
+# #
 url = "https://api.geekdo.com/xmlapi/collection/mkgray"
 xml_file = URI.open(url).read
 html_doc = Nokogiri::XML.parse(xml_file)
@@ -77,4 +77,18 @@ end
 
 Game.first(4).each do |game|
   Favorite.create!(game: game, user: User.first)
+end
+
+
+
+#gab : pour faire mes tests sur la map j'ai hardcodé un bout de seed pour les events, on peut bien sûr virer
+Event.delete_all
+events = [
+  { user_id: '1', game_id: '4', name: "test1", address: "3 rue des boulets, 75011", event_type: "Tournament", description: "test", date: "01/01/2024", status: "Open"},
+  { user_id: '2', game_id: '3', name: "test2", address: "3 rue de rivoli, 75001", event_type: "Tournament", description: "test", date: "01/01/2024", status: "Open"},
+  { user_id: '3', game_id: '2', name: "test3", address: "3 rue pouchet, 75017", event_type: "Casual", description: "test", date: "01/01/2024", status: "Cancelled"},
+  { user_id: '4', game_id: '1', name: "test4", address: "3 rue servan, 75011", event_type: "Casual", description: "test", date: "01/01/2024", status: "Cancelled"}
+]
+events.each do |event|
+  Event.create!(user_id: event[:user_id], game_id: event[:game_id], name: event[:name], address: event[:address], event_type: event[:event_type], description: event[:description], date: event[:date], status: event[:status])
 end

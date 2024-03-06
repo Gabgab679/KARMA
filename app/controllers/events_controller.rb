@@ -5,6 +5,16 @@ class EventsController < ApplicationController
   def index
     @games = current_user.games
     @events = get_events_for_each_game(@games)
+    @events = Event.all
+    # The `geocoded` scope filters only events with coordinates
+    @markers = @events.geocoded.map do |event|
+      {
+        lat: event.latitude,
+        lng: event.longitude,
+        info_window_html: render_to_string(partial: 'info_window', locals: {event: event}),
+        marker_html: render_to_string(partial: 'marker', locals: {event: event})
+      }
+    end
   end
 
   # Link_to de l'action index juste au dessus et qui envoie vers l'évènements correspondant sur /events/:id
