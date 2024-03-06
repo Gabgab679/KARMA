@@ -6,12 +6,13 @@ class EventsController < ApplicationController
     @games = current_user.games
     @events = get_events_for_each_game(@games)
     @events = Event.all
-    # The `geocoded` scope filters only flats with coordinates
+    # The `geocoded` scope filters only events with coordinates
     @markers = @events.geocoded.map do |event|
       {
         lat: event.latitude,
         lng: event.longitude,
-        info_window_html: render_to_string(partial: 'info_window', locals: {event: event})
+        info_window_html: render_to_string(partial: 'info_window', locals: {event: event}),
+        marker_html: render_to_string(partial: 'marker', locals: {event: event})
       }
     end
   end
