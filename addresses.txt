@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 4, Rue Jules Breton
 85, Rue de Grenelle
 4, Rue des Chantres
@@ -38,3 +39,45 @@ L'embuscade, 47, Rue Catherine de La Rochefoucauld
 3, Rue Christian Dewet
 32, Rue Nationale
 81, Avenue Raymond Poincaré
+=======
+20, Rue Neuve Saint-Pierre
+4, Avenue du Stade de Coubertin
+Centre de secours Rousseau, 21, Rue du Jour
+3, Rue du Saint-Gothard
+2, Rue Boudreau
+3, Rue La Quintinie
+2, Villa Félix Faure
+5, Rue Amyot
+19, Quai de l'Horloge
+9, Rue Corbineau
+12, Rue Paul Belmondo
+14, Rue Bixio
+72, Rue du Moulin Vert
+7, Cité Delaunay
+6, Rue Jeanne d'Arc
+6, Rue Littré
+EIB The Victor Hugo School, 23, Rue de Cronstadt
+20, Rue de Tlemcen
+43, Rue de Cîteaux
+Chez Ami 2, 141, Rue Raymond Losserand
+Grande Mosquée de Paris, 2 bis, Place du Puits de l'Ermite
+32, Place du Marché Saint-Honoré
+14, Avenue de Breteuil
+23, Rue Pierre Fontaine
+Gare d'Austerlitz, 85, Quai d'Austerlitz
+13, Rue Richomme
+10 bis, Rue Morand
+École élémentaire République, 98, Avenue de la République
+16, Rue Louis Braille
+1, Villa Sonatine
+10, Rue Fabre d'Églantine
+158, Rue de Charonne
+115, Boulevard Exelmans
+7, Rue Soufflot
+13, Rue Buzelin
+47, Avenue de Wagram
+7, Rue Seveste
+11, Impasse Reille
+32, Place du Marché Saint-Honoré
+63, Avenue du Général Michel Bizot
+>>>>>>> d8110c5dccdfd5b685dca4108ab3a4e9ffcbe94a
