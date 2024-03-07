@@ -1,6 +1,8 @@
 <%= simple_form_for(@event) do |f| %>
   <%= f.input :name %>
-  <%= f.input :date %>
+  <%= f.input :date,
+            as: :string,
+            input_html: { data: { controller: "datepicker" } } %>
   <%= f.input :address %>
   <%= f.input :description %>
   <%= f.input :game, collection: Game.all %>

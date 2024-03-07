@@ -18,8 +18,11 @@ export default class extends Controller {
     })
     this.#addMarkersToMap()
     this.#fitMapToMarkers()
+    const marker = new mapboxgl.Marker();
+    marker.setLngLat([longitude, latitude]);
   }
-  
+
+
   #fitMapToMarkers() {
     const bounds = new mapboxgl.LngLatBounds()
     this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
