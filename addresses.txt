@@ -1,40 +1,40 @@
-2, Rue Olier
-Hôpital Saint-Antoine, 184, Rue du Faubourg Saint-Antoine
-12, Rue Demarquay
-Freemousse.bar, 76, Rue Marcadet
-Comédie des 3 bornes, 32, Rue des Trois Bornes
-11b, Rue des Récollets
-8, Avenue de la Porte de Vincennes
-63, Boulevard Romain Rolland
-35, Rue des Perchamps
-31, Rue de Monceau
-3, Avenue Pierre Semard
-28/30, Rue Saint-Fargeau
-32, Avenue Paul Doumer
-55, Rue Émile Reynaud
-55, Rue Froidevaux
-16, Rue de Paris
-9, Rue Étex
-Collège Georges Brassens, 4, Rue Erik Satie
-18, Rue Rubens
-6, Voie Poussin
-15, 17, Rue Affre
+4, Rue Jules Breton
+85, Rue de Grenelle
+4, Rue des Chantres
+156, Boulevard de Grenelle
+Église Évangélique Foi Espérance et Amour, 28 bis, Rue des Vinaigriers
+150, Rue de Longchamp
+5, Rue du Docteur Labbé
+68, Rue Marguerite de Rochechouart
+3, Rue Lauriston
+13 bis, Rue Curial
+4, Rue Pierre Guérin
+68, Rue Marguerite de Rochechouart
+6, Rue Littré
+37 bis, Rue des Plantes
+128, Boulevard Pereire
+103, Rue de l'Abbé Groult
 3, Rue Léo Delibes
-14, Avenue Franklin Delano Roosevelt
-Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
-16, Rue du Simplon
-83-85, Boulevard Vincent Auriol
-7, Passage Kracher
-21, Rue Jenner
-4, Rue Cépré
-6, Rue de l'Université
-29, Rue du Mail
-43, Rue de Cîteaux
-74, Avenue de Gravelle
-120, Rue Lauriston
-9, Rue du Professeur Hyacinthe Vincent
-43, Rue des Périchaux
-46, Rue des Haies
-145, Avenue Jean Jaurès
-66, Rue de Longchamp
-1, Rue Sainte-Anne
+23, Rue Pierre Fontaine
+LCL, 156, Rue Saint-Charles
+98, Rue des Orteaux
+164E, Rue de Saussure
+L'embuscade, 47, Rue Catherine de La Rochefoucauld
+1, Villa Sonatine
+56, Rue Nicolo
+3, Rue du Saint-Gothard
+21, Rue Daubenton
+92, Rue de Crimée
+5, Rue du Docteur Labbé
+20, Place Dupleix
+36, Villa Godin
+12, Boulevard Bessières
+23, Rue Pierre Fontaine
+1, Avenue Hoche
+80, Rue du Surmelin
+80, Rue du Surmelin
+33, Rue Polonceau
+36, Villa Godin
+3, Rue Christian Dewet
+32, Rue Nationale
+81, Avenue Raymond Poincaré
