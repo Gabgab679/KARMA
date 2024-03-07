@@ -1,0 +1,10 @@
+<div class="text-warning">
+  <h2>My events</h2>
+  <% current_user.events_participations.each do |event| %>
+    <%= link_to event.name, event_path(event) %>
+  <% end %>
+  <h2>My hosted events</h2>
+  <% current_user.events.each do |event| %>
+    <%= link_to event.name, event_path(event) %>
+    <% end %>
+</div>

@@ -13,6 +13,9 @@ Rails.application.routes.draw do
 
   get 'dashboard', to: 'pages#dashboard'
   get 'leaderboard', to: 'pages#leaderboard'
+  get 'my_events', to: 'pages#user_events'
+  get 'map', to: 'pages#map'
+
 
   resources :events do
     resources :participations, only: %i[create update destroy]
