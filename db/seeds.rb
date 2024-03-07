@@ -108,6 +108,7 @@ end
 # event_addresses = ParisAddressGenerator.generate(number: 40)
 # # p event_addresses
 ADDRESSES = ["3 rue de rivoli 75001","3 rue des boulets 75011", "3 rue pouchet 75017", "3 rue de rivoli 75001", "3 rue de la paix 75002", "3 rue servan 75011", "3 boulevard voltaire 75011", "3 boulevard diderot 75012", "3 boulevard de Ménilmontant 75011", "3 boulevard beaumarchais 75004" ]
+EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "Event"]
 
 10.times do
   game = games.sample
@@ -115,7 +116,7 @@ ADDRESSES = ["3 rue de rivoli 75001","3 rue des boulets 75011", "3 rue pouchet 7
 
   Event.create!(
     event_type: Event::EVENT_TYPE.sample,
-    name: "Partie de #{game.name} proposée par #{user.username}",
+    name: EVENT_NAME.sample,
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
     address: ADDRESSES.sample, # addresse a générer par faker autour de paris
