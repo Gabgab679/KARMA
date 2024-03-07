@@ -43,7 +43,7 @@ html_doc = Nokogiri::XML.parse(xml_file)
 
 games = []
 
-html_doc.root.xpath("item").first(2).each do |element|
+html_doc.root.xpath("item").first(10).each do |element|
   games << Game.create!(
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
@@ -64,7 +64,7 @@ games_attributes = [
 ]
 
 games_attributes.each do |game_attribute|
-  games << Game.create!(name: game_attribute[:name], description: game_attribute[:description], min_players: game_attribute[:min_players], image_url: game_attribute[:image_url])
+  games << Game.create!(name: game_attribute[:name], image_url: game_attribute[:image_url], description: game_attribute[:description], min_players: game_attribute[:min_players])
 end
 
 users = []
@@ -90,27 +90,16 @@ favorites = [
   { game: games[4], user: users[0] }
 ]
 
-# seed events a ne surtout pas faire manuellement
-# time
-
-# dates = []
-
-# 2.times do
-#   dates << (Date.today + rand(0..60)).to_datetime
-# end
-
-# utiliser faker pour créer le name, l'adresse et la description
-
-Game.first(4).each do |game|
+Game.first(10).each do |game|
   Favorite.create!(game: game, user: User.first)
 end
 
-# event_addresses = ParisAddressGenerator.generate(number: 40)
-# # p event_addresses
+event_addresses = ParisAddressGenerator.generate(number: 40)
+
 ADDRESSES = ["3 rue de rivoli 75001","3 rue des boulets 75011", "3 rue pouchet 75017", "3 rue de rivoli 75001", "3 rue de la paix 75002", "3 rue servan 75011", "3 boulevard voltaire 75011", "3 boulevard diderot 75012", "3 boulevard de Ménilmontant 75011", "3 boulevard beaumarchais 75004" ]
 EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "Event"]
 
-10.times do
+30.times do
   game = games.sample
   user = users.sample
 
@@ -119,7 +108,7 @@ EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "E
     name: EVENT_NAME.sample,
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
-    address: ADDRESSES.sample, # addresse a générer par faker autour de paris
+    address: event_addresses.sample, # addresse a générer par faker autour de paris
     description: Faker::Movies::StarWars.quote, # description à générer par faker
     status: Event::STATUS.sample,
     game: game,
