@@ -1,31 +1,31 @@
 <% unless action_name == "home" || action_name == "sign_in" %>
-  <footer class="footer">
-    <nav class="footer-nav">
-      <div class="footer-icon <%= "current-page-indicator" if action_name == "index" && controller_name == "games" %>"">
-        <%= link_to "/games" do %>
-          <%= image_tag('icone-etoile.png') %>
-        <% end %>
-    </div>
-      <div class="footer-icon <%= "current-page-indicator" if action_name == "index" && controller_name == "events" %>">
-        <%= link_to "/events" do %>
-          <%= image_tag('icone-maps.png') %>
-        <% end %>
+    <footer class="footer">
+      <nav class="footer-nav">
+        <div class="footer-icon <%= "current-page-indicator" if action_name == "index" && controller_name == "games" %>">
+          <%= link_to "/games" do %>
+            <%= image_tag('icone-etoile.png') %>
+          <% end %>
       </div>
-      <div class="footer-icon <%= "current-page-indicator" if action_name == "index" && controller_name == "events" %>">
-        <%= link_to "/events" do %>
-          <%= image_tag('icone-home.png') %>
-        <% end %>
-      </div>
-      <div class="footer-icon <%= "current-page-indicator" if action_name == "dashboard" %>">
-        <%= link_to "/dashboard" do %>
-          <%= image_tag('icone-evenement.png') %>
-        <% end %>
-      </div>
-      <div class="footer-icon <%= "current-page-indicator" if action_name == "new" && controller_name == "events" %>">
-        <%= link_to "/events/new" do %>
-          <%= image_tag('icone-plus.png') %>
-        <% end %>
-      </div>
-    </nav>
-  </footer>
+        <div class="footer-icon <%= "current-page-indicator" if action_name == "map" && controller_name == "pages" %>">
+          <%= link_to "/map" do %>
+            <%= image_tag('icone-maps.png') %>
+          <% end %>
+        </div>
+        <div class="footer-icon <%= "current-page-indicator" if action_name == "index" && controller_name == "events" %>">
+          <%= link_to "/" do %>
+            <%= image_tag('icone-home.png') %>
+          <% end %>
+        </div>
+        <div class="footer-icon <%= "current-page-indicator" if action_name == "my_events" && controller_name == "pages" %>">
+          <%= link_to "/my_events" do %>
+            <%= image_tag('icone-evenement.png') %>
+          <% end %>
+        </div>
+        <div class="footer-icon <%= "current-page-indicator" if action_name == "new" && controller_name == "events" %>">
+          <%= link_to "/events/new" do %>
+            <%= image_tag('icone-plus.png') %>
+          <% end %>
+        </div>
+      </nav>
+    </footer>
 <% end %>

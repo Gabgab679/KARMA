@@ -97,25 +97,43 @@ Centre de secours Rousseau, 21, Rue du Jour
 EIB The Victor Hugo School, 23, Rue de Cronstadt
 20, Rue de Tlemcen
 43, Rue de Cîteaux
-Chez Ami 2, 141, Rue Raymond Losserand
-Grande Mosquée de Paris, 2 bis, Place du Puits de l'Ermite
-32, Place du Marché Saint-Honoré
-14, Avenue de Breteuil
-23, Rue Pierre Fontaine
-Gare d'Austerlitz, 85, Quai d'Austerlitz
-13, Rue Richomme
-10 bis, Rue Morand
-École élémentaire République, 98, Avenue de la République
-16, Rue Louis Braille
-1, Villa Sonatine
-10, Rue Fabre d'Églantine
-158, Rue de Charonne
-115, Boulevard Exelmans
-7, Rue Soufflot
-13, Rue Buzelin
+23, Rue Pergolèse
+69, Rue Buffon
 47, Avenue de Wagram
+12, Rue du Saint-Gothard
+2, Rue de Rungis
+Collège Louise Michel, 11, Rue Jean Poulmarch
+145, Avenue Jean Jaurès
+6, Rue Marc Séguin
+56, Boulevard Auguste Blanqui
+22b, Rue Norvins
+11, Rue Jacques Kellner
+10 bis, Rue Morand
+6, Rue Barthélemy
+8b, Rue Quentin Bauchart
+19, Quai de l'Horloge
+4, Rue du Pic-de-Barrette
+9, Rue de l'Ourcq
+3, Boulevard des Frères Voisin
+3, Rue La Quintinie
+22 Bis, Rue Bayen
+29, Rue de Dunkerque
+2b, Rue Scheffer
+1, Rue de l'Église
+82, Rue de la Fédération
+16, Rue du Clos
+9, Rue de la Néva
+2b, Avenue Pasteur
+14, Rue Beaurepaire
+Gare d'Austerlitz, 85, Quai d'Austerlitz
+121, Avenue des Champs-Élysées
+63, Boulevard Auguste Blanqui
+19, Rue Alain Chartier
+6, Square Emmanuel Chabrier
+2, Rue Bougainville
+11, Rue Jacques Kellner
+69, Rue Buffon
 7, Rue Seveste
 11, Impasse Reille
 32, Place du Marché Saint-Honoré
 63, Avenue du Général Michel Bizot
-
