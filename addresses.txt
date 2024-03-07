@@ -1,3 +1,45 @@
+<<<<<<< HEAD
+4, Rue Jules Breton
+85, Rue de Grenelle
+4, Rue des Chantres
+156, Boulevard de Grenelle
+Église Évangélique Foi Espérance et Amour, 28 bis, Rue des Vinaigriers
+150, Rue de Longchamp
+5, Rue du Docteur Labbé
+68, Rue Marguerite de Rochechouart
+3, Rue Lauriston
+13 bis, Rue Curial
+4, Rue Pierre Guérin
+68, Rue Marguerite de Rochechouart
+6, Rue Littré
+37 bis, Rue des Plantes
+128, Boulevard Pereire
+103, Rue de l'Abbé Groult
+3, Rue Léo Delibes
+23, Rue Pierre Fontaine
+LCL, 156, Rue Saint-Charles
+98, Rue des Orteaux
+164E, Rue de Saussure
+L'embuscade, 47, Rue Catherine de La Rochefoucauld
+1, Villa Sonatine
+56, Rue Nicolo
+3, Rue du Saint-Gothard
+21, Rue Daubenton
+92, Rue de Crimée
+5, Rue du Docteur Labbé
+20, Place Dupleix
+36, Villa Godin
+12, Boulevard Bessières
+23, Rue Pierre Fontaine
+1, Avenue Hoche
+80, Rue du Surmelin
+80, Rue du Surmelin
+33, Rue Polonceau
+36, Villa Godin
+3, Rue Christian Dewet
+32, Rue Nationale
+81, Avenue Raymond Poincaré
+=======
 20, Rue Neuve Saint-Pierre
 4, Avenue du Stade de Coubertin
 Centre de secours Rousseau, 21, Rue du Jour
@@ -38,3 +80,4 @@ Gare d'Austerlitz, 85, Quai d'Austerlitz
 11, Impasse Reille
 32, Place du Marché Saint-Honoré
 63, Avenue du Général Michel Bizot
+>>>>>>> d8110c5dccdfd5b685dca4108ab3a4e9ffcbe94a
