@@ -1,0 +1,10 @@
+<%= simple_form_for(@event) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :date %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :game, collection: Game.all %>
+  <%= f.input :max_players %>
+  <%= f.input :event_type, collection: Event::EVENT_TYPE %>
+  <%= f.submit %>
+<% end %>
