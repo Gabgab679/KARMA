@@ -1,40 +1,40 @@
-19, Rue de la Gare de Reuilly
-33-35, Rue des Lilas
-29, Rue de Dunkerque
-24, Rue d'Annam
-61, Avenue Jean Jaurès
-76, Rue Lamarck
-126, Rue de Javel
-12, Rue Beaunier
-LCL, 156, Rue Saint-Charles
-1, Rue Sainte-Anne
-28, Avenue de Laumière
-2, Impasse Delaunay
-55 Bis, Boulevard Pereire
-10, Passage Rauch
-28, Rue Rouelle
-9, Rue des Pruniers
-Sorbonne Université - Faculté des Lettres, Campus Malesherbes, 108, Boulevard Malesherbes
-25, Boulevard Bessières
-73, Quai Panhard et Levassor
-6, Cour Saint-Pierre
-28, Avenue Lamoricière
-7, Passage Kracher
-4, Avenue du Stade de Coubertin
-33, Rue Cambronne
-5-23, Rue d'Alsace
-3, Boulevard de Grenelle
-85, Rue de Grenelle
+16, Rue de Gergovie
+29, Rue Marbeuf
+38, Rue du Hameau
+43, Rue de Cîteaux
+23, Rue Pergolèse
 69, Rue Buffon
-29, Rue de la Tour
-32, Rue Nationale
-67, Rue des Grands Champs
-30, Rue Damesme
+47, Avenue de Wagram
+12, Rue du Saint-Gothard
 2, Rue de Rungis
-20, Rue de Tlemcen
-44, Boulevard Poniatowski
-3, Rue Guyton de Morveau
-31, Rue Erlanger
-160, Rue d'Aubervilliers
-13, Rue Richomme
-5, Rue Fernand Foureau
+Collège Louise Michel, 11, Rue Jean Poulmarch
+145, Avenue Jean Jaurès
+6, Rue Marc Séguin
+56, Boulevard Auguste Blanqui
+22b, Rue Norvins
+11, Rue Jacques Kellner
+10 bis, Rue Morand
+6, Rue Barthélemy
+8b, Rue Quentin Bauchart
+19, Quai de l'Horloge
+4, Rue du Pic-de-Barrette
+9, Rue de l'Ourcq
+3, Boulevard des Frères Voisin
+3, Rue La Quintinie
+22 Bis, Rue Bayen
+29, Rue de Dunkerque
+2b, Rue Scheffer
+1, Rue de l'Église
+82, Rue de la Fédération
+16, Rue du Clos
+9, Rue de la Néva
+2b, Avenue Pasteur
+14, Rue Beaurepaire
+Gare d'Austerlitz, 85, Quai d'Austerlitz
+121, Avenue des Champs-Élysées
+63, Boulevard Auguste Blanqui
+19, Rue Alain Chartier
+6, Square Emmanuel Chabrier
+2, Rue Bougainville
+11, Rue Jacques Kellner
+69, Rue Buffon
