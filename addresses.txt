@@ -1,40 +1,40 @@
-2, Rue Olier
-Hôpital Saint-Antoine, 184, Rue du Faubourg Saint-Antoine
-12, Rue Demarquay
-Freemousse.bar, 76, Rue Marcadet
-Comédie des 3 bornes, 32, Rue des Trois Bornes
-11b, Rue des Récollets
-8, Avenue de la Porte de Vincennes
-63, Boulevard Romain Rolland
-35, Rue des Perchamps
-31, Rue de Monceau
-3, Avenue Pierre Semard
-28/30, Rue Saint-Fargeau
-32, Avenue Paul Doumer
-55, Rue Émile Reynaud
-55, Rue Froidevaux
-16, Rue de Paris
-9, Rue Étex
-Collège Georges Brassens, 4, Rue Erik Satie
-18, Rue Rubens
-6, Voie Poussin
-15, 17, Rue Affre
-3, Rue Léo Delibes
-14, Avenue Franklin Delano Roosevelt
-Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
-16, Rue du Simplon
-83-85, Boulevard Vincent Auriol
-7, Passage Kracher
-21, Rue Jenner
-4, Rue Cépré
-6, Rue de l'Université
-29, Rue du Mail
+20, Rue Neuve Saint-Pierre
+4, Avenue du Stade de Coubertin
+Centre de secours Rousseau, 21, Rue du Jour
+3, Rue du Saint-Gothard
+2, Rue Boudreau
+3, Rue La Quintinie
+2, Villa Félix Faure
+5, Rue Amyot
+19, Quai de l'Horloge
+9, Rue Corbineau
+12, Rue Paul Belmondo
+14, Rue Bixio
+72, Rue du Moulin Vert
+7, Cité Delaunay
+6, Rue Jeanne d'Arc
+6, Rue Littré
+EIB The Victor Hugo School, 23, Rue de Cronstadt
+20, Rue de Tlemcen
 43, Rue de Cîteaux
-74, Avenue de Gravelle
-120, Rue Lauriston
-9, Rue du Professeur Hyacinthe Vincent
-43, Rue des Périchaux
-46, Rue des Haies
-145, Avenue Jean Jaurès
-66, Rue de Longchamp
-1, Rue Sainte-Anne
+Chez Ami 2, 141, Rue Raymond Losserand
+Grande Mosquée de Paris, 2 bis, Place du Puits de l'Ermite
+32, Place du Marché Saint-Honoré
+14, Avenue de Breteuil
+23, Rue Pierre Fontaine
+Gare d'Austerlitz, 85, Quai d'Austerlitz
+13, Rue Richomme
+10 bis, Rue Morand
+École élémentaire République, 98, Avenue de la République
+16, Rue Louis Braille
+1, Villa Sonatine
+10, Rue Fabre d'Églantine
+158, Rue de Charonne
+115, Boulevard Exelmans
+7, Rue Soufflot
+13, Rue Buzelin
+47, Avenue de Wagram
+7, Rue Seveste
+11, Impasse Reille
+32, Place du Marché Saint-Honoré
+63, Avenue du Général Michel Bizot
