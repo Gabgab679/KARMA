@@ -10,9 +10,6 @@
 
 require_relative "seeds/paris_address_generator"
 
-event_addresses = ParisAddressGenerator.generate(number: 40)
-p event_addresses
-
 Event.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Events                 "
@@ -39,6 +36,7 @@ puts "------------------    ---------------------- "
 # # Werewolves
 # # Blood on the tower clock
 # #
+
 url = "https://api.geekdo.com/xmlapi/collection/mkgray"
 xml_file = URI.open(url).read
 html_doc = Nokogiri::XML.parse(xml_file)
@@ -66,7 +64,7 @@ games_attributes = [
 ]
 
 games_attributes.each do |game_attribute|
-  games << Game.create!(name: game_attribute[:name], description: game_attribute[:description], min_players: game_attribute[:min_players])
+  games << Game.create!(name: game_attribute[:name], description: game_attribute[:description], min_players: game_attribute[:min_players], image_url: game_attribute[:image_url])
 end
 
 users = []
@@ -107,18 +105,22 @@ Game.first(4).each do |game|
   Favorite.create!(game: game, user: User.first)
 end
 
+# event_addresses = ParisAddressGenerator.generate(number: 40)
+# # p event_addresses
+ADDRESSES = ["3 rue de rivoli 75001","3 rue des boulets 75011", "3 rue pouchet 75017", "3 rue de rivoli 75001", "3 rue de la paix 75002", "3 rue servan 75011", "3 boulevard voltaire 75011", "3 boulevard diderot 75012", "3 boulevard de Ménilmontant 75011", "3 boulevard beaumarchais 75004" ]
+EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "Event"]
 
-2.times do
+10.times do
   game = games.sample
   user = users.sample
 
   Event.create!(
     event_type: Event::EVENT_TYPE.sample,
-    name: "Partie de #{game.name} proposée par #{user.username}",
+    name: EVENT_NAME.sample,
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
-    address: "26 rue de rivoli, Paris", # addresse a générer par faker autour de paris
-    description: "oeoeoeoe", # description à générer par faker
+    address: ADDRESSES.sample, # addresse a générer par faker autour de paris
+    description: Faker::Movies::StarWars.quote, # description à générer par faker
     status: Event::STATUS.sample,
     game: game,
     max_players: rand(6..12)
