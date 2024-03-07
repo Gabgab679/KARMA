@@ -1,4 +1,43 @@
-<<<<<<< HEAD
+43, Rue de Cîteaux
+34, Rue des Maronites
+31, Quai d'Issy-les-Moulineaux
+9, Rue des Pruniers
+11, Rue Saint-Dominique
+68, Rue Marguerite de Rochechouart
+10, Passage Rauch
+Sorbonne Université - Faculté des Lettres, Campus Clignancourt, 2, Rue Francis de Croisset
+3, Boulevard de Grenelle
+12, Villa Cœur de Vey
+28, Rue Ledion
+4, Rue Cépré
+29, Rue de Dunkerque
+3 bis, Cité du Palais-Royal de Belleville
+13, Rue du Nord
+13, Rue du Nord
+47, Avenue de Wagram
+38, Rue du Hameau
+2 à 10, Rue de la Concertation
+14, Rue Beaurepaire
+6, Rue Littré
+1, Avenue de la Sœur Rosalie
+74, Rue de Paris
+1, Avenue de la Sœur Rosalie
+43, Rue des Périchaux
+69, Rue Buffon
+8, Rue Pelée
+3, Rue des Grands Augustins
+12, Quai de la Marne
+17, Quai aux Fleurs
+6, Rue de l'Université
+24, Rue Dugommier
+83-85, Boulevard Vincent Auriol
+17, Quai aux Fleurs
+68, Rue Marguerite de Rochechouart
+9, Rue Viète
+8b, Rue Quentin Bauchart
+83-85, Boulevard Vincent Auriol
+L'embuscade, 47, Rue Catherine de La Rochefoucauld
+238, Rue du Faubourg Saint-Antoine
 4, Rue Jules Breton
 85, Rue de Grenelle
 4, Rue des Chantres
@@ -39,7 +78,6 @@ L'embuscade, 47, Rue Catherine de La Rochefoucauld
 3, Rue Christian Dewet
 32, Rue Nationale
 81, Avenue Raymond Poincaré
-=======
 20, Rue Neuve Saint-Pierre
 4, Avenue du Stade de Coubertin
 Centre de secours Rousseau, 21, Rue du Jour
@@ -80,4 +118,4 @@ Gare d'Austerlitz, 85, Quai d'Austerlitz
 11, Impasse Reille
 32, Place du Marché Saint-Honoré
 63, Avenue du Général Michel Bizot
->>>>>>> d8110c5dccdfd5b685dca4108ab3a4e9ffcbe94a
+
