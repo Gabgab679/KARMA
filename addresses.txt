@@ -1,143 +1,40 @@
-43, Rue de Cîteaux
-34, Rue des Maronites
-31, Quai d'Issy-les-Moulineaux
-9, Rue des Pruniers
-11, Rue Saint-Dominique
-68, Rue Marguerite de Rochechouart
-10, Passage Rauch
-Sorbonne Université - Faculté des Lettres, Campus Clignancourt, 2, Rue Francis de Croisset
-3, Boulevard de Grenelle
-12, Villa Cœur de Vey
-28, Rue Ledion
-4, Rue Cépré
-29, Rue de Dunkerque
-3 bis, Cité du Palais-Royal de Belleville
-13, Rue du Nord
-13, Rue du Nord
-47, Avenue de Wagram
-38, Rue du Hameau
-2 à 10, Rue de la Concertation
-14, Rue Beaurepaire
-6, Rue Littré
-1, Avenue de la Sœur Rosalie
-74, Rue de Paris
-1, Avenue de la Sœur Rosalie
-43, Rue des Périchaux
-69, Rue Buffon
-8, Rue Pelée
-3, Rue des Grands Augustins
-12, Quai de la Marne
-17, Quai aux Fleurs
-6, Rue de l'Université
-24, Rue Dugommier
-83-85, Boulevard Vincent Auriol
-17, Quai aux Fleurs
-68, Rue Marguerite de Rochechouart
-9, Rue Viète
-8b, Rue Quentin Bauchart
-83-85, Boulevard Vincent Auriol
-L'embuscade, 47, Rue Catherine de La Rochefoucauld
-238, Rue du Faubourg Saint-Antoine
-4, Rue Jules Breton
-85, Rue de Grenelle
-4, Rue des Chantres
-156, Boulevard de Grenelle
-Église Évangélique Foi Espérance et Amour, 28 bis, Rue des Vinaigriers
-150, Rue de Longchamp
-5, Rue du Docteur Labbé
-68, Rue Marguerite de Rochechouart
-3, Rue Lauriston
-13 bis, Rue Curial
-4, Rue Pierre Guérin
-68, Rue Marguerite de Rochechouart
-6, Rue Littré
-37 bis, Rue des Plantes
-128, Boulevard Pereire
-103, Rue de l'Abbé Groult
-3, Rue Léo Delibes
-23, Rue Pierre Fontaine
-LCL, 156, Rue Saint-Charles
-98, Rue des Orteaux
-164E, Rue de Saussure
-L'embuscade, 47, Rue Catherine de La Rochefoucauld
-1, Villa Sonatine
-56, Rue Nicolo
-3, Rue du Saint-Gothard
-21, Rue Daubenton
-92, Rue de Crimée
-5, Rue du Docteur Labbé
-20, Place Dupleix
-36, Villa Godin
+27, Boulevard de l'Hôpital
+13, Rue Richomme
+44, Rue de l'Abbé Carton
+32, Rue du Mont Cenis
+2, Rue Champollion
+163P, Avenue de Flandre
+16, Rue de Paris
+87 bis, Rue Blomet
 12, Boulevard Bessières
-23, Rue Pierre Fontaine
-1, Avenue Hoche
-80, Rue du Surmelin
-80, Rue du Surmelin
-33, Rue Polonceau
-36, Villa Godin
-3, Rue Christian Dewet
-32, Rue Nationale
-81, Avenue Raymond Poincaré
-20, Rue Neuve Saint-Pierre
-4, Avenue du Stade de Coubertin
-Centre de secours Rousseau, 21, Rue du Jour
-3, Rue du Saint-Gothard
-2, Rue Boudreau
+6, Rue Notre-Dame-de-Lorette
+51, Rue du Cherche-Midi
+Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
+12, Rue Faidherbe
+61, Avenue Jean Jaurès
+6, Rue du Général Appert
+Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
+14, Quai d'Orléans
+28, Rue de la Source
+Gare Saint-Lazare, 11, Rue de Rome
+185, Boulevard Voltaire
+24, Rue Scandicci
+7, Passage Kracher
+9, Rue du Professeur Hyacinthe Vincent
+Pacha Kebab, 21, Rue d'Amsterdam
+29, Boulevard de Montmorency
+100, Rue Regnault
+15, Avenue de la Belle Gabrielle
+Chez Ami 2, 141, Rue Raymond Losserand
+10, Rue Fabre d'Églantine
+19, Rue du Docteur Blanche
+28, Rue de la Source
+4, Rue Portalis
 3, Rue La Quintinie
-2, Villa Félix Faure
-5, Rue Amyot
-19, Quai de l'Horloge
-9, Rue Corbineau
-12, Rue Paul Belmondo
-14, Rue Bixio
-72, Rue du Moulin Vert
-7, Cité Delaunay
-6, Rue Jeanne d'Arc
-6, Rue Littré
-EIB The Victor Hugo School, 23, Rue de Cronstadt
-20, Rue de Tlemcen
-43, Rue de Cîteaux
+24, Rue d'Annam
 23, Rue Pergolèse
-69, Rue Buffon
-47, Avenue de Wagram
-<<<<<<< HEAD
-12, Rue du Saint-Gothard
-2, Rue de Rungis
-Collège Louise Michel, 11, Rue Jean Poulmarch
-145, Avenue Jean Jaurès
-6, Rue Marc Séguin
-56, Boulevard Auguste Blanqui
-22b, Rue Norvins
-11, Rue Jacques Kellner
-10 bis, Rue Morand
-6, Rue Barthélemy
-8b, Rue Quentin Bauchart
-19, Quai de l'Horloge
-4, Rue du Pic-de-Barrette
-9, Rue de l'Ourcq
-3, Boulevard des Frères Voisin
-3, Rue La Quintinie
-22 Bis, Rue Bayen
-29, Rue de Dunkerque
-2b, Rue Scheffer
-1, Rue de l'Église
-82, Rue de la Fédération
-16, Rue du Clos
-9, Rue de la Néva
-2b, Avenue Pasteur
-14, Rue Beaurepaire
-Gare d'Austerlitz, 85, Quai d'Austerlitz
-121, Avenue des Champs-Élysées
-63, Boulevard Auguste Blanqui
-19, Rue Alain Chartier
-6, Square Emmanuel Chabrier
-2, Rue Bougainville
-11, Rue Jacques Kellner
-69, Rue Buffon
-=======
-7, Rue Seveste
-11, Impasse Reille
-32, Place du Marché Saint-Honoré
-63, Avenue du Général Michel Bizot
-
->>>>>>> 68aa5e397035771809f4ab0c88507df11f7ca447
+25, Boulevard Bessières
+22 bis, Rue d'Annam
+33, Rue Robert et Sonia Delaunay
+6, Place Constantin Pecqueur
+46, Rue de Turenne
