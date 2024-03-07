@@ -23,12 +23,17 @@ class EventsController < ApplicationController
   # Link_to de l'action index juste au dessus et qui envoie vers l'évènements correspondant sur /events/:id
   def show
     # Si event vient bien de current user, alors on ajoute une feature dans la show pour rediriger vers edit
-    @is_user_game = false
-    current_user.games.each do |game|
-      if @game == game
-        @is_user_game = true
-      end
+    @event = Event.find(params[:id])
+    @registered = false
+    @event.participations.each do |participation|
+      @registered = true if participation.user == current_user
     end
+    # @is_user_game = false
+    # current_user.games.each do |game|
+    #   if @game == game
+    #     @is_user_game = true
+    #   end
+    # end
     # Variable d'instance crée pour afficher le button "edit event"
   end
 

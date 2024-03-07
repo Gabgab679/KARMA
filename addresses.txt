@@ -1,10 +1,106 @@
-16, Rue de Gergovie
-29, Rue Marbeuf
+43, Rue de Cîteaux
+34, Rue des Maronites
+31, Quai d'Issy-les-Moulineaux
+9, Rue des Pruniers
+11, Rue Saint-Dominique
+68, Rue Marguerite de Rochechouart
+10, Passage Rauch
+Sorbonne Université - Faculté des Lettres, Campus Clignancourt, 2, Rue Francis de Croisset
+3, Boulevard de Grenelle
+12, Villa Cœur de Vey
+28, Rue Ledion
+4, Rue Cépré
+29, Rue de Dunkerque
+3 bis, Cité du Palais-Royal de Belleville
+13, Rue du Nord
+13, Rue du Nord
+47, Avenue de Wagram
 38, Rue du Hameau
+2 à 10, Rue de la Concertation
+14, Rue Beaurepaire
+6, Rue Littré
+1, Avenue de la Sœur Rosalie
+74, Rue de Paris
+1, Avenue de la Sœur Rosalie
+43, Rue des Périchaux
+69, Rue Buffon
+8, Rue Pelée
+3, Rue des Grands Augustins
+12, Quai de la Marne
+17, Quai aux Fleurs
+6, Rue de l'Université
+24, Rue Dugommier
+83-85, Boulevard Vincent Auriol
+17, Quai aux Fleurs
+68, Rue Marguerite de Rochechouart
+9, Rue Viète
+8b, Rue Quentin Bauchart
+83-85, Boulevard Vincent Auriol
+L'embuscade, 47, Rue Catherine de La Rochefoucauld
+238, Rue du Faubourg Saint-Antoine
+4, Rue Jules Breton
+85, Rue de Grenelle
+4, Rue des Chantres
+156, Boulevard de Grenelle
+Église Évangélique Foi Espérance et Amour, 28 bis, Rue des Vinaigriers
+150, Rue de Longchamp
+5, Rue du Docteur Labbé
+68, Rue Marguerite de Rochechouart
+3, Rue Lauriston
+13 bis, Rue Curial
+4, Rue Pierre Guérin
+68, Rue Marguerite de Rochechouart
+6, Rue Littré
+37 bis, Rue des Plantes
+128, Boulevard Pereire
+103, Rue de l'Abbé Groult
+3, Rue Léo Delibes
+23, Rue Pierre Fontaine
+LCL, 156, Rue Saint-Charles
+98, Rue des Orteaux
+164E, Rue de Saussure
+L'embuscade, 47, Rue Catherine de La Rochefoucauld
+1, Villa Sonatine
+56, Rue Nicolo
+3, Rue du Saint-Gothard
+21, Rue Daubenton
+92, Rue de Crimée
+5, Rue du Docteur Labbé
+20, Place Dupleix
+36, Villa Godin
+12, Boulevard Bessières
+23, Rue Pierre Fontaine
+1, Avenue Hoche
+80, Rue du Surmelin
+80, Rue du Surmelin
+33, Rue Polonceau
+36, Villa Godin
+3, Rue Christian Dewet
+32, Rue Nationale
+81, Avenue Raymond Poincaré
+20, Rue Neuve Saint-Pierre
+4, Avenue du Stade de Coubertin
+Centre de secours Rousseau, 21, Rue du Jour
+3, Rue du Saint-Gothard
+2, Rue Boudreau
+3, Rue La Quintinie
+2, Villa Félix Faure
+5, Rue Amyot
+19, Quai de l'Horloge
+9, Rue Corbineau
+12, Rue Paul Belmondo
+14, Rue Bixio
+72, Rue du Moulin Vert
+7, Cité Delaunay
+6, Rue Jeanne d'Arc
+6, Rue Littré
+EIB The Victor Hugo School, 23, Rue de Cronstadt
+20, Rue de Tlemcen
 43, Rue de Cîteaux
 23, Rue Pergolèse
 69, Rue Buffon
 47, Avenue de Wagram
+<<<<<<< HEAD
 12, Rue du Saint-Gothard
 2, Rue de Rungis
 Collège Louise Michel, 11, Rue Jean Poulmarch
@@ -38,3 +134,10 @@ Gare d'Austerlitz, 85, Quai d'Austerlitz
 2, Rue Bougainville
 11, Rue Jacques Kellner
 69, Rue Buffon
+=======
+7, Rue Seveste
+11, Impasse Reille
+32, Place du Marché Saint-Honoré
+63, Avenue du Général Michel Bizot
+
+>>>>>>> 68aa5e397035771809f4ab0c88507df11f7ca447
