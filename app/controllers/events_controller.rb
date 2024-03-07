@@ -4,9 +4,9 @@ class EventsController < ApplicationController
   # link_to de la show de GamesController qui envoie vers la Route "/events"
   def index
     @games = current_user.games # jeux favoris du current_user
-    @favorite_events = get_events_for_favorite_games(@games) # evenements des jeux fav
-    @other_events = Event.all.reject { |event| @favorite_events.include?(event) }
-
+    @favorite_events = get_events_for_favorite_games(@games)
+    @other_events = Event.where.not(id: @favorite_events.map(&:id)) # Tout les évènements dont l'id ne correspond pas aux favorites events de l'user
+    # Event.all.reject { |event| @favorite_events.include?(event)
 
     @events = Event.all
     #search-bar and filters query below
@@ -16,9 +16,8 @@ class EventsController < ApplicationController
     @events = @events.global_search(params[:location]) if params[:location].present?
 
     # The `geocoded` scope filters only events with coordinates
-    # @favorite_markers = fetch_markers(@favorite_events)
-    # @other_events_markers = fetch_markers(@other_events)
-
+    @favorite_markers = fetch_markers(@favorite_events)
+    @other_events_markers = fetch_markers(@other_events)
   end
 
   # Link_to de l'action index juste au dessus et qui envoie vers l'évènements correspondant sur /events/:id
@@ -61,6 +60,7 @@ class EventsController < ApplicationController
   private
 
   def fetch_markers(events)
+
     events.geocoded.map do |event|
       {
         lat: event.latitude,
@@ -78,7 +78,7 @@ class EventsController < ApplicationController
       events_collection_per_game << game.events
     end
     # Event.where(id: events.flatten.map(&:id))
-    Event.where(id: events.flatten.map(&:id))
+    Event.where(id: events_collection_per_game.flatten.map(&:id))
 
   end
 

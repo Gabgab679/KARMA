@@ -15,7 +15,7 @@
 
   <div class="col-3">
     <% unless action_name == "profil" %>
-      <% if current_user.photo.attached? %>
+      <% if false %> <!--  current_user.photo.attached? -->
         <%= link_to "/profil", class: "right-avatar-nav rounded-circle" do %>
         <%= cl_image_tag current_user.photo.key, crop: :fill_pad %>
          <% end %>

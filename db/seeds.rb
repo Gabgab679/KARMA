@@ -45,7 +45,7 @@ html_doc = Nokogiri::XML.parse(xml_file)
 
 games = []
 
-html_doc.root.xpath("item").first(2).each do |element|
+html_doc.root.xpath("item").first(10).each do |element|
   games << Game.create!(
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
@@ -66,7 +66,7 @@ games_attributes = [
 ]
 
 games_attributes.each do |game_attribute|
-  games << Game.create!(name: game_attribute[:name], description: game_attribute[:description], min_players: game_attribute[:min_players])
+  games << Game.create!(name: game_attribute[:name], image_url: game_attribute[:image_url], description: game_attribute[:description], min_players: game_attribute[:min_players])
 end
 
 users = []
@@ -92,23 +92,12 @@ favorites = [
   { game: games[4], user: users[0] }
 ]
 
-# seed events a ne surtout pas faire manuellement
-# time
-
-# dates = []
-
-# 2.times do
-#   dates << (Date.today + rand(0..60)).to_datetime
-# end
-
-# utiliser faker pour créer le name, l'adresse et la description
-
-Game.first(4).each do |game|
+Game.first(10).each do |game|
   Favorite.create!(game: game, user: User.first)
 end
 
 
-2.times do
+30.times do
   game = games.sample
   user = users.sample
 
@@ -117,8 +106,8 @@ end
     name: "Partie de #{game.name} proposée par #{user.username}",
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
-    address: "26 rue de rivoli, Paris", # addresse a générer par faker autour de paris
-    description: "oeoeoeoe", # description à générer par faker
+    address: event_addresses.sample, # addresse a générer par faker autour de paris
+    description: Faker::GreekPhilosophers.quote, # description à générer par faker
     status: Event::STATUS.sample,
     game: game,
     max_players: rand(6..12)

@@ -1,40 +1,40 @@
-2, Rue Olier
-Hôpital Saint-Antoine, 184, Rue du Faubourg Saint-Antoine
-12, Rue Demarquay
-Freemousse.bar, 76, Rue Marcadet
-Comédie des 3 bornes, 32, Rue des Trois Bornes
-11b, Rue des Récollets
-8, Avenue de la Porte de Vincennes
-63, Boulevard Romain Rolland
-35, Rue des Perchamps
-31, Rue de Monceau
-3, Avenue Pierre Semard
-28/30, Rue Saint-Fargeau
-32, Avenue Paul Doumer
-55, Rue Émile Reynaud
-55, Rue Froidevaux
-16, Rue de Paris
-9, Rue Étex
-Collège Georges Brassens, 4, Rue Erik Satie
-18, Rue Rubens
-6, Voie Poussin
-15, 17, Rue Affre
-3, Rue Léo Delibes
-14, Avenue Franklin Delano Roosevelt
-Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
-16, Rue du Simplon
-83-85, Boulevard Vincent Auriol
-7, Passage Kracher
-21, Rue Jenner
-4, Rue Cépré
-6, Rue de l'Université
-29, Rue du Mail
-43, Rue de Cîteaux
-74, Avenue de Gravelle
-120, Rue Lauriston
-9, Rue du Professeur Hyacinthe Vincent
-43, Rue des Périchaux
-46, Rue des Haies
-145, Avenue Jean Jaurès
-66, Rue de Longchamp
+19, Rue de la Gare de Reuilly
+33-35, Rue des Lilas
+29, Rue de Dunkerque
+24, Rue d'Annam
+61, Avenue Jean Jaurès
+76, Rue Lamarck
+126, Rue de Javel
+12, Rue Beaunier
+LCL, 156, Rue Saint-Charles
 1, Rue Sainte-Anne
+28, Avenue de Laumière
+2, Impasse Delaunay
+55 Bis, Boulevard Pereire
+10, Passage Rauch
+28, Rue Rouelle
+9, Rue des Pruniers
+Sorbonne Université - Faculté des Lettres, Campus Malesherbes, 108, Boulevard Malesherbes
+25, Boulevard Bessières
+73, Quai Panhard et Levassor
+6, Cour Saint-Pierre
+28, Avenue Lamoricière
+7, Passage Kracher
+4, Avenue du Stade de Coubertin
+33, Rue Cambronne
+5-23, Rue d'Alsace
+3, Boulevard de Grenelle
+85, Rue de Grenelle
+69, Rue Buffon
+29, Rue de la Tour
+32, Rue Nationale
+67, Rue des Grands Champs
+30, Rue Damesme
+2, Rue de Rungis
+20, Rue de Tlemcen
+44, Boulevard Poniatowski
+3, Rue Guyton de Morveau
+31, Rue Erlanger
+160, Rue d'Aubervilliers
+13, Rue Richomme
+5, Rue Fernand Foureau
