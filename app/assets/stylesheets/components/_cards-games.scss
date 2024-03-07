@@ -1,0 +1,43 @@
+/* _game.scss */
+.card-games {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  overflow: hidden; /* Pour cacher le débordement de l'image */
+  margin-bottom: 20px; /* Ajout de marge en bas pour espacement entre les cartes */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)); /* Ajout du gradient */
+}
+
+.game-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff; /* Couleur du texte en blanc */
+}
+
+.btn-favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.karma-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux cartes de passer à la ligne lorsque l'écran est plus petit */
+  justify-content: space-between; /* Espacement égal entre les cartes */
+}
+
+.col {
+  flex: 0 0 calc(50% - 10px); /* Calcul de 50% de la largeur de la colonne avec un espacement de 10px entre les colonnes */
+  max-width: calc(50% - 10px); /* Calcul de 50% de la largeur de la colonne avec un espacement de 10px entre les colonnes */
+  padding: 0 5px; /* Ajout de padding horizontal pour espacement entre les cartes */
+}

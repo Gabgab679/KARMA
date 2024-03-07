@@ -1,0 +1,6 @@
+<!-- _game.html.erb -->
+<div class="card-games" style="background-image: url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
+  <div class="overlay"></div> <!-- Ajout d'un overlay pour le filtre -->
+  <h2 class="game-name"><%= game.name %></h2>
+  <%= button_to "☆", favorite_path(game), method: :patch, class: "btn btn-outline-warning btn-favorite" %>
+</div>
