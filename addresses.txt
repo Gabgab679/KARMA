@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 43, Rue de Cîteaux
 34, Rue des Maronites
 31, Quai d'Issy-les-Moulineaux
@@ -39,8 +38,6 @@ Sorbonne Université - Faculté des Lettres, Campus Clignancourt, 2, Rue Francis
 83-85, Boulevard Vincent Auriol
 L'embuscade, 47, Rue Catherine de La Rochefoucauld
 238, Rue du Faubourg Saint-Antoine
-=======
-<<<<<<< HEAD
 4, Rue Jules Breton
 85, Rue de Grenelle
 4, Rue des Chantres
@@ -81,7 +78,6 @@ L'embuscade, 47, Rue Catherine de La Rochefoucauld
 3, Rue Christian Dewet
 32, Rue Nationale
 81, Avenue Raymond Poincaré
-=======
 20, Rue Neuve Saint-Pierre
 4, Avenue du Stade de Coubertin
 Centre de secours Rousseau, 21, Rue du Jour
@@ -122,5 +118,4 @@ Gare d'Austerlitz, 85, Quai d'Austerlitz
 11, Impasse Reille
 32, Place du Marché Saint-Honoré
 63, Avenue du Général Michel Bizot
->>>>>>> d8110c5dccdfd5b685dca4108ab3a4e9ffcbe94a
->>>>>>> d4094680880fa1b96fafab8bac715d012c777b69
+
