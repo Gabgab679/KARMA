@@ -1,40 +1,40 @@
-2, Rue Olier
-Hôpital Saint-Antoine, 184, Rue du Faubourg Saint-Antoine
-12, Rue Demarquay
-Freemousse.bar, 76, Rue Marcadet
-Comédie des 3 bornes, 32, Rue des Trois Bornes
-11b, Rue des Récollets
-8, Avenue de la Porte de Vincennes
-63, Boulevard Romain Rolland
-35, Rue des Perchamps
-31, Rue de Monceau
-3, Avenue Pierre Semard
-28/30, Rue Saint-Fargeau
-32, Avenue Paul Doumer
-55, Rue Émile Reynaud
-55, Rue Froidevaux
-16, Rue de Paris
-9, Rue Étex
-Collège Georges Brassens, 4, Rue Erik Satie
-18, Rue Rubens
-6, Voie Poussin
-15, 17, Rue Affre
-3, Rue Léo Delibes
-14, Avenue Franklin Delano Roosevelt
-Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
-16, Rue du Simplon
-83-85, Boulevard Vincent Auriol
-7, Passage Kracher
-21, Rue Jenner
-4, Rue Cépré
-6, Rue de l'Université
-29, Rue du Mail
 43, Rue de Cîteaux
-74, Avenue de Gravelle
-120, Rue Lauriston
-9, Rue du Professeur Hyacinthe Vincent
+34, Rue des Maronites
+31, Quai d'Issy-les-Moulineaux
+9, Rue des Pruniers
+11, Rue Saint-Dominique
+68, Rue Marguerite de Rochechouart
+10, Passage Rauch
+Sorbonne Université - Faculté des Lettres, Campus Clignancourt, 2, Rue Francis de Croisset
+3, Boulevard de Grenelle
+12, Villa Cœur de Vey
+28, Rue Ledion
+4, Rue Cépré
+29, Rue de Dunkerque
+3 bis, Cité du Palais-Royal de Belleville
+13, Rue du Nord
+13, Rue du Nord
+47, Avenue de Wagram
+38, Rue du Hameau
+2 à 10, Rue de la Concertation
+14, Rue Beaurepaire
+6, Rue Littré
+1, Avenue de la Sœur Rosalie
+74, Rue de Paris
+1, Avenue de la Sœur Rosalie
 43, Rue des Périchaux
-46, Rue des Haies
-145, Avenue Jean Jaurès
-66, Rue de Longchamp
-1, Rue Sainte-Anne
+69, Rue Buffon
+8, Rue Pelée
+3, Rue des Grands Augustins
+12, Quai de la Marne
+17, Quai aux Fleurs
+6, Rue de l'Université
+24, Rue Dugommier
+83-85, Boulevard Vincent Auriol
+17, Quai aux Fleurs
+68, Rue Marguerite de Rochechouart
+9, Rue Viète
+8b, Rue Quentin Bauchart
+83-85, Boulevard Vincent Auriol
+L'embuscade, 47, Rue Catherine de La Rochefoucauld
+238, Rue du Faubourg Saint-Antoine

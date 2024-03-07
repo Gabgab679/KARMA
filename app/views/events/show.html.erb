@@ -1,0 +1,20 @@
+<div class="text-warning">
+  <%= @event.name %>
+  <%= @event.description %>
+  <%= @event.game.name %>
+  <p>patatipatata</p>
+
+  <h2>Participants</h2>
+  <% @event.participations.each do |participation| %>
+    <%= participation.user.username %>
+  <% end %>
+
+  <% if @registered == false %>
+    <%= button_to "Register", event_participations_path(@event), method: :post, class: "btn btn-outline-primary"  %>
+  <% else %>
+    <p>You are registered!</p>
+  <% end %>
+
+  <%= link_to "Game details", game_path(@event.game), class: "btn btn-outline-primary" %>
+
+</div>
