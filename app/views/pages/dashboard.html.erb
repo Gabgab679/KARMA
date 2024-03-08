@@ -8,20 +8,25 @@
 <%# <% end %>
 
 <%# <%= render 'form_user' %>
-
-<div class="d-flex">
-  <div class="row">
-  <div class="col-6">
-    <h2>my events</h2>
-    <% current_user.events_participations.each do |event| %>
-      <%= event.name %>
-    <% end %>
-  </div>
-  <div class="col-6">
-    <h2>my games</h2>
-    <% current_user.games.each do |game| %>
-      <%= game.name %>
-    <% end %>
-  </div>
-  </div>
+<% unless current_user.events || current_user.events_participations %> <!-- A moins que l'un des deux ne soit vrai -->
+  <p> No upcoming events, register to one or create a new event !</p>
+<% else %>
+  <% unless current_user.events_participations %>
+   <p> You're not registered to any events! </p>
+  <% else %>
+    <p> Upcoming events </p>
+    <div class="karma-container">
+    <%= render "shared/cards-events", events: current_user.events_participations %>
+    </div>
+  <% end %>
+  <% unless current_user.events %>
+    <p> Create a new event </p>
+  <% else %>
+    <%= render "shared/cards-events", events: current_user.events %>
+  <% end %>
+<% end %> <!-- Cas l'utilisateur n'a pas crée d'évènements-->
+  <!-- Cas l'utilisateur ne participe à aucun événements -->
+<div class="karma-container">
+ <%= render "shared/cards-games", games: current_user.games %>
+</div>
 </div>

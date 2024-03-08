@@ -1,0 +1,61 @@
+.bg-card #signup-btn {
+
+  position: absolute;
+  width: 342px;
+  height: 54px;
+  left: 27px;
+  top: 635px;
+
+  background: #9E13F9;
+  border-radius: 20px;
+
+
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
+
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #FFFFFF;
+
+}
+
+.bg-card #login-btn {
+
+  position: absolute;
+  width: 342px;
+  height: 54px;
+  left: 27px;
+  top: 565px;
+
+  background: #F72585;
+  border-radius: 20px;
+
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+
+  }
+
+.bg-card{
+  background-image: url("Homepage.jpg");   /* The image used */
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
