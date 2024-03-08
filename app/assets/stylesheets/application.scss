@@ -11,8 +11,9 @@
 @import "components/index";
 @import "pages/index";
 
-body{
+body, html{
   background-color: #32153F;
+  height: 100%;
 }
 
 .karma-container {

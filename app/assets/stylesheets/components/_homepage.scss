@@ -1,81 +1,61 @@
-// position: absolute;
-// width: 564px;
-// height: 432.28px;
-// left: -111.99px;
-// top: 36.07px;
+.bg-card #signup-btn {
 
-// opacity: 0.3;
-// transform: rotate(-14.97deg);
+  position: absolute;
+  width: 342px;
+  height: 54px;
+  left: 27px;
+  top: 635px;
 
-
-// position: absolute;
-// width: 656.5px;
-// height: 563.27px;
-// left: -112px;
-// top: 359px;
+  background: #9E13F9;
+  border-radius: 20px;
 
 
-// /* Group 138 */
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
 
-// position: absolute;
-// width: 564px;
-// height: 432.28px;
-// left: -111.99px;
-// top: 36.07px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-// opacity: 0.3;
-// transform: rotate(-14.97deg);
+  color: #FFFFFF;
 
+}
 
-// /* Rectangle 126 */
+.bg-card #login-btn {
 
-// position: absolute;
-// width: 277px;
-// height: 210.48px;
-// left: -111.99px;
-// top: 36.07px;
+  position: absolute;
+  width: 342px;
+  height: 54px;
+  left: 27px;
+  top: 565px;
+
+  background: #F72585;
+  border-radius: 20px;
+
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+
+  }
 
 .bg-card{
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UNO_Logo.svg/1280px-UNO_Logo.svg.png");
+  background-image: url("Homepage.jpg");   /* The image used */
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-// border-radius: 20px;
-// transform: rotate(-14.97deg);
-
-
-// /* Rectangle 127 */
-
-// position: absolute;
-// width: 277px;
-// height: 210.48px;
-// left: 165.28px;
-// top: -38.04px;
-
-// background: url(b8-catane-le-jeu-de-base-2010-cover.jpg);
-// border-radius: 20px;
-// transform: rotate(-14.97deg);
-
-
-// /* Rectangle 128 */
-
-// position: absolute;
-// width: 277px;
-// height: 210.48px;
-// left: 222.56px;
-// top: 176.23px;
-
-// background: url(s-l1200.png);
-// border-radius: 20px;
-// transform: rotate(-14.97deg);
-
-
-// /* Rectangle 129 */
-
-// position: absolute;
-// width: 277px;
-// height: 210.48px;
-// left: -54.71px;
-// top: 250.35px;
-
-// background: url(téléchargement (3).png);
-// border-radius: 20px;
-// transform: rotate(-14.97deg);
