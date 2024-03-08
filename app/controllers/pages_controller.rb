@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   end
 
   def map
-
+    
     @events = current_user.events_participations
     @events = @events.global_search(params[:query]) if params[:query].present?
     @events = @events.global_search(params[:event_type]) if params[:event_type].present?
