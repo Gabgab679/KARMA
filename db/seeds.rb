@@ -120,3 +120,10 @@ EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "E
   )
   # creation d'event avec faker et "generate"
 end
+
+5.times do
+  fav = Favorite.new
+  fav.user = User.all.sample
+  fav.game = Game.all.sample
+  fav.save
+end

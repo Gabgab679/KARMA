@@ -1,36 +1,38 @@
-
-
 <% unless action_name == "home" %>
-<nav class="navbar-complete row mx-0" >
-  <div class="col-3">
-      <%= link_to request.referrer, class: "left-button-nav" do %>
-      <%= image_tag('arrow.png') %>
-      <% end %>
-  </div>
+<div class="offset-top">
+  <nav class="navbar-complete row mx-0" >
+    <div class="col-3">
+        <%= link_to request.referrer, class: "left-button-nav" do %>
+        <%= image_tag('arrow.png') %>
+        <% end %>
+    </div>
 
-  <div class="col-6">
-    <div class="logo" style="background-image: url(<%= asset_path('logo-navbar.svg') %>) !important;"></div>
-  </div>
+    <div class="col-6">
+      <div class="logo" style="background-image: url(<%= asset_path('logo-navbar.svg') %>) !important;"></div>
+    </div>
 
-  <div class="col-3">
-    <% unless action_name == "profil" %>
-      <% if current_user %>
-        <%= link_to "/dashboard", class: "right-avatar-nav rounded-circle" do %>
-          <% if current_user.photo.attached? %>
-            <%= cl_image_tag current_user.photo.key, crop: :fill_pad, class: "avatar", alt: "dropdown menu" %>
-          <% else %>
-             <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
+    <div class="col-3">
+      <% unless action_name == "profil" %>
+        <% if current_user %>
+        <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+          <%= link_to "/dashboard", class: "right-avatar-nav rounded-circle" do %>
+            <% if current_user.photo.attached? %>
+              <%= cl_image_tag current_user.photo.key, crop: :fill_pad, class: "avatar", alt: "dropdown menu" %>
+            <% else %>
+              <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
+            <% end %>
+          <% end %>
+        <% else %>
+          <%= link_to "/profil", class: "right-avatar-nav rounded-circle" do %>
+            <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
           <% end %>
         <% end %>
-      <% else %>
-        <%= link_to "/profil", class: "right-avatar-nav rounded-circle" do %>
-          <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
-        <% end %>
       <% end %>
-    <% end %>
-  </div>
-</nav>
-<% end %>
+    </div>
+  </nav>
+  <% end %>
+</div>
+
 
 
 <%# pour l'avatar tu vas le gérer depuis la view avec style="background image: currentuser :img" %>
