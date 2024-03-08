@@ -3,6 +3,7 @@ class EventsController < ApplicationController
 
   # link_to de la show de GamesController qui envoie vers la Route "/events"
   def index
+
     @games = current_user.games # jeux favoris du current_user
     @favorite_events = get_events_for_favorite_games(@games)
     @other_events = Event.where.not(id: @favorite_events.map(&:id)) # Tout les évènements dont l'id ne correspond pas aux favorites events de l'user
@@ -16,7 +17,7 @@ class EventsController < ApplicationController
     @events = @events.global_search(params[:location]) if params[:location].present?
 
     # The `geocoded` scope filters only events with coordinates
-    @favorite_markers = fetch_markers(@favorite_events)
+    @markers = fetch_markers(current_user.events_participations)
     @other_events_markers = fetch_markers(@other_events)
   end
 

@@ -1,11 +1,4 @@
 <!-- _game.html.erb -->
 <div class="karma-container">
- <% @games.each do |game| %>
-    <div class="card-games">
-      <%= image_tag(game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png", width: "100%") %>
-      <h2><%= game.name %></h2>
-      <%= button_to "☆", favorite_path(game), method: :patch, class: "btn btn-outline-warning" %>
-    </div>
-  <% end %>
-  </div>
+ <%= render "shared/cards-games", games: @games%>
 </div>
