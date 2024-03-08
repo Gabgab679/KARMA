@@ -15,7 +15,7 @@
       <% unless action_name == "profil" %>
         <% if current_user %>
         <%= button_to "logout", destroy_user_session_path, method: :delete, class: "w-25 btn btn-warning>" %>
-        <%= link_to "/dashboard", class: "right-avatar-nav rounded-circle" do %>
+        <%= link_to "/my_events", class: "right-avatar-nav rounded-circle" do %>
             <% if current_user.photo.attached? %>
               <%= cl_image_tag current_user.photo.key, crop: :fill_pad, class: "avatar", alt: "dropdown menu" %>
             <% else %>
