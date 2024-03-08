@@ -1,5 +1,5 @@
 <%= render "shared/search_bar" %>
-
+<div style="padding-top: 10px;>
 <% @events.each do |event| %>
   <%= event.name %>
   <%= link_to "see event", event_path(event) %>
@@ -9,3 +9,4 @@
   data-controller="map"
   data-map-markers-value="<%= @markers.to_json %>"
   data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+  </div>
