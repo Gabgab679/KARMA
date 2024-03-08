@@ -1,0 +1,17 @@
+<div class="offset-top">
+  <div class="card-container">
+    <% @events.each do |event| %>
+      <div class="card-events" style="background-image: url('<%= event.game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
+        <div class="overlay d-flex"></div>
+        <div class="place-restante">
+          <p>Places :<%= remaining_spots(event) %></p>
+        </div>
+        <div>
+          <h2><%= event.name %></h2>
+          <p><%= event.date.strftime("%d %b") %></p>
+          <%= link_to "see event", event_path(event) %>
+      </div>
+      </div>
+    <% end %>
+  </div>
+</div>

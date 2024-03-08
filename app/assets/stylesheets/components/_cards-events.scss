@@ -1,0 +1,53 @@
+/* _game.scss */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-events {
+  flex: 0 0 calc(50% - 10px); /* 50% de la largeur de la ligne avec 10px d'espace entre les cartes */
+  max-width: calc(50% - 10px); /* 50% de la largeur de la ligne avec 10px d'espace entre les cartes */
+  margin-bottom: 20px; /* Espace entre les lignes de cartes */
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8));
+}
+
+.card-events h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  width: calc(100% - 20px); /* Largeur de la carte moins les marges */
+  overflow: hidden; /* Masque le texte dépassant de la zone définie */
+  text-overflow: ellipsis; /* Remplace le texte dépassant par des points de suspension */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+
+.card-events .place-restante .p{
+  color: #fff;
+}
+
+.card-events .place-restante {
+  background-color: #9E13F9;
+  border: solid white;
+  border-radius: 20px;
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  margin: 2.5px;
+}
