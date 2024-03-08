@@ -56,7 +56,7 @@ class EventsController < ApplicationController
     @event.user = current_user
     @event.status = "Open"
     if @event.save
-      redirect_to dashboard_path(@event)
+      redirect_to event_path(@event)
     else
       render :new
     end
