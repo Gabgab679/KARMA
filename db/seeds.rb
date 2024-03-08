@@ -10,6 +10,10 @@
 
 require_relative "seeds/paris_address_generator"
 
+Participation.delete_all
+puts "------------------    ---------------------- "
+puts "               Delete Participations"
+puts "------------------    ---------------------- "
 Event.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Events                 "
@@ -22,11 +26,11 @@ Game.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Games"
 puts "------------------    ---------------------- "
-
 User.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Users"
 puts "------------------    ---------------------- "
+
 
 # # Uno
 # # Poker
@@ -108,7 +112,7 @@ EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "E
     name: EVENT_NAME.sample,
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
-    address: event_addresses.sample, # addresse a générer par faker autour de paris
+    address: ADDRESSES.sample, # addresse a générer par faker autour de paris
     description: Faker::Movies::StarWars.quote, # description à générer par faker
     status: Event::STATUS.sample,
     game: game,

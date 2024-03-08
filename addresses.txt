@@ -1,40 +1,40 @@
-27, Boulevard de l'Hôpital
-13, Rue Richomme
-44, Rue de l'Abbé Carton
-32, Rue du Mont Cenis
-2, Rue Champollion
-163P, Avenue de Flandre
-16, Rue de Paris
-87 bis, Rue Blomet
-12, Boulevard Bessières
+21, Passage Duhesme
+8, Rue Albert Willemetz
+24, Boulevard Saint-Michel
 6, Rue Notre-Dame-de-Lorette
-51, Rue du Cherche-Midi
-Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
-12, Rue Faidherbe
-61, Avenue Jean Jaurès
-6, Rue du Général Appert
-Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
-14, Quai d'Orléans
-28, Rue de la Source
-Gare Saint-Lazare, 11, Rue de Rome
+10, Rue Blondel
+3, Rue Guyton de Morveau
+31, Boulevard Jules Sandeau
+2b, Rue Scheffer
+16, Rue du Simplon
+22b, Rue Norvins
+24, Avenue des Canadiens
+158, Rue de Charonne
+7, Cité Delaunay
+6, Rue Barthélemy
+31, Rue d'Alsace
+13p, Villa Nieuport
+8, Rue Botzaris
+4, Rue du Renard
+55, Avenue de la Commune de Paris
+4, Passage Commun J/13
+6, Rue Littré
+7, Cité Delaunay
+31, Boulevard Jules Sandeau
+33, Rue du Moulinet
+66, Rue de Longchamp
+10, Passage Rauch
+53, Rue Saint-Placide
+12, Rue Coustou
+Myl, 5, Avenue Jean Jaurès
+37 bis, Rue des Plantes
+Myl, 5, Avenue Jean Jaurès
+39, Rue Condorcet
+29, Rue Marbeuf
+68, Rue Marguerite de Rochechouart
+81, Avenue Raymond Poincaré
+21, Rue d'Odessa
 185, Boulevard Voltaire
-24, Rue Scandicci
-7, Passage Kracher
-9, Rue du Professeur Hyacinthe Vincent
-Pacha Kebab, 21, Rue d'Amsterdam
-29, Boulevard de Montmorency
-100, Rue Regnault
-15, Avenue de la Belle Gabrielle
-Chez Ami 2, 141, Rue Raymond Losserand
-10, Rue Fabre d'Églantine
-19, Rue du Docteur Blanche
-28, Rue de la Source
-4, Rue Portalis
-3, Rue La Quintinie
-24, Rue d'Annam
-23, Rue Pergolèse
-25, Boulevard Bessières
-22 bis, Rue d'Annam
-33, Rue Robert et Sonia Delaunay
-6, Place Constantin Pecqueur
-46, Rue de Turenne
+4, Rue des Chantres
+23, Rue François 1er
+3, Rue des Grands Augustins
