@@ -15,14 +15,15 @@ class PagesController < ApplicationController
   end
 
   def map
+    @games = current_user.games
+    @favorite_events = get_events_for_favorite_games(@games)
 
-    @events = current_user.events_participations
     @events = @events.global_search(params[:query]) if params[:query].present?
     @events = @events.global_search(params[:event_type]) if params[:event_type].present?
     @events = @events.global_search(params[:dates]) if params[:dates].present?
     @events = @events.global_search(params[:location]) if params[:location].present?
 
-    @markers = @events.geocoded.map do |event|
+    @markers = @favorite_events.geocoded.map do |event|
       {
         lat: event.latitude,
         lng: event.longitude,
@@ -30,5 +31,17 @@ class PagesController < ApplicationController
         marker_html: render_to_string(partial: 'marker', locals: {event: event})
       }
     end
+  end
+
+  private
+
+  def get_events_for_favorite_games(games)
+    events_collection_per_game = []
+
+    games.each do |game|
+      events_collection_per_game << game.events
+    end
+    # Event.where(id: events.flatten.map(&:id))
+    Event.where(id: events_collection_per_game.flatten.map(&:id))
   end
 end
