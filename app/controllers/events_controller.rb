@@ -11,13 +11,17 @@ class EventsController < ApplicationController
 
     @events = Event.all
     # user_events = @events.each do |event|
-    # #   @games.include?(event.game)
-    # # end
-    # #search-bar and filters query below
-    # @events = @events.global_search(params[:query]) if params[:query].present?
+    #   @games.include?(event.game)
+    # end
+    #search-bar and filters query below
+    @events = @events.global_search(params[:query]) if params[:query].present?
     # @events = @events.global_search(params[:event_type]) if params[:event_type].present?
-    # @events = @events.global_search(params[:dates]) if params[:dates].present?
-    # @events = @events.global_search(params[:location]) if params[:location].present?
+
+    if params[:date].present?
+      first_date, last_date = *params[:date].split(" to ")
+      @events = @events.where("date >= ?", first_date).where("date <= ?", last_date)
+    end
+    @events = @events.global_search(params[:location]) if params[:location].present?
 
     # # The `geocoded` scope filters only events with coordinates
     # @markers = fetch_markers(@favorite_events)
