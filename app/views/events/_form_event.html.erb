@@ -5,7 +5,7 @@
             input_html: { data: { controller: "datepicker" } } %>
   <%= f.input :address %>
   <%= f.input :description %>
-  <%= f.input :game, collection: Game.all %>
+  <%= f.input :game_id, collection: Game.all %>
   <%= f.input :max_players %>
   <%= f.input :event_type, collection: Event::EVENT_TYPE %>
   <%= f.submit %>

@@ -15,6 +15,8 @@ class PagesController < ApplicationController
   end
 
   def map
+
+    @events = Event.all
     @games = current_user.games
     @favorite_events = get_events_for_favorite_games(@games)
 
@@ -23,7 +25,7 @@ class PagesController < ApplicationController
     @events = @events.global_search(params[:dates]) if params[:dates].present?
     @events = @events.global_search(params[:location]) if params[:location].present?
 
-    @markers = @favorite_events.geocoded.map do |event|
+    @markers = @events.geocoded.map do |event|
       {
         lat: event.latitude,
         lng: event.longitude,

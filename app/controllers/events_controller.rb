@@ -23,8 +23,8 @@ class EventsController < ApplicationController
     end
     @events = @events.global_search(params[:location]) if params[:location].present?
 
-    # The `geocoded` scope filters only events with coordinates
-    @markers = fetch_markers(@favorite_events)
+    # # The `geocoded` scope filters only events with coordinates
+    # @markers = fetch_markers(@favorite_events)
     # @other_events_markers = fetch_markers(@other_events)
   end
 
@@ -53,8 +53,13 @@ class EventsController < ApplicationController
   # new renvoie vers la route create qui redirige auto vers le dashboard
   def create
     @event = Event.new(event_params)
-    @event.save
-    redirect_to dashboard_path(@event)
+    @event.user = current_user
+    @event.status = "Open"
+    if @event.save
+      redirect_to dashboard_path(@event)
+    else
+      render :new
+    end
   end
 
   # 2 routes possible qui envoie vers edit, 1 depuis l'index des events et l'autre depuis le dashboard peut être
@@ -99,6 +104,6 @@ class EventsController < ApplicationController
   end
 
   def event_params
-
+    params.require(:event).permit(:name, :description, :date, :address, :game_id, :max_players, :event_type)
   end
 end

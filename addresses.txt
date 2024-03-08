@@ -1,3 +1,45 @@
+<<<<<<< HEAD
+24, Rue Dugommier
+66, Rue de Longchamp
+12, Rue Paul Belmondo
+6, Rue Paul Bert
+6, Place Constantin Pecqueur
+14, Rue Bixio
+10, Passage Rauch
+13, Rue Oscar Roty
+10, Cour des Fabriques
+3, Rue Lamennais
+8, Rue Lamarck
+2, Rue Olier
+63, Boulevard Romain Rolland
+40, Rue de Paris
+34, Rue Le Brun
+11, Allée Anne de Beaujeu
+1, Villa Sonatine
+3b, Rue Dosne
+7, Rue des Chaufourniers
+12, Rue Orfila
+19, Rue de Gergovie
+4, Passage Commun J/13
+36, Rue Saint-Vincent
+31, Rue de Romainville
+2, Impasse Delaunay
+44, Rue Hermel
+8, Rue Albert Willemetz
+CLJT Didot, 41, Rue Didot
+12, Quai de la Marne
+32, Rue Nationale
+39, Rue Condorcet
+6, Rue du Général Appert
+2, Rue Paul Cézanne
+7, Rue Géo Chavez
+6, Rue du Général Appert
+2, Impasse Delaunay
+École Massillon, 2 bis, Quai des Célestins
+64, Rue Spontini
+14, Avenue Franklin Delano Roosevelt
+87 bis, Rue Blomet
+=======
 21, Passage Duhesme
 8, Rue Albert Willemetz
 24, Boulevard Saint-Michel
@@ -38,3 +80,4 @@ Myl, 5, Avenue Jean Jaurès
 4, Rue des Chantres
 23, Rue François 1er
 3, Rue des Grands Augustins
+>>>>>>> 1db6c83c851e4669050622002cc8784b90437b76
