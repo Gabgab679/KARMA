@@ -6,7 +6,7 @@ export default class extends Controller {
     console.log("hello");
     flatpickr(this.element, {
       mode: "range",
-      dateFormat: "Y-m-d"
+      dateFormat: "d-m-Y"
     })
   }
 }

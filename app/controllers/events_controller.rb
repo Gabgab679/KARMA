@@ -18,8 +18,7 @@ class EventsController < ApplicationController
       first_date, last_date = *params[:date].split(" to ")
       @events = @events.where("date >= ?", first_date).where("date <= ?", last_date)
     end
-    # @events = @events.global_search(params[:dates]) if params[:dates].present?
-    # @events = @events.global_search(params[:location]) if params[:location].present?
+    @events = @events.global_search(params[:location]) if params[:location].present?
 
     # The `geocoded` scope filters only events with coordinates
     @markers = fetch_markers(@events)
