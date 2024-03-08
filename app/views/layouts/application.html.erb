@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <title>Karma</title>
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
@@ -14,13 +16,12 @@
   </head>
 
   <body>
-    <div class="offset-top">
-    <%= render "shared/navbar" %>
-    <%= render "shared/flashes" %>
-    <%= yield %>
+      <%= render "shared/navbar" %>
+      <%= render "shared/flashes" %>
+      <%= yield %>
 
-    <div class="footer-container">
-      <%= render "shared/footer" %>
+      <div class="footer-container">
+        <%= render "shared/footer" %>
     </div>
   </div>
   </body>

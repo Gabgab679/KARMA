@@ -6,10 +6,13 @@ class EventsController < ApplicationController
 
     @games = current_user.games # jeux favoris du current_user
     @favorite_events = get_events_for_favorite_games(@games)
-    @other_events = Event.where.not(id: @favorite_events.map(&:id)) # Tout les évènements dont l'id ne correspond pas aux favorites events de l'user
+    # @other_events = Event.where.not(id: @favorite_events.map(&:id)) # Tout les évènements dont l'id ne correspond pas aux favorites events de l'user
     # Event.all.reject { |event| @favorite_events.include?(event)
 
     @events = Event.all
+    # user_events = @events.each do |event|
+    #   @games.include?(event.game)
+    # end
     #search-bar and filters query below
     @events = @events.global_search(params[:query]) if params[:query].present?
     @events = @events.global_search(params[:event_type]) if params[:event_type].present?
@@ -17,8 +20,8 @@ class EventsController < ApplicationController
     @events = @events.global_search(params[:location]) if params[:location].present?
 
     # The `geocoded` scope filters only events with coordinates
-    @markers = fetch_markers(current_user.events_participations)
-    @other_events_markers = fetch_markers(@other_events)
+    @markers = fetch_markers(@favorite_events)
+    # @other_events_markers = fetch_markers(@other_events)
   end
 
   # Link_to de l'action index juste au dessus et qui envoie vers l'évènements correspondant sur /events/:id
@@ -85,7 +88,6 @@ class EventsController < ApplicationController
     end
     # Event.where(id: events.flatten.map(&:id))
     Event.where(id: events_collection_per_game.flatten.map(&:id))
-
   end
 
   def set_events
