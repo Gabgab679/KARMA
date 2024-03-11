@@ -1,24 +1,20 @@
-<div class="container chatroom">
+<div class="container chatroom"
+  data-controller="event-subscription"
+  data-event-subscription-event-id-value="<%= @event.id %>">
 
- <h1>Chat with participants of <%= @event.name %></h1>
+  <h1>Chat with participants of <%= @event.name %></h1>
 
- <div class="messages">
-  <%if @messages %>
-      <% @messages.each do |message| %>
-        <div id="message-<%= message.id %>">
-          <small>
-            <strong><%= message.user.username %></strong>
-            <i><%= message.created_at.strftime("%a %b %e at %l:%M %p") %></i>
-          </small>
-          <p><%= message.content %></p>
-        </div>
+  <div class="messages" data-event-subscription-target="messages">
+    <% if @messages %>
+      <% @event.messages.each do |message| %>
+        <%= render "messages/message", message: message %>
       <% end %>
     <% end %>
+    </div>
   </div>
-</div>
 
 <%= simple_form_for [@event, @message],
-  html: {class: "d-flex"} do |f|
+  html: { data: { action: "turbo:submit-end->event-subscription#resetForm" }, class: "d-flex" } do |f|
 %>
   <%= f.input :content,
     label: false,
