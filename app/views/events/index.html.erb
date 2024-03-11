@@ -1,0 +1,8 @@
+<%= render "shared/search_bar" %>
+<div style="padding-top: 10px;">
+<% @events.each do |event| %>
+  <%= event.name %>
+  <%= link_to "see event", event_path(event) %>
+<% end %>
+</div>
+

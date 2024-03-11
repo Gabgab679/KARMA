@@ -1,0 +1,12 @@
+<%= simple_form_for(@event) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :date,
+            as: :string,
+            input_html: { data: { controller: "datepicker" } } %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :game_id, collection: Game.all %>
+  <%= f.input :max_players %>
+  <%= f.input :event_type, collection: Event::EVENT_TYPE %>
+  <%= f.submit %>
+<% end %>

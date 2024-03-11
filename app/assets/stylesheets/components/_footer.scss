@@ -1,0 +1,30 @@
+.footer {
+  position: fixed; /* Positionnement fixe */
+  bottom: 20px; /* Alignement en bas de la page */
+  left: 20px; /* Marge à gauche */
+  width: 350px; /* Largeur du footer */
+  height: 50px; /* Hauteur du footer */
+  background-color: #F72585; /* Couleur de fond du footer */
+  display: flex; /* Utilisation de Flexbox pour aligner les éléments */
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 20px;
+  z-index: 99; /* Centrage vertical */
+
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;/* Utilisation de Flexbox pour aligner les éléments */
+  }
+  .footer-icon {
+    padding: 0.4rem;
+    border-radius: 40%;
+
+  }
+  .current-page-indicator {
+  background-color: #9E13F9;
+  }
+}

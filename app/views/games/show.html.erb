@@ -1,0 +1,14 @@
+<div class="text-warning">
+  <div class="">
+    <h1><%= @game.name %></h1>
+    <% if @game.image_url %>
+      <%= image_tag(@game.image_url, style: "width: 100%; height: 200px; object-fit: cover") %>
+    <% else %>
+      <%= image_tag("https://c.clc2l.com/t/m/o/monopoly-cgwI69.png", width: "100%") %>
+    <% end %>
+     <h4><%= @game.description %></h4>
+     <p><%= @game.min_players%>+ players</p>
+     <p>Family friendly</p>
+    <button type="button" class="btn btn-outline-warning">Add to favorites</button>
+  </div>
+</div>

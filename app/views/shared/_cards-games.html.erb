@@ -1,0 +1,17 @@
+<!-- _game.html.erb -->
+
+<div class="offset-top">
+  <div class="card-container">
+    <% games.each do |game| %>
+      <div class="card-games" style="background-image: url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
+        <div class="overlay"></div>
+        <h2><%= game.name %></h2>
+        <% if current_user.games.include?(game) %>
+          <%= button_to "💫", favorite_path(game), method: :delete, class: "btn btn-outline-warning" %>
+        <% else %>
+          <%= button_to "☆", favorites_path(game), method: :post, class: "btn btn-outline-warning" %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
