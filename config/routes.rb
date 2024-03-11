@@ -10,15 +10,15 @@ Rails.application.routes.draw do
   # Defines the root path route ('/')
   # root 'posts#index'
 
-
   get 'dashboard', to: 'pages#dashboard'
   get 'leaderboard', to: 'pages#leaderboard'
   get 'my_events', to: 'pages#user_events'
   get 'map', to: 'pages#map'
-
+  get 'chatrooms', to: 'pages#chatrooms'
 
   resources :events do
     resources :participations, only: %i[create update destroy]
+    resources :messages, only: %i[index create]
   end
 
   resources :games, only: %i[index show]

@@ -6,25 +6,31 @@
 <%# <% else %>
   <%# <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
 <%# <% end %>
+<div>
+  <div data-controller="dashboard-tabs"> <!-- Controller -->
+    <button data-action="click->dashboard-tabs#displayFavoriteGames"> My Games </button> <!-- Action (stimulus) -->
+    <button data-action="click->dashboard-tabs#displayLeaderboard"> Leaderboard </button> <!-- Action (stimulus) -->
+    <div class="">
+      <div data-dashboard-tabs-target="favoriteGameElement" class="">
+        <%= render "shared/cards-games", games: current_user.games %>
 
-<%# <%= render 'form_user' %>
-<% unless current_user.events || current_user.events_participations %> <!-- A moins que l'un des deux ne soit vrai -->
-  <p> No upcoming events, register to one or create a new event !</p>
-<% else %>
-  <% unless current_user.events_participations %>
-   <p> You're not registered to any events! </p>
-  <% else %>
-    <p> Upcoming events </p>
-    <%= render "shared/cards-events", events: current_user.events_participations %>
+        <details>
+          <summary> Other Games </summary>
+          <div> <%= render "shared/cards-games", games: @other_games %> </div>
+        </details>
+      </div>
+
+      <div data-dashboard-tabs-target="leaderboardElement" class="d-none">
+        <p>Hello world! - sarcasme avec bcp d'amour, Alex
+          Cette tab n'existe plus si on ne fait pas le dashboard
+        </p>
+      </div>
+      <!-- div games -->
+      <!-- div leaderboard -->
     </div>
-  <% end %>
-  <% unless current_user.events %>
-    <p> Create a new event </p>
-  <% else %>
-    <%= render "shared/cards-events", events: current_user.events %>
-  <% end %>
-<% end %> <!-- Cas l'utilisateur n'a pas crée d'évènements-->
-  <!-- Cas l'utilisateur ne participe à aucun événements -->
- <%= render "shared/cards-games", games: current_user.games %>
-</div>
+  </div>
+
+
+<!-- Targets Comment appelle t on la target dans le cas ou le controller s'appelle dashboard_tabs ?-->
+<%# <%= render 'form_user' %>
 </div>

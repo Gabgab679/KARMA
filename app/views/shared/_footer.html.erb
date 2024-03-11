@@ -16,6 +16,16 @@
             <%= image_tag('icone-evenement.png') %>
           <% end %>
         </div>
+        <div class="footer-icon <%= "current-page-indicator" if action_name == "new" && controller_name == "events" %>">
+          <%= link_to "/events/new" do %>
+            <%= image_tag('icone-plus.png') %>
+          <% end %>
+        </div>
+        <div class="footer-icon <%= "current-page-indicator" if action_name == "chatrooms" && controller_name == "pages" %>">
+          <%= link_to "/chatrooms" do %>
+            <%= image_tag('message_icon.png') %>
+          <% end %>
+        </div>
       </nav>
     </footer>
 <% end %>

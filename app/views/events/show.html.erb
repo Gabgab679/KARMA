@@ -1,20 +1,39 @@
-<div class="text-warning">
-  <%= @event.name %>
-  <%= @event.description %>
-  <%= @event.game.name %>
-  <p>patatipatata</p>
-
-  <h2>Participants</h2>
-  <% @event.participations.each do |participation| %>
-    <%= participation.user.username %>
-  <% end %>
-
-  <% if @registered == false %>
-    <%= button_to "Register", event_participations_path(@event), method: :post, class: "btn btn-outline-primary"  %>
-  <% else %>
-    <p>You are registered!</p>
-  <% end %>
-
-  <%= link_to "Game details", game_path(@event.game), class: "btn btn-outline-primary" %>
-
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%=@event.game.image_url%>');">
+    <h3><%= @event.game.name %></h3>
 </div>
+<div class="container">
+  <div class="title" >
+    <h1><%= @event.name %></h1>
+    <p>proposed by <%=@event.user.username%></p>
+  </div>
+  <div class="event-info">
+    <div class="event-description">
+      <p><%= @event.description %></p>
+    </div>
+  </div>
+  <div class="participations">
+    <h2>Participants</h2>
+    <div class="d-flex">
+    <% if @event.participations != [] %>
+      <% @event.participations.each do |participation| %>
+        <% if participation.user == current_user %>
+          <%= image_tag "https://cdn.langeek.co/photo/20347/thumb/you/350", crop: :fill_pad, class: "avatar", alt: "user participation" %>
+        <% else %>
+          <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
+          <p><%=participation.user.username%></p>
+        <% end %>
+      <% end %>
+    <% else %>
+      <p>No participant yet</p>
+    <% end %>
+    </div>
+  </div>
+    <% if @registered == false %>
+      <%= button_to "Register", event_participations_path(@event), method: :post, class: "register-button"  %>
+    <% else %>
+      <%= button_to "Cancel my participation", event_participations_path(@event), method: :delete, class: "register-button"  %>
+    <% end %>
+
+
+    <%= link_to "Game details", game_path(@event.game), class: "btn btn-outline-primary" %>
+  </div>

@@ -2,7 +2,8 @@ class GamesController < ApplicationController
   #Depuis home, petit chargement qui envoie sur index
   def index
     @games = Game.all
-    @favorite_games = current_user.games # Self explanatory cette fonction :)
+    @favorite_games = current_user.games
+     # Self explanatory cette fonction :)
     # @upcoming_game_events = get_upcoming_game_events(@games)
   end
 

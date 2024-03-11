@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :events_participations, through: :participations, source: :event
   has_many :games, through: :favorites
   has_one_attached :photo
+  has_many :messages
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

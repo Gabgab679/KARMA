@@ -1,0 +1,58 @@
+.event-info {
+    max-width: 800px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    border: 2px solid #ff69b4; /* Pink border */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+.title {
+  margin: 20px auto;
+}
+.title h2, p {
+  margin-bottom: 0 !important;
+
+}
+
+.participations {
+  margin: 20px auto;
+}
+
+.event-info p {
+    margin-bottom: 0;
+}
+
+.event-info p span {
+    font-weight: bold;
+}
+
+.event-description {
+    margin-top: 0;
+}
+
+.event-description p {
+    line-height: 2.5;
+    // border: 2px solid #ff69b4; /* Pink border */
+    // padding: 10px;
+    // border-radius: 5px;
+    // box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+.register-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #F72585;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}

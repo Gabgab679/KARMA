@@ -6,6 +6,8 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @games = Game.all
+    @other_games = @games.reject { |game| current_user.games.include?(game) }
   end
 
   def leaderboard
@@ -25,7 +27,7 @@ class PagesController < ApplicationController
     @events = @events.global_search(params[:dates]) if params[:dates].present?
     @events = @events.global_search(params[:location]) if params[:location].present?
 
-    @markers = @events.geocoded.map do |event|
+    @fav_markers = @favorite_events.geocoded.map do |event|
       {
         lat: event.latitude,
         lng: event.longitude,
@@ -33,6 +35,30 @@ class PagesController < ApplicationController
         marker_html: render_to_string(partial: 'marker', locals: {event: event})
       }
     end
+
+    @all_markers = @events.geocoded.map do |event|
+      {
+        lat: event.latitude,
+        lng: event.longitude,
+        info_window_html: render_to_string(partial: 'info_window', locals: {event: event}),
+        marker_html: render_to_string(partial: 'marker', locals: {event: event})
+      }
+    end
+
+    @custom_markers = @events.geocoded.map do |event|
+      {
+        lat: event.latitude,
+        lng: event.longitude,
+        info_window_html: render_to_string(partial: 'info_window', locals: {event: event}),
+        marker_html: render_to_string(partial: 'marker', locals: {event: event})
+      }
+    end
+  end
+
+  def chatrooms
+    @events_participations = current_user.events_participations
+    #current_user.events_participations ##tous les events où l'user est inscrit, mais qu'il n'a pas crées
+    @created_events = current_user.events
   end
 
   private
