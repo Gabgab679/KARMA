@@ -1,4 +1,5 @@
 import { Application } from "@hotwired/stimulus"
+import "@rails/actioncable"
 
 const application = Application.start()
 
