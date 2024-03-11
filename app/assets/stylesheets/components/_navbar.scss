@@ -1,5 +1,5 @@
   .offset-top {
-    padding-top: 95px;
+    padding-top: 60px;
   }
 
  .navbar-complete {
@@ -14,6 +14,7 @@
   border-bottom: 1px solid #D9D9D9;
   margin-bottom: 25px;
   z-index: 50;
+  padding-top: 2px;
 
   .left-button-nav {
     display: block;
@@ -27,7 +28,8 @@
     background-size: cover; /* Ajuste la taille de l'image pour couvrir l'élément */
     background-position: center;
     >img{
-      width: 100%
+      width: 100%;
+      padding-top: 5px;
     }
   }
 
@@ -49,7 +51,6 @@
   /* Style du texte "Karma" au milieu */
   .logo {
     text-align: center;
-    margin-top: 32px;
     width: 91.32px; /* Taille de l'avatar */
     height: 47.9px;
     // background-image: url(''); /* Chemin vers votre image */
@@ -58,5 +59,13 @@
     margin-bottom: 2px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }
