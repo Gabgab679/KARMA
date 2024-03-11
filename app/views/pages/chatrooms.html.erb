@@ -1,14 +1,24 @@
-<div class="container">
-  <ul>
-    <% current_user.events.each  do |event| %>
+<%= render "shared/navbar" %>
 
+<div class="container">
+  <div class="row">
+  <h1><strong>Chats for registered events</strong></h1>
+  <pre>
+  </pre>
+    <ul>
+      <% current_user.events.each  do |event| %>
         <h2><strong><%= event.name %></strong></h2>
-        <p>Last message: <%= event.messages.last.content if event.messages.last %></p>
+        <% if event.messages.last %>
+        <p>Last message: <%= event.messages.last.content %></p>
+        <p>from: <%= event.messages.last.user.username%></p>
+        <%= button_to "See more messages", event_messages_path(event), class: "register-button" %>
         <br>
-        <%= link_to "see more", event_messages_path(event) %>
         <br>
-        <br>
-        <br>
-    <% end %>
-  </ul>
+        <% else %>
+          <p>No messages yet!</p>
+          <%= button_to "Send the first message!", event_messages_path(event), class: "register-button" %>
+      <% end %>
+      <% end %>
+    </ul>
+  </div>
 </div>
