@@ -1,12 +1,16 @@
-<%= simple_form_for(@event) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :date,
-            as: :string,
-            input_html: { data: { controller: "datepicker" } } %>
-  <%= f.input :address %>
-  <%= f.input :description %>
-  <%= f.input :game_id, collection: Game.all %>
-  <%= f.input :max_players %>
-  <%= f.input :event_type, collection: Event::EVENT_TYPE %>
-  <%= f.submit %>
-<% end %>
+<div class="karma-container" style="padding-top: 10px; border-radius: 10px; border: 2px solid #32153F;">
+  <%= simple_form_for(@event, html: { class: "form-horizontal" }) do |f| %>
+    <%= f.input :name, label_html: { class: "col-sm-2 control-label" }, input_html: { class: "form-control" } %>
+    <%= f.input :date, as: :string, input_html: { data: { controller: "datepicker" }, class: "form-control" } %>
+    <%= f.input :address, label_html: { class: "col-sm-2 control-label" }, input_html: { class: "form-control" } %>
+    <%= f.input :description, label_html: { class: "col-sm-2 control-label" }, input_html: { class: "form-control" } %>
+    <%= f.input :game_id, collection: Game.all, label_html: { class: "col-sm-2 control-label" }, input_html: { class: "form-control" } %>
+    <%= f.input :max_players, label_html: { class: "col-sm-2 control-label" }, input_html: { class: "form-control" } %>
+    <%= f.input :event_type, collection: Event::EVENT_TYPE, label_html: { class: "col-sm-2 control-label" }, input_html: { class: "form-control" } %>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= f.submit "Submit", class: "btn btn-primary", style: "background-color: #32153F; color: white;" %>
+      </div>
+    </div>
+  <% end %>
+</div>
