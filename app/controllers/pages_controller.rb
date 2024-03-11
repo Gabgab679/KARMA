@@ -35,6 +35,12 @@ class PagesController < ApplicationController
     end
   end
 
+  def chatrooms
+    @events_participations = current_user.events_participations
+    #current_user.events_participations ##tous les events où l'user est inscrit, mais qu'il n'a pas crées
+    @created_events = current_user.events
+  end
+
   private
 
   def get_events_for_favorite_games(games)

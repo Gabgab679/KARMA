@@ -1,0 +1,14 @@
+<div class="container">
+  <ul>
+    <% current_user.events.each  do |event| %>
+
+        <h2><strong><%= event.name %></strong></h2>
+        <p>Last message: <%= event.messages.last.content if event.messages.last %></p>
+        <br>
+        <%= link_to "see more", event_messages_path(event) %>
+        <br>
+        <br>
+        <br>
+    <% end %>
+  </ul>
+</div>
