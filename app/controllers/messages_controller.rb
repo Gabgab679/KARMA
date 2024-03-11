@@ -11,9 +11,9 @@ class MessagesController < ApplicationController
     @message.event = @event
     @message.user = current_user
     if @message.save
-      event_messages_path(@event)
+      redirect_to event_messages_path(@event)
     else
-      render "messages/index", status: :unprocessable_entity
+      render 'messages/index', status: :unprocessable_entity
     end
   end
 

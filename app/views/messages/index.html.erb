@@ -3,14 +3,16 @@
  <h1>Chat with participants of <%= @event.name %></h1>
 
  <div class="messages">
-    <% @messages.each do |message| %>
-      <div id="message-<%= message.id %>">
-        <small>
-          <strong><%= message.user.username %></strong>
-          <i><%= message.created_at.strftime("%a %b %e at %l:%M %p") %></i>
-        </small>
-        <p><%= message.content %></p>
-      </div>
+  <%if @messages %>
+      <% @messages.each do |message| %>
+        <div id="message-<%= message.id %>">
+          <small>
+            <strong><%= message.user.username %></strong>
+            <i><%= message.created_at.strftime("%a %b %e at %l:%M %p") %></i>
+          </small>
+          <p><%= message.content %></p>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>
