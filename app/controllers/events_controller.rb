@@ -36,13 +36,6 @@ class EventsController < ApplicationController
     @event.participations.each do |participation|
       @registered = true if participation.user == current_user
     end
-    # @is_user_game = false
-    # current_user.games.each do |game|
-    #   if @game == game
-    #     @is_user_game = true
-    #   end
-    # end
-    # Variable d'instance crée pour afficher le button "edit event"
   end
 
   # Link_to de l'action index des events qui envoie vers la création d'un nouvel évènement
@@ -56,7 +49,7 @@ class EventsController < ApplicationController
     @event.user = current_user
     @event.status = "Open"
     if @event.save
-      redirect_to dashboard_path(@event)
+      redirect_to event_path(@event)
     else
       render :new
     end

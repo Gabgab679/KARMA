@@ -7,11 +7,11 @@ export default class extends Controller {
 
   displayLeaderboard() {
     this.favoriteGameElementTarget.classList.add("d-none");
-    this.leaderboardGameElementTarget.classList.remove("d-block");
+    this.leaderboardElementTarget.classList.remove("d-none");
   }
 
-  displayFavoriteGame() {
-    this.favoriteGameElementTarget.classList.add("d-block");
-    this.leaderboardGameElementTarget.classList.remove("d-none");
+  displayFavoriteGames() {
+    this.favoriteGameElementTarget.classList.remove("d-none");
+    this.leaderboardElementTarget.classList.add("d-none");
   }
 }
