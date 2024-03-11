@@ -6,6 +6,10 @@ class FavoritesController < ApplicationController
     new_fav.save
   end
 
+  def update
+
+  end
+
   def destroy
     game = Game.find(params[:id])
     game.favorites.each do |favorite|
