@@ -1,53 +1,60 @@
-/* _game.scss */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.card-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  padding: 3px;
 }
 
-.card-events {
-  flex: 0 0 calc(50% - 10px); /* 50% de la largeur de la ligne avec 10px d'espace entre les cartes */
-  max-width: calc(50% - 10px); /* 50% de la largeur de la ligne avec 10px d'espace entre les cartes */
-  margin-bottom: 20px; /* Espace entre les lignes de cartes */
+.card-event-link-2 {
+  text-decoration: none;
+  color: white;
+  /* font-family: "Comfortaa", sans-serif; */
+}
+
+.card-event-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 200px;
   background-size: cover;
   background-position: center;
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8));
-}
 
-.card-events h2 {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+.card-event-games-2-h2 {
   color: #fff;
   width: calc(100% - 20px); /* Largeur de la carte moins les marges */
   overflow: hidden; /* Masque le texte dépassant de la zone définie */
   text-overflow: ellipsis; /* Remplace le texte dépassant par des points de suspension */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  height: 60px;
+  margin-bottom: 0px;
 }
 
-
-.card-events .place-restante .p{
-  color: #fff;
-}
-
-.card-events .place-restante {
-  background-color: #9E13F9;
+.place-restante-2 {
+  text-align: center;
+  line-height: 25px;
+  background-color: #F72585;
   border: solid white;
-  border-radius: 20px;
-  position: absolute;
+  border-radius: 15px;
   width: 70px;
-  height: 20px;
-  margin: 2.5px;
+  height: 25px;
+  margin: 0px;
+  font-size: small;
+  margin-top: 0.5px;
+}
+
+.right-avatar-nav {
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir l'élément */
+  background-position: center;
+  >img{
+    width: 100%
+  }
 }
