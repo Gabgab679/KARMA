@@ -10,3 +10,4 @@ pin "flatpickr" # @4.6.13
 pin "bootstrap", to: "bootstrap.min.js", preload: true
 pin "@popperjs/core", to: "popper.js", preload: true
 pin "mapbox-gl" # @3.1.2
+pin "@rails/actioncable", to: "@rails--actioncable.js" # @7.1.3
