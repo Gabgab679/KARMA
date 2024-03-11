@@ -6,6 +6,8 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @games = Game.all
+    @other_games = @games.reject { |game| current_user.games.include?(game) }
   end
 
   def leaderboard

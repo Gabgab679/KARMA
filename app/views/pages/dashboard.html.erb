@@ -7,17 +7,28 @@
   <%# <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
 <%# <% end %>
 <div>
-<div data-controller="dashboard-tabs"> <!-- Controller -->
-  <button data-action="click->dashboard-tabs#displayFavoriteGames"> My Favorite Games </button> <!-- Action (stimulus) -->
-  <button data-action="click->dashboard-tabs#displayLeaderboard"> Leaderboard </button> <!-- Action (stimulus) -->
-  <div class="">
-    <div data-dashboard-tabs-target="favoriteGameElement" class="">1</div>
+  <div data-controller="dashboard-tabs"> <!-- Controller -->
+    <button data-action="click->dashboard-tabs#displayFavoriteGames"> My Games </button> <!-- Action (stimulus) -->
+    <button data-action="click->dashboard-tabs#displayLeaderboard"> Leaderboard </button> <!-- Action (stimulus) -->
+    <div class="">
+      <div data-dashboard-tabs-target="favoriteGameElement" class="">
+        <%= render "shared/cards-games", games: current_user.games %>
 
-    <div data-dashboard-tabs-target="leaderboardElement" class="">2</div>
-    <!-- div games -->
-    <!-- div leaderboard -->
+        <details>
+          <summary> Other Games </summary>
+          <div> <%= render "shared/cards-games", games: @other_games %> </div>
+        </details>
+      </div>
+
+      <div data-dashboard-tabs-target="leaderboardElement" class="d-none">
+        <p>Hello world! - sarcasme avec bcp d'amour, Alex
+          Cette tab n'existe plus si on ne fait pas le dashboard
+        </p>
+      </div>
+      <!-- div games -->
+      <!-- div leaderboard -->
+    </div>
   </div>
-</div>
 
 
 <!-- Targets Comment appelle t on la target dans le cas ou le controller s'appelle dashboard_tabs ?-->
