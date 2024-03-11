@@ -11,9 +11,13 @@
   <button data-action="click->dashboard-tabs#displayFavoriteGames"> My Favorite Games </button> <!-- Action (stimulus) -->
   <button data-action="click->dashboard-tabs#displayLeaderboard"> Leaderboard </button> <!-- Action (stimulus) -->
   <div class="">
-    <div data-dashboard-tabs-target="favoriteGameElement" class="">1</div>
+    <div data-dashboard-tabs-target="favoriteGameElement" class="">
+      <%= render "shared/cards-games", games: current_user.games %>
+    </div>
 
-    <div data-dashboard-tabs-target="leaderboardElement" class="">2</div>
+    <div data-dashboard-tabs-target="leaderboardElement" class="">
+      <p>Hello world! - sarcasme avec bcp d'amour, Alex</p>
+    </div>
     <!-- div games -->
     <!-- div leaderboard -->
   </div>
