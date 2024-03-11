@@ -10,8 +10,11 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     @message.event = @event
     @message.user = current_user
-    @message.save
-    redirect_to event_messages_path(@event)
+    if @message.save
+      event_messages_path(@event)
+    else
+      render "messages/index", status: :unprocessable_entity
+    end
   end
 
   private
