@@ -7,9 +7,7 @@
    <p> You're not registered to any events! </p>
   <% else %>
     <p> Upcoming events </p>
-    <div class="karma-container">
     <%= render "shared/cards-events", events: current_user.events_participations %>
-    </div>
   <% end %>
   <% unless current_user.events %>
     <p> Create a new event </p>
@@ -18,7 +16,5 @@
   <% end %>
   <% end %> <!-- Cas l'utilisateur n'a pas crée d'évènements-->
   <!-- Cas l'utilisateur ne participe à aucun événements -->
-  <div class="karma-container">
-  <%= render "shared/cards-games", games: current_user.games %>
-</div>
+  <%= render "shared/cards-games", games: current_user.games %
 </div>

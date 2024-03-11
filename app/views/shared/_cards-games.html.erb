@@ -1,17 +1,18 @@
 <!-- _game.html.erb -->
-
-<div class="offset-top">
-  <div class="card-container">
-    <% games.each do |game| %>
-      <div class="card-games" style="background-image: url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
-        <div class="overlay"></div>
-        <h2><%= game.name %></h2>
-        <% if current_user.games.include?(game) %>
-          <%= button_to "💫", favorite_path(game), method: :delete, class: "btn btn-outline-warning" %>
-        <% else %>
-          <%= button_to "☆", favorites_path(game), method: :post, class: "btn btn-outline-warning" %>
-        <% end %>
-      </div>
-    <% end %>
+  <div class="karma-container">
+    <div class="card-container-grid">
+      <% games.each do |game| %>
+        <div class="card-games" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8)), url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
+          <div class="w-100 d-flex justify-content-end">
+            <% if current_user.games.include?(game) %>
+              <%= button_to "🖤", favorite_path(game), method: :delete, class: "favori" %>
+            <% else %>
+              <%= button_to "🧡", favorites_path(game), method: :post, class: "favori" %>
+            <% end %>
+          </div>
+          <h2> <%= game.name %></h2>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
