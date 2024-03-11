@@ -1,40 +1,83 @@
-4, Avenue du Stade de Coubertin
-169 ter, Boulevard Lefebvre
-2, Rue de Civry
-Crèche collective municipale 132 rue Rambuteau, 132, Rue Rambuteau
-30, Rue Berthe
-169 ter, Boulevard Lefebvre
-9 - 25, Boulevard Romain Rolland
-ALTAREA, 87, Rue de Richelieu
-Freemousse.bar, 76, Rue Marcadet
-66, Avenue Émile Zola
-13, Rue du Nord
-3, Impasse Saint-Claude
-75, Rue d'Aboukir
-12, Rue Coustou
-79, Rue Baron Le Roy
-Institut National du Sport, de l'Expertise et de la Performance, 11, Avenue du Tremblay
-4, Rue du Pic-de-Barrette
-L'embuscade, 47, Rue Catherine de La Rochefoucauld
-29, Rue Érard
-46, Rue de Turenne
-76, Rue des Belles Feuilles
-15, Rue Belliard
-55, Rue Émile Reynaud
-5, Rue Antoine Vollon
+<<<<<<< HEAD
+24, Rue Dugommier
+66, Rue de Longchamp
+12, Rue Paul Belmondo
+6, Rue Paul Bert
+6, Place Constantin Pecqueur
+14, Rue Bixio
+10, Passage Rauch
+13, Rue Oscar Roty
+10, Cour des Fabriques
+3, Rue Lamennais
+8, Rue Lamarck
+2, Rue Olier
+63, Boulevard Romain Rolland
+40, Rue de Paris
+34, Rue Le Brun
+11, Allée Anne de Beaujeu
+1, Villa Sonatine
+3b, Rue Dosne
+7, Rue des Chaufourniers
+12, Rue Orfila
+19, Rue de Gergovie
+4, Passage Commun J/13
 36, Rue Saint-Vincent
-15, Avenue Félix d'Hérelle
-129, Boulevard Malesherbes
-29, Rue de Dunkerque
-3, Square de Tocqueville
+31, Rue de Romainville
+2, Impasse Delaunay
+44, Rue Hermel
+8, Rue Albert Willemetz
+CLJT Didot, 41, Rue Didot
+12, Quai de la Marne
+32, Rue Nationale
+39, Rue Condorcet
+6, Rue du Général Appert
+2, Rue Paul Cézanne
+7, Rue Géo Chavez
+6, Rue du Général Appert
+2, Impasse Delaunay
+École Massillon, 2 bis, Quai des Célestins
+64, Rue Spontini
 14, Avenue Franklin Delano Roosevelt
-4, Rue Cépré
-38, Rue de Lille
-EIB The Victor Hugo School, 23, Rue de Cronstadt
-Annexx, 78, Rue de Paris
-7, Cité Delaunay
-1, Avenue de la Sœur Rosalie
-46, Rue de Turenne
-8, Rue Botzaris
-3, Rue du Saint-Gothard
+87 bis, Rue Blomet
+=======
+21, Passage Duhesme
+8, Rue Albert Willemetz
+24, Boulevard Saint-Michel
+6, Rue Notre-Dame-de-Lorette
+10, Rue Blondel
+3, Rue Guyton de Morveau
+31, Boulevard Jules Sandeau
+2b, Rue Scheffer
 16, Rue du Simplon
+22b, Rue Norvins
+24, Avenue des Canadiens
+158, Rue de Charonne
+7, Cité Delaunay
+6, Rue Barthélemy
+31, Rue d'Alsace
+13p, Villa Nieuport
+8, Rue Botzaris
+4, Rue du Renard
+55, Avenue de la Commune de Paris
+4, Passage Commun J/13
+6, Rue Littré
+7, Cité Delaunay
+31, Boulevard Jules Sandeau
+33, Rue du Moulinet
+66, Rue de Longchamp
+10, Passage Rauch
+53, Rue Saint-Placide
+12, Rue Coustou
+Myl, 5, Avenue Jean Jaurès
+37 bis, Rue des Plantes
+Myl, 5, Avenue Jean Jaurès
+39, Rue Condorcet
+29, Rue Marbeuf
+68, Rue Marguerite de Rochechouart
+81, Avenue Raymond Poincaré
+21, Rue d'Odessa
+185, Boulevard Voltaire
+4, Rue des Chantres
+23, Rue François 1er
+3, Rue des Grands Augustins
+>>>>>>> 1db6c83c851e4669050622002cc8784b90437b76
