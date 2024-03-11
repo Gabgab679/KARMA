@@ -1,11 +1,6 @@
-<% unless action_name == "home" || action_name == "sign_in" %>
+<% if request.path.in?(['/my_events', '/events', '/map']) %>
     <footer class="footer">
       <nav class="footer-nav">
-        <div class="footer-icon <%= "current-page-indicator" if action_name == "index" && controller_name == "games" %>">
-          <%= link_to "/games" do %>
-            <%= image_tag('icone-etoile.png') %>
-          <% end %>
-      </div>
         <div class="footer-icon <%= "current-page-indicator" if action_name == "map" && controller_name == "pages" %>">
           <%= link_to "/map" do %>
             <%= image_tag('icone-maps.png') %>
@@ -26,9 +21,9 @@
             <%= image_tag('icone-plus.png') %>
           <% end %>
         </div>
-        <div class="footer-icon <%= "current-page-indicator" if action_name == "new" && controller_name == "events" %>">
-          <%= link_to "/pages/chatrooms" do %>
-            <%= image_tag('icone-plus.png') %>
+        <div class="footer-icon <%= "current-page-indicator" if action_name == "chatrooms" && controller_name == "pages" %>">
+          <%= link_to "/chatrooms" do %>
+            <%= image_tag('message_icon.png') %>
           <% end %>
         </div>
       </nav>
