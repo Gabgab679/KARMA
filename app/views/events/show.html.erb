@@ -15,7 +15,7 @@
     <p>You are registered!</p>
   <% end %>
 
-  <%= link_to "Chat with other participants", event_messages_path(@event), class: "btn btn-outline-primary" %>
+  <%= link_to "Chat with other participants", event_messages_path(), class: "btn btn-outline-primary" %>
 
   <%= link_to "Game details", game_path(@event.game), class: "btn btn-outline-primary" %>
 
