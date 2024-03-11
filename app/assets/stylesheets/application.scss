@@ -14,13 +14,10 @@
 body, html{
   background-color: #32153F;
   height: 100%;
+  font-family: $main-font;
 }
 
 .karma-container {
   padding-left: 1.1rem;
   padding-right: 1.1rem;
-}
-
-.offset-top {
-  padding-top: 50px;
 }
