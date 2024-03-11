@@ -1,4 +1,4 @@
-<div class="karma-container" style="padding-top: 10px; border-radius: 10px; border: 2px solid #32153F;">
+<div class="karma-container" style="padding-top: 10px; padding-bottom: 300px;">
   <%= simple_form_for(@event, html: { class: "form-horizontal" }) do |f| %>
     <%= f.input :name, label_html: { class: "col-sm-2 control-label" }, input_html: { class: "form-control" } %>
     <%= f.input :date, as: :string, input_html: { data: { controller: "datepicker" }, class: "form-control" } %>
@@ -9,7 +9,7 @@
     <%= f.input :event_type, collection: Event::EVENT_TYPE, label_html: { class: "col-sm-2 control-label" }, input_html: { class: "form-control" } %>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <%= f.submit "Submit", class: "btn btn-primary", style: "background-color: #32153F; color: white;" %>
+        <%= f.submit "Submit", class: "btn btn-primary", style: "background-color: #f72585; color: white; width: 100%; border: 2px solid #f72585;" %>
       </div>
     </div>
   <% end %>

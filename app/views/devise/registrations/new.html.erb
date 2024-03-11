@@ -1,31 +1,35 @@
-<h2>Sign up</h2>
+<div class="karma-cointer">
 
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+  <h2>Sign up</h2>
 
-  <div class="form-inputs">
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
 
-    <%= f.input :email,
-                required: true,
-                input_html: { autocomplete: "email" }%>
+    <div class="form-inputs">
 
-    <%= f.input :username,
-                required: true,
-                autofocus: true %>
+      <%= f.input :email,
+                  required: true,
+                  input_html: { autocomplete: "email" }%>
 
-    <%= f.input :password,
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
+      <%= f.input :username,
+                  required: true,
+                  autofocus: true %>
 
-    <%= f.input :password_confirmation,
-                required: true,
-                input_html: { autocomplete: "new-password" } %>
+      <%= f.input :password,
+                  required: true,
+                  hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                  input_html: { autocomplete: "new-password" } %>
 
-    <%= f.input :bio %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+      <%= f.input :password_confirmation,
+                  required: true,
+                  input_html: { autocomplete: "new-password" } %>
 
-<%= render "devise/shared/links" %>
+      <%= f.input :bio %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit "Sign up" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+
+</div>
