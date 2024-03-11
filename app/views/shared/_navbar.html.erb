@@ -13,9 +13,10 @@
 
     <div class="col-3">
       <% unless action_name == "profil" %>
+      <div class="nav-item dropdown"></div>
         <% if current_user %>
           <% if current_user.photo.attached? %>
-            <%= cl_image_tag current_user.photo.key, crop: :fill_pad, class: "avatar dropdown-toggle", alt: "dropdown menu" %>
+            <%= cl_image_tag current_user.photo.key, crop: :fill_pad, class: "avatar rounded-circle dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
@@ -30,7 +31,7 @@
             </div>
           <% end %>
         <% else %>
-          <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png", class: "right-avatar-nav rounded-circle dropdown-toggle") %>
+          <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png", class: "right-avatar-nav rounded-circle") %>
         <% end %>
       <% end %>
     </div>
