@@ -7,12 +7,20 @@
   <%# <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
 <%# <% end %>
 <div>
-<div> <!-- Controller -->
-  <button> My Favorite Games </button> <!-- Action (stimulus) -->
-  <button> Leaderboard </button> <!-- Action (stimulus) -->
+<div data-controller="dashboard_tabs"> <!-- Controller -->
+  <button data-action="click->dashboard_tabs#fire"> My Favorite Games </button> <!-- Action (stimulus) -->
+  <button data-action="click->dashboard_tabs#fire"> Leaderboard </button> <!-- Action (stimulus) -->
+  <div class="">
+    <div data-dashboard-tabs-target="favoriteGameElement" class=""></div>
+
+    <div data-dashboard-tabs-target="leaderboardElement" class=""></div>
+    <!-- div games -->
+    <!-- div leaderboard -->
+  </div>
 </div>
 
-<!-- Targets -->
+
+<!-- Targets Comment appelle t on la target dans le cas ou le controller s'appelle dashboard_tabs ?-->
 <%# <%= render 'form_user' %>
 
 </div>
