@@ -16,6 +16,7 @@ class ParticipationsController < ApplicationController
   end
 
   def destroy
+    raise
     event = Event.find(params[:event_id])
     ## destroy à coder
 

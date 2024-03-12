@@ -11,8 +11,20 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
   end
 end
-  # private
+  private
 
+  def addFavorite
+    @game = Game.find(params[:id])
+    respond_to do |format|
+      if @game.save
+        format.html { redirect_to dashboard_path(@game) }
+        format.text { render 'cards-game', locals: { game: @game }, formats: [:html] }
+      else
+        format.html { render :dashboard, status: :unprocessable_entity }
+        format.json # Follows the classic Rails flow and look for a create.json view
+      end
+    end
+  end
 #   def get_user_favorite_games(games) ####CETTE FONCTION EST L'EQUIVALENT DE ### CURRENT_USER.GAMES ###
 #     favorite_games = []
 #     games.each do |game|

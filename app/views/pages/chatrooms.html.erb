@@ -1,10 +1,8 @@
-<%= render "shared/navbar" %>
-
 <div class="container">
-  <h1><strong>Chats for registered events</strong></h1>
+  <h1 class="mt-2 mb-0" style="font-size: 50px"><strong>Your chats</strong></h1>
   <pre></pre>
   <% current_user.events.each  do |event| %>
-    <h2 style="my-2"><strong><%= event.name %></strong></h2>
+    <h3 style="my-2"><strong><%= event.name %></strong></h3>
     <% if event.messages.last %>
       <p style="margin-bottom: 0"><%= event.messages.last.user.username%>: <%= event.messages.last.content%> at <%= event.messages.last.created_at.localtime.strftime("%I:%M %p") %></p>
       <%= button_to "See more messages", event_messages_path(event), method: :get, class: "register-button" %>
