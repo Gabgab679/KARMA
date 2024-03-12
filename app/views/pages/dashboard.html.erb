@@ -6,31 +6,24 @@
 <%# <% else %>
   <%# <%= image_tag("https://cdn-icons-png.flaticon.com/512/1178/1178882.png") %>
 <%# <% end %>
-<div>
-  <div data-controller="dashboard-tabs"> <!-- Controller -->
-    <button data-action="click->dashboard-tabs#displayFavoriteGames"> My Favorite Games </button> <!-- Action (stimulus) -->
-    <button data-action="click->dashboard-tabs#displayLeaderboard"> Leaderboard </button> <!-- Action (stimulus) -->
-    <div class="">
-      <div data-dashboard-tabs-target="favoriteGameElement" class="">
-        <%= render "shared/cards-games", games: current_user.games %>
 
-        <details>
-          <summary> Other Games </summary>
-          <div> <%= render "shared/cards-games", games: @other_games %> </div>
-          </details>
-      </div>
-
-      <div data-dashboard-tabs-target="leaderboardElement" class="d-none">
-        <p>Hello world! - sarcasme avec bcp d'amour, Alex
-          Cette tab n'existe plus si on ne fait pas le dashboard
-        </p>
-      </div>
-      <!-- div games -->
-      <!-- div leaderboard -->
-    </div>
+<div data-controller="dashboard-tabs">
+  <div class="karma-container col-12 row mx-0 position-relative py-2" style="justify-content: space-between">
+    <button class="karma-button-rose p-0" data-dashboard-tabs-target="favoriteGamesButton" data-action="click->dashboard-tabs#displayFavoriteGames" style="width: 48% !important">Favorite Games</button>
+    <button class="karma-button-violet p-0" data-dashboard-tabs-target="leaderboardButton" data-action="click->dashboard-tabs#displayLeaderboard" style="width: 48% !important">Leaderboard</button>
+  </div>
+  <div data-dashboard-tabs-target="leaderboardElement" class="d-none">
+    <p>Hello world! - sarcasme avec bcp d'amour, Alex
+      Cette tab n'existe plus si on ne fait pas le dashboard
+    </p>
   </div>
 
+  <div class="col-12" data-dashboard-tabs-target="favoriteGameElement">
+    <%= render "shared/cards-games", games: current_user.games %>
 
-<!-- Targets Comment appelle t on la target dans le cas ou le controller s'appelle dashboard_tabs ?-->
-<%# <%= render 'form_user' %>
+    <details>
+      <summary class="karma-container py-2" style="font-size: 24px"> Other Games </summary>
+      <div> <%= render "shared/cards-games", games: @other_games %> </div>
+    </details>
+  </div>
 </div>
