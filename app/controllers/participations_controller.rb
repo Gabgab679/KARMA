@@ -10,4 +10,12 @@ class ParticipationsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
+
+  def update
+    redirect_to my_events, flash: { alert: 'You just registered to this event! Wait for the host confirmation' }
+  end
+
+  def destroy
+    @event = Event.find(params[:event_id])
+  end
 end
