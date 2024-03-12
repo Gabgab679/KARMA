@@ -28,8 +28,13 @@ class PagesController < ApplicationController
     @favorite_events = get_events_for_favorite_games(@games)
 
     @events = @events.global_search(params[:query]) if params[:query].present?
-    @events = @events.global_search(params[:event_type]) if params[:event_type].present?
-    @events = @events.global_search(params[:dates]) if params[:dates].present?
+    @events = @events.where(event_type: params[:event_type]) if params[:event_type].present?
+
+    if params[:date].present?
+      first_date, last_date = *params[:date].split(" to ")
+      @events = @events.where("date >= ?", first_date).where("date <= ?", last_date)
+    end
+
     @events = @events.global_search(params[:location]) if params[:location].present?
 
     @fav_markers = @favorite_events.geocoded.map do |event|
