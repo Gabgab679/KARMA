@@ -36,10 +36,10 @@
                   <% else %>
                     <div class="avatar">
                     <% if participation.user.photo.key %>
-                      <%= button_to "", event_participation_path(@event, participation), method: :delete, class: "fa-solid fa-xmark", style: "color: #ff0000;"  %>
+                      <%= button_to "", event_participation_path(@event, participation), method: :delete, class: "fa-solid fa-xmark", style: "color: #ff0000;", onclick: "return confirm('Are you sure you want to cancel this registration?')" %>
                       <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
                     <% else %>
-                    <%= button_to "", event_participation_path(@event, participation), method: :delete, class: "fa-solid fa-xmark", style: "color: #ff0000;"  %>
+                    <%= button_to "", event_participation_path(@event, participation), method: :delete, class: "fa-solid fa-xmark", style: "color: #ff0000;", onclick: "return confirm('Are you sure you want to cancel this registration')" %>
                       <%= image_tag "https://cdn-icons-png.flaticon.com/512/1178/1178882.png", crop: :fill_pad, class: "avatar", alt: "other user" %>
                     <% end %>
                       <p style="w-25"><%=participation.user.username%></p>
@@ -53,21 +53,10 @@
             </div>
         <% end %>
       </div>
-      <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
-        <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
-        <% if @registered == false %>
-          <%= button_to "Register", event_participations_path(@event), method: :post, class: "register-button"  %>
-        <% else %>
-          <% if current_user != @event.user %>
-            <%= button_to "Cancel this event", event_path(@event), method: :delete, class: "register-button"  %>
-          <% else %>
-            <%= button_to "Cancel my participation", event_participations_path(@event), method: :delete, class: "register-button"  %>
-          <% end %>
-        <% end %>
-      <% elsif @event.status == "Cancelled" %>
+      <% if @event.status != "Cancelled" %>
+        <%= button_to "Cancel this event", event_path(@event), method: :delete, class: "game-details", onclick: "return confirm('Are you sure you want to cancel your event?')"  %>
+      <% else%>
         <div class="text-danger">This event has been cancelled due to the cancellation of this event cancelling</div>
-      <% elsif @event.status == "Fully booked" %>
-        <div class="text-danger">This event is fully booked! Comeback later or register to a new one!</div>
       <% end %>
     </div>
   </div>

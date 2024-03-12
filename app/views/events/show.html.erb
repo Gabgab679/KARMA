@@ -47,23 +47,17 @@
           </div>
       <% end %>
     </div>
+    <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
     <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
-      <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
-      <% if @registered == false %>
+      <% if @registered == false && current_user != @event.user %>
         <%= button_to "Register", event_participations_path(@event), method: :post, class: "register-button"  %>
-      <% else %>
-        <% if current_user == @event.user %>
-          <%= button_to "Cancel this event", event_path(@event), method: :delete, class: "register-button"  %>
-        <% else %>
+      <% elsif current_user != @event.user %>
           <%= button_to "Cancel my participation", event_participations_path(@event), method: :delete, class: "register-button"  %>
-        <% end %>
       <% end %>
     <% elsif @event.status == "Cancelled" %>
-      <div class="text-danger">This event has been cancelled due to the cancellation of this event cancelling</div>
-    <% elsif @event.status == "Fully booked" %>
-      <div class="text-danger">This event is fully booked! Comeback later or register to a new one!</div>
+        <div class="text-danger">This event has been cancelled due to the cancellation of this event cancelling</div>
+    <% elsif @event.status == "Fully booked" && current_user != @event.user %>
+        <div class="text-danger">This event is fully booked! Comeback later or register to a new one!</div>
     <% end %>
   </div>
 </div>
-
-<%= render "shared/footer" %>
