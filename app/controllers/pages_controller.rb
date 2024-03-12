@@ -14,11 +14,11 @@ class PagesController < ApplicationController
   end
 
   def user_events
-    raise
+
     #Récupérer les events de current_user
     #Récupérer les participations qui concernent ces evenements et qui sont en pending
     #Récupérer les utilisateurs qui ont proposés leurs participations
-    # @user_created_events = current_user.events
+    @user_created_events = current_user.events
     # @pending_participations.
   end
 

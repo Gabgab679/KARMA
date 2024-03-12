@@ -1,24 +1,27 @@
 <div class="text-warning">
   <h2>My events</h2>
   <% unless current_user.events || current_user.events_participations %> <!-- A moins que l'un des deux ne soit vrai -->
-  <p> No upcoming events, register to one or create a new event !</p>
+    <p> No upcoming events, register to one or create a new event !</p>
   <% else %>
   <% unless current_user.events_participations %>
    <p> You're not registered to any events! </p>
   <% else %>
     <p> Upcoming events </p>
-    <%= render "shared/cards-events", events: current_user.events_participations %>
+    <div>
+      <p> Events you've registered to </p>
+      <%= render "shared/cards-events", events: current_user.events_participations %>
+    </div>
   <% end %>
   <% unless current_user.events %>
     <p> Create a new event </p>
   <% else %>
-  <% current_user.events.participations.first %>
     <div class="participation">
 
     </div>
+    <p> Events you've created </p>
     <%= render "shared/cards-events", events: current_user.events %>
   <% end %>
   <% end %> <!-- Cas l'utilisateur n'a pas crée d'évènements-->
   <!-- Cas l'utilisateur ne participe à aucun événements -->
-  <%= render "shared/cards-games", games: current_user.games %>
+
 </div>
