@@ -18,8 +18,7 @@ class PagesController < ApplicationController
     #Récupérer les events de current_user
     #Récupérer les participations qui concernent ces evenements et qui sont en pending
     #Récupérer les utilisateurs qui ont proposés leurs participations
-    @user_created_events = current_user.events
-    # @pending_participations.
+    @pending_request = current_user.request_participations.where(status: "Pending")
   end
 
   def map

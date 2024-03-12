@@ -1,40 +1,40 @@
-13, Rue Pierre Fontaine
-16, Rue de Paris
-33, Rue Cambronne
-55, Rue de l'Université
-3, Rue La Quintinie
-Les Bols de Jean, 2, Rue de Choiseul
-12, Rue du Saint-Gothard
-9, Rue Étex
-28/30, Rue Saint-Fargeau
-3, Avenue Pierre Semard
-169 ter, Boulevard Lefebvre
-Gamelle, 33, Avenue Daumesnil
-3, Square de Tocqueville
-14, Avenue Marcel Proust
-12, Quai de la Marne
-1, Avenue Brunetière
-Hôtel Coulanges, 11 bis, Rue de Birague
-32, Rue Nationale
-32, Rue Nationale
-25, Rue Berzélius
-15, 17, Rue Affre
-20, Rue Saint-Blaise
-31, Rue Erlanger
-8, Avenue de la Porte de Vincennes
-16, Rue du Simplon
-23, Rue François 1er
-1, Avenue de Bouvines
-17, Passage Duhesme
-11, Rue du Surmelin
-32, Quai d'Orléans
-24, Rue d'Annam
-10, Passage Rauch
-6, Rue du 4 Septembre
-27, Avenue de Paris
-Bâtiment 102, 5, Avenue des Bateliers
-28, Avenue de Laumière
-2, Rue Olier
-9, Rue de la Néva
-9, Avenue Jean Jaurès
-Le Paquebot, 3, Boulevard Victor
+3, Rue Lachelier
+1, Rue Curnonsky
+5, Rue Antoine Vollon
+3, Rue Lamennais
+27, Boulevard de l'Hôpital
+63, Boulevard Romain Rolland
+16, Rue George Eastman
+14, Avenue du Square
+10, Rue Lécuyer
+44, Boulevard Poniatowski
+145, Rue Blomet
+39, Rue Boissonade
+84, Rue d'Aboukir
+6, Rue de l'Université
+92, Rue de Lille
+48, Rue Trousseau
+6, Rue de l'Université
+5-23, Rue d'Alsace
+53, Rue Saint-Placide
+Collège Georges Brassens, 4, Rue Erik Satie
+126, Rue de Rivoli
+7, Rue Sainte-Isaure
+2, Avenue Réaumur
+10, Rue Fabre d'Églantine
+4, Avenue du Stade de Coubertin
+14, Rue Beaurepaire
+25, Boulevard Bessières
+12, Rue des Quatre-Vents
+10, Rue du Commandant Rivière
+13, Rue Buzelin
+Sorbonne Université - Faculté des Lettres, Campus Clignancourt, 2, Rue Francis de Croisset
+94, Rue Réaumur
+Annexx, 78, Rue de Paris
+Cité Scolaire Internationale Honoré-de-Balzac, 118, Boulevard Bessières
+16, Rue du Hameau
+8, Rue Albert Willemetz
+6, Rue de Lesseps
+1, Rue Lacretelle
+11-13, Route du Bassin n°6
+29, Rue des Fougères

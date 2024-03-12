@@ -56,6 +56,8 @@ html_doc.root.xpath("item").first(10).each do |element|
   )
 end
 
+
+
 # seeds.rb
 games_attributes = [
   { name: "Uno", description: "Uno is a classic card game where players aim to be the first to get rid of all their cards by matching colors or numbers.", image_url: "https://www.godisageek.com/wp-content/uploads/Uno-review1.jpg", min_players: 2 },
@@ -126,4 +128,11 @@ end
   fav.user = User.all.sample
   fav.game = Game.all.sample
   fav.save
+end
+
+30.times do
+  status = Participation::STATUS.sample
+  user = User.all.sample
+  event = Event.all.sample
+  Participation.create!(user: user, event: event, status: status)
 end

@@ -27,8 +27,11 @@
             <%= image_tag "https://cdn2.f-cdn.com/contestentries/1107446/20762621/599154bb89160_thumb900.jpg", crop: :fill_pad, class: "avatar", alt: "user participation" %>
           <% else %>
             <div class="avatar">
-              <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
-              <p style="w-25"><%=participation.user.username%></p>
+              <% if participation.user.photo.key %>
+                <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
+              <% else %>
+                <%= image_tag "https://cdn-icons-png.flaticon.com/512/1178/1178882.png", crop: :fill_pad, class: "avatar", alt: "other user" %>
+              <% end %>              <p style="w-25"><%=participation.user.username%></p>
             </div>
           <% end %>
         <% end %>

@@ -1,12 +1,10 @@
 <div class="text-warning">
-  <h2>My events</h2>
   <% unless current_user.events || current_user.events_participations %> <!-- A moins que l'un des deux ne soit vrai -->
     <p> No upcoming events, register to one or create a new event !</p>
   <% else %>
   <% unless current_user.events_participations %>
    <p> You're not registered to any events! </p>
   <% else %>
-    <p> Upcoming events </p>
     <div>
       <p> Events you've registered to </p>
       <%= render "shared/cards-events", events: current_user.events_participations %>
@@ -16,7 +14,15 @@
     <p> Create a new event </p>
   <% else %>
     <div class="participation">
+      <p>Accept <%= @pending_request.first.user.username %>'s participation</p>
+      <div>
+        <div>
+          <%= button_to "Accept", participations_path %>
+          <%= button_to "Decline", %>
+        </div>
+      </div>
 
+      <!-- Ajouter la participation num 1: -->
     </div>
     <p> Events you've created </p>
     <%= render "shared/cards-events", events: current_user.events %>
