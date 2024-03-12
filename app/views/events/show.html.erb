@@ -2,38 +2,55 @@
     <h3><%= @event.game.name %></h3>
 </div>
 <div class="container">
-  <div class="title" >
-    <h1><%= @event.name %></h1>
-    <p>proposed by <%=@event.user.username%></p>
-  </div>
-  <div class="event-info">
-    <div class="event-description">
-      <p><%= @event.description %></p>
+  <div class="container-event">
+    <div class="title" >
+      <h1><%= @event.name %></h1>
+      <p>proposed by <%=@event.user.username%></p>
     </div>
-  </div>
-  <div class="participations">
-    <h2>Participants</h2>
-    <div class="d-flex">
-    <% if @event.participations != [] %>
-      <% @event.participations.each do |participation| %>
-        <% if participation.user == current_user %>
-          <%= image_tag "https://cdn.langeek.co/photo/20347/thumb/you/350", crop: :fill_pad, class: "avatar", alt: "user participation" %>
-        <% else %>
-          <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
-          <p><%=participation.user.username%></p>
+    <div class="event-info">
+      <div class="event-description">
+        <p><%= @event.description %></p>
+      </div>
+    </div>
+    <ul style="padding-left: 0px;">
+      <li><i class="fa-solid fa-trophy pe-2 m-2" style="color: #9e13f9;"></i><%= @event.event_type %></li>
+      <li><i class="fa-solid fa-calendar pe-2 m-2" style="color: #9e13f9;"></i><%= @event.date.localtime.strftime("%A, %d %B %Y at %I:%M %p") %></li>
+      <li><i class="fa-solid fa-map-location-dot pe-2 m-2" style="color: #9e13f9;"></i><%= link_to @event.address, "https://www.google.com/maps/place/#{@event.address.gsub(" ", "+")}", target: "_blank" %></li>
+      <li><i class="fa-solid fa-spinner pe-2 m-2" style="color: #9e13f9;"></i><%= @event.status %></li>
+    </ul>
+    <div class="participations">
+      <h3>Participants</h3>
+      <div class="d-flex align-items-center">
+      <% if @event.participations != [] %>
+        <% @event.participations.each do |participation| %>
+          <% if participation.user == current_user %>
+            <%= image_tag "https://cdn2.f-cdn.com/contestentries/1107446/20762621/599154bb89160_thumb900.jpg", crop: :fill_pad, class: "avatar", alt: "user participation" %>
+          <% else %>
+            <div class="avatar">
+              <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
+              <p style="w-25"><%=participation.user.username%></p>
+            </div>
+          <% end %>
         <% end %>
+            <p class="ps-3"><%= @event.max_players - @event.participations.count %> spots left!</p>
+      <% else %>
+        <p><%= @event.max_players %> spots left! </p>
       <% end %>
-    <% else %>
-      <p>No participant yet</p>
-    <% end %>
+      </div>
     </div>
-  </div>
-    <% if @registered == false %>
-      <%= button_to "Register", event_participations_path(@event), method: :post, class: "register-button"  %>
-    <% else %>
-      <%= button_to "Cancel my participation", event_participations_path(@event), method: :delete, class: "register-button"  %>
+    <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
+      <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
+      <% if @registered == false %>
+        <%= button_to "Register", event_participations_path(@event), method: :post, class: "register-button"  %>
+      <% else %>
+        <%= button_to "Cancel my participation", event_participations_path(@event), method: :delete, class: "register-button"  %>
+      <% end %>
+    <% elsif @event.status == "Cancelled" %>
+      <div class="text-danger">This event has been cancelled due to the cancellation of this event cancelling</div>
+    <% elsif @event.status == "Fully booked" %>
+      <div class="text-danger">This event is fully booked! Comeback later or register to a new one!</div>
     <% end %>
-
-
-    <%= link_to "Game details", game_path(@event.game), class: "btn btn-outline-primary" %>
   </div>
+</div>
+
+<%= render "shared/footer" %>

@@ -23,7 +23,6 @@ class PagesController < ApplicationController
   end
 
   def map
-
     @events = Event.all
     @games = current_user.games
     @favorite_events = get_events_for_favorite_games(@games)
@@ -42,16 +41,7 @@ class PagesController < ApplicationController
       }
     end
 
-    @all_markers = @events.geocoded.map do |event|
-      {
-        lat: event.latitude,
-        lng: event.longitude,
-        info_window_html: render_to_string(partial: 'info_window', locals: {event: event}),
-        marker_html: render_to_string(partial: 'marker', locals: {event: event})
-      }
-    end
-
-    @custom_markers = @events.geocoded.map do |event|
+    @markers = @events.geocoded.map do |event|
       {
         lat: event.latitude,
         lng: event.longitude,

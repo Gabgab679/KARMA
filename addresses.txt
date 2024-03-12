@@ -1,40 +1,40 @@
-5, Rue de Pontoise
+13, Rue Pierre Fontaine
+16, Rue de Paris
 33, Rue Cambronne
-13, Rue Giordano Bruno
-2b, Rue Scheffer
-55, Rue Froidevaux
-16, Rue Duvivier
-48, Boulevard Pereire
-44, Boulevard Poniatowski
-13p, Villa Nieuport
-10, Rue Louis David
-16, Boulevard Suchet
-1, Rue Curnonsky
-39, Rue Boissonade
-138, Avenue de Paris
-4, Rue de Pont-à-Mousson
-43, Rue de Cîteaux
-16, Rue Louis Braille
-23, Rue Pierre Fontaine
-Centre de Recherche des Cordeliers, 15, Rue de l'École de Médecine
-28, Rue Bois-le-Vent
-Collège Georges Brassens, 4, Rue Erik Satie
-156, Boulevard de Grenelle
-10, Rue Lécuyer
-21, Passage Duhesme
-3, Rue Guyton de Morveau
-10, Rue Fabre d'Églantine
-12, Rue Orfila
-7, Passage Kracher
-17, Rue Francis de Croisset
-28, Rue de Paradis
-10, Rue Rembrandt
-6, Rue Barthélemy
+55, Rue de l'Université
+3, Rue La Quintinie
+Les Bols de Jean, 2, Rue de Choiseul
+12, Rue du Saint-Gothard
+9, Rue Étex
+28/30, Rue Saint-Fargeau
+3, Avenue Pierre Semard
+169 ter, Boulevard Lefebvre
+Gamelle, 33, Avenue Daumesnil
+3, Square de Tocqueville
+14, Avenue Marcel Proust
+12, Quai de la Marne
+1, Avenue Brunetière
+Hôtel Coulanges, 11 bis, Rue de Birague
+32, Rue Nationale
+32, Rue Nationale
 25, Rue Berzélius
-72, Rue du Moulin Vert
-7, Impasse Haxo
-1, Avenue de la Sœur Rosalie
-111, Rue de Paris
-40-42, Quai de la Loire
-Gare d'Austerlitz, 85, Quai d'Austerlitz
-24, Rue Scandicci
+15, 17, Rue Affre
+20, Rue Saint-Blaise
+31, Rue Erlanger
+8, Avenue de la Porte de Vincennes
+16, Rue du Simplon
+23, Rue François 1er
+1, Avenue de Bouvines
+17, Passage Duhesme
+11, Rue du Surmelin
+32, Quai d'Orléans
+24, Rue d'Annam
+10, Passage Rauch
+6, Rue du 4 Septembre
+27, Avenue de Paris
+Bâtiment 102, 5, Avenue des Bateliers
+28, Avenue de Laumière
+2, Rue Olier
+9, Rue de la Néva
+9, Avenue Jean Jaurès
+Le Paquebot, 3, Boulevard Victor
