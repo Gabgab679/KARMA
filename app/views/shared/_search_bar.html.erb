@@ -1,37 +1,26 @@
 <div class="container justify-content-center">
+  <div class="row justify-content-center">
+    <%= form_with url: events_path, method: :get, class: "row" do %>
 
-<div class="row justify-content-center">
+      <div class="col-12 row mx-0 position-relative" style="justify-content: space-between">
+        <div class="col-10 row position-relative">
+          <%= text_field_tag :query,
+                params[:query],
+                class: "form-control col-10 search-bar",
+                placeholder: "Type an event name"
+          %>
 
-  <%= form_with url: events_path, method: :get, class: "row" do %>
-  <%# search-bar pour chercher les string event.name ET game.name%>
-      <div class="col-12 row position-relative">
-        <%= text_field_tag :query,
-              params[:query],
-              class: "form-control col-12",
-              placeholder: "Type an event name and/or game name"
-        %>
-          <%= submit_tag "Search", name: "", class: "btn btn-primary top-0 end-0 position-absolute", style: "width: fit-content" %>
-      </div>
-
-      <div class="col-8 d-flex align-items-center">
-        <div class="col-3">
-          <%= link_to "Casual", events_path(event_type: "Casual"), class: "badge text-bg-secondary" %>
+          <%= submit_tag "Search", name: "", class: "karma-button-rose top-0 end-0 position-absolute", style: "width: fit-content; height: 45px" %>
         </div>
 
-        <div class="col-3">
-          <%= link_to "Tournament", events_path(event_type: "Tournament"), class: "badge text-bg-secondary" %>
-        </div>
-
-        <div class="col-6">
-          <%# search-bar pour filtrer sur la date => à transfo en bouton de filtre %>
-          <%= text_field_tag :date, params[:date],
-                            data: { controller: 'flatpicker-range' },
-                            class: 'form-control' %>
-        </div>
-
+           <div class="col-2">
+            <%= text_field_tag :date, params[:date],
+                              data: { controller: 'flatpicker-range' },
+                              class: 'form-control calendar-icone',
+                              style: 'background-color: transparent; border: none; padding: 23px; '
+                              %>
+          </div>
       </div>
-
-      </div>
-
-  <% end %>
+    <% end %>
+  </div>
 </div>
