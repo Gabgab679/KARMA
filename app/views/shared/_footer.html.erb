@@ -1,4 +1,4 @@
-<% if request.path.in?(['/my_events', '/events', '/map', '/chatrooms']) %>
+<% unless controller_name == 'devise' || action_name == "home" %>
     <footer class="footer">
       <nav class="footer-nav">
         <div class="footer-icon <%= "current-page-indicator" if action_name == "map" && controller_name == "pages" %>">
