@@ -16,6 +16,9 @@ class ParticipationsController < ApplicationController
   end
 
   def destroy
-    @event = Event.find(params[:event_id])
+    event = Event.find(params[:event_id])
+    ## destroy à coder
+
+    redirect_to event, notice: "You've cancelled this registration"
   end
 end
