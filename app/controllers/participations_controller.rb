@@ -11,6 +11,10 @@ class ParticipationsController < ApplicationController
     end
   end
 
+  def update
+    redirect_to my_events, flash: { alert: 'You just registered to this event! Wait for the host confirmation' }
+  end
+
   def destroy
     event = Event.find(params[:event_id])
     redirect_to event, notice: "You've cancelled this registration"
