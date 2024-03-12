@@ -1,40 +1,40 @@
-3, Rue Lachelier
-1, Rue Curnonsky
+3, Rue des Grands Augustins
+6, Rue Barthélemy
+19, Rue Fernand Labori
+19, Rue de la Gare de Reuilly
+10, Impasse du Labrador
+16, Rue du Clos
+126, Rue de Javel
+82, Rue de la Fédération
+29, Rue Marbeuf
+15, 17, Rue Affre
+Les jardins de la Géode, 4-8, Rue de Cambrai
+9, Avenue Jean Jaurès
+Bâtiment 210, 11, Rue du Grain
 5, Rue Antoine Vollon
-3, Rue Lamennais
-27, Boulevard de l'Hôpital
-63, Boulevard Romain Rolland
-16, Rue George Eastman
-14, Avenue du Square
-10, Rue Lécuyer
-44, Boulevard Poniatowski
-145, Rue Blomet
-39, Rue Boissonade
-84, Rue d'Aboukir
-6, Rue de l'Université
-92, Rue de Lille
-48, Rue Trousseau
-6, Rue de l'Université
-5-23, Rue d'Alsace
-53, Rue Saint-Placide
-Collège Georges Brassens, 4, Rue Erik Satie
-126, Rue de Rivoli
-7, Rue Sainte-Isaure
-2, Avenue Réaumur
-10, Rue Fabre d'Églantine
 4, Avenue du Stade de Coubertin
-14, Rue Beaurepaire
-25, Boulevard Bessières
-12, Rue des Quatre-Vents
-10, Rue du Commandant Rivière
-13, Rue Buzelin
-Sorbonne Université - Faculté des Lettres, Campus Clignancourt, 2, Rue Francis de Croisset
+185, Boulevard Voltaire
+8, Rue Toussaint-Féron
+15, Avenue de la Belle Gabrielle
+79, Boulevard Poniatowski
+5, Rue de Pontoise
+47, Rue de la Folie-Méricourt
+163P, Avenue de Flandre
+43, Rue du Théâtre
+9, Rue des Pruniers
+32, Avenue Paul Doumer
+56, Rue Nicolo
+1, Avenue Brunetière
+Le Parisien, 25, Avenue Michelet
+9, Rue de la Néva
 94, Rue Réaumur
-Annexx, 78, Rue de Paris
-Cité Scolaire Internationale Honoré-de-Balzac, 118, Boulevard Bessières
-16, Rue du Hameau
-8, Rue Albert Willemetz
-6, Rue de Lesseps
-1, Rue Lacretelle
-11-13, Route du Bassin n°6
-29, Rue des Fougères
+61, Rue Bichat
+12, Rue Laurence Savart
+28, Rue de Paradis
+1, Avenue Hoche
+120, Rue Lauriston
+15, Rue Belliard
+12, Rue du Saint-Gothard
+9, Rue Ruhmkorff
+14, Rue Beaurepaire
+12, Rue du Saint-Gothard

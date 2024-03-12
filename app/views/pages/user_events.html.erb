@@ -13,17 +13,22 @@
   <% unless current_user.events %>
     <p> Create a new event </p>
   <% else %>
-    <div class="participation">
+    <% if @pending_request.any? %>
+      <div class="participation">
       <p>Accept <%= @pending_request.first.user.username %>'s participation</p>
-      <div>
         <div>
-          <%= button_to "Accept", participations_path %>
-          <%= button_to "Decline", %>
+          <div>
+            <%= button_to "Accept", event_participation_path(@pending_request.first.event, @pending_request.first.id), method: :patch %>
+            <%= button_to "Decline", event_participation_path(@pending_request.first.event, @pending_request.first.id), method: :delete %>
+          </div>
         </div>
-      </div>
 
       <!-- Ajouter la participation num 1: -->
-    </div>
+      </div>
+    <% else %>
+      You'll have new participations soon enough ! 🤞
+    <% end %>
+
     <p> Events you've created </p>
     <%= render "shared/cards-events", events: current_user.events %>
   <% end %>
