@@ -34,7 +34,7 @@
       </div>
     <% end %>
 
-  <% elsif action_name == "games"%>
+  <% elsif controller_name == "games"%>
     <%= form_with url: games_path, method: :get, class: "row" do %>
     <%# search-bar pour chercher les string event.name ET game.name%>
       <div class="col-12 mx-0 row position-relative" style="justify-content: space-between">
