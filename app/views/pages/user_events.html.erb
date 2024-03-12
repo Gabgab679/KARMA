@@ -12,6 +12,10 @@
   <% unless current_user.events %>
     <p> Create a new event </p>
   <% else %>
+  <% current_user.events.participations.first %>
+    <div class="participation">
+
+    </div>
     <%= render "shared/cards-events", events: current_user.events %>
   <% end %>
   <% end %> <!-- Cas l'utilisateur n'a pas crée d'évènements-->
