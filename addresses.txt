@@ -1,40 +1,40 @@
-13, Rue Pierre Fontaine
-16, Rue de Paris
-33, Rue Cambronne
-55, Rue de l'Université
-3, Rue La Quintinie
-Les Bols de Jean, 2, Rue de Choiseul
-12, Rue du Saint-Gothard
-9, Rue Étex
-28/30, Rue Saint-Fargeau
-3, Avenue Pierre Semard
-169 ter, Boulevard Lefebvre
-Gamelle, 33, Avenue Daumesnil
-3, Square de Tocqueville
-14, Avenue Marcel Proust
-12, Quai de la Marne
-1, Avenue Brunetière
-Hôtel Coulanges, 11 bis, Rue de Birague
-32, Rue Nationale
-32, Rue Nationale
-25, Rue Berzélius
+3, Rue des Grands Augustins
+6, Rue Barthélemy
+19, Rue Fernand Labori
+19, Rue de la Gare de Reuilly
+10, Impasse du Labrador
+16, Rue du Clos
+126, Rue de Javel
+82, Rue de la Fédération
+29, Rue Marbeuf
 15, 17, Rue Affre
-20, Rue Saint-Blaise
-31, Rue Erlanger
-8, Avenue de la Porte de Vincennes
-16, Rue du Simplon
-23, Rue François 1er
-1, Avenue de Bouvines
-17, Passage Duhesme
-11, Rue du Surmelin
-32, Quai d'Orléans
-24, Rue d'Annam
-10, Passage Rauch
-6, Rue du 4 Septembre
-27, Avenue de Paris
-Bâtiment 102, 5, Avenue des Bateliers
-28, Avenue de Laumière
-2, Rue Olier
-9, Rue de la Néva
+Les jardins de la Géode, 4-8, Rue de Cambrai
 9, Avenue Jean Jaurès
-Le Paquebot, 3, Boulevard Victor
+Bâtiment 210, 11, Rue du Grain
+5, Rue Antoine Vollon
+4, Avenue du Stade de Coubertin
+185, Boulevard Voltaire
+8, Rue Toussaint-Féron
+15, Avenue de la Belle Gabrielle
+79, Boulevard Poniatowski
+5, Rue de Pontoise
+47, Rue de la Folie-Méricourt
+163P, Avenue de Flandre
+43, Rue du Théâtre
+9, Rue des Pruniers
+32, Avenue Paul Doumer
+56, Rue Nicolo
+1, Avenue Brunetière
+Le Parisien, 25, Avenue Michelet
+9, Rue de la Néva
+94, Rue Réaumur
+61, Rue Bichat
+12, Rue Laurence Savart
+28, Rue de Paradis
+1, Avenue Hoche
+120, Rue Lauriston
+15, Rue Belliard
+12, Rue du Saint-Gothard
+9, Rue Ruhmkorff
+14, Rue Beaurepaire
+12, Rue du Saint-Gothard
