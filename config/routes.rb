@@ -22,5 +22,5 @@ Rails.application.routes.draw do
   end
 
   resources :games, only: %i[index show]
-  resources :favorites, only: %i[create destroy update]
+  resources :favorites, only: %i[create destroy]
 end

@@ -8,7 +8,7 @@
 <%# <% end %>
 <div>
   <div data-controller="dashboard-tabs"> <!-- Controller -->
-    <button data-action="click->dashboard-tabs#displayFavoriteGames"> My Games </button> <!-- Action (stimulus) -->
+    <button data-action="click->dashboard-tabs#displayFavoriteGames"> My Favorite Games </button> <!-- Action (stimulus) -->
     <button data-action="click->dashboard-tabs#displayLeaderboard"> Leaderboard </button> <!-- Action (stimulus) -->
     <div class="">
       <div data-dashboard-tabs-target="favoriteGameElement" class="">
@@ -17,7 +17,7 @@
         <details>
           <summary> Other Games </summary>
           <div> <%= render "shared/cards-games", games: @other_games %> </div>
-        </details>
+          </details>
       </div>
 
       <div data-dashboard-tabs-target="leaderboardElement" class="d-none">

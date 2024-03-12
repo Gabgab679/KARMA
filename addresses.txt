@@ -1,40 +1,40 @@
-21, Passage Duhesme
-8, Rue Albert Willemetz
-24, Boulevard Saint-Michel
-6, Rue Notre-Dame-de-Lorette
-10, Rue Blondel
-3, Rue Guyton de Morveau
-31, Boulevard Jules Sandeau
+5, Rue de Pontoise
+33, Rue Cambronne
+13, Rue Giordano Bruno
 2b, Rue Scheffer
-16, Rue du Simplon
-22b, Rue Norvins
-24, Avenue des Canadiens
-158, Rue de Charonne
-7, Cité Delaunay
-6, Rue Barthélemy
-31, Rue d'Alsace
+55, Rue Froidevaux
+16, Rue Duvivier
+48, Boulevard Pereire
+44, Boulevard Poniatowski
 13p, Villa Nieuport
-8, Rue Botzaris
-4, Rue du Renard
-55, Avenue de la Commune de Paris
-4, Passage Commun J/13
-6, Rue Littré
-7, Cité Delaunay
-31, Boulevard Jules Sandeau
-33, Rue du Moulinet
-66, Rue de Longchamp
-10, Passage Rauch
-53, Rue Saint-Placide
-12, Rue Coustou
-Myl, 5, Avenue Jean Jaurès
-37 bis, Rue des Plantes
-Myl, 5, Avenue Jean Jaurès
-39, Rue Condorcet
-29, Rue Marbeuf
-68, Rue Marguerite de Rochechouart
-81, Avenue Raymond Poincaré
-21, Rue d'Odessa
-185, Boulevard Voltaire
-4, Rue des Chantres
-23, Rue François 1er
-3, Rue des Grands Augustins
+10, Rue Louis David
+16, Boulevard Suchet
+1, Rue Curnonsky
+39, Rue Boissonade
+138, Avenue de Paris
+4, Rue de Pont-à-Mousson
+43, Rue de Cîteaux
+16, Rue Louis Braille
+23, Rue Pierre Fontaine
+Centre de Recherche des Cordeliers, 15, Rue de l'École de Médecine
+28, Rue Bois-le-Vent
+Collège Georges Brassens, 4, Rue Erik Satie
+156, Boulevard de Grenelle
+10, Rue Lécuyer
+21, Passage Duhesme
+3, Rue Guyton de Morveau
+10, Rue Fabre d'Églantine
+12, Rue Orfila
+7, Passage Kracher
+17, Rue Francis de Croisset
+28, Rue de Paradis
+10, Rue Rembrandt
+6, Rue Barthélemy
+25, Rue Berzélius
+72, Rue du Moulin Vert
+7, Impasse Haxo
+1, Avenue de la Sœur Rosalie
+111, Rue de Paris
+40-42, Quai de la Loire
+Gare d'Austerlitz, 85, Quai d'Austerlitz
+24, Rue Scandicci
