@@ -10,4 +10,9 @@ class ParticipationsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
+
+  def destroy
+    event = Event.find(params[:event_id])
+    redirect_to event, notice: "You've cancelled this registration"
+  end
 end

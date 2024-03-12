@@ -1,5 +1,8 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%=@event.game.image_url%>');">
     <h3><%= @event.game.name %></h3>
+    <% if current_user == @event.user %>
+      <%= button_to "", edit_event_path(@event), method: :get, class: "fa-regular fa-pen-to-square edit-event", style: "color: #F72585;" %>
+    <% end %>
 </div>
 <div class="container">
   <div class="container-event">
@@ -19,31 +22,41 @@
       <li><i class="fa-solid fa-spinner pe-2 m-2" style="color: #9e13f9;"></i><%= @event.status %></li>
     </ul>
     <div class="participations">
-      <h3>Participants</h3>
-      <div class="d-flex align-items-center">
-      <% if @event.participations != [] %>
-        <% @event.participations.each do |participation| %>
-          <% if participation.user == current_user %>
-            <%= image_tag "https://cdn2.f-cdn.com/contestentries/1107446/20762621/599154bb89160_thumb900.jpg", crop: :fill_pad, class: "avatar", alt: "user participation" %>
-          <% else %>
-            <div class="avatar">
-              <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
-              <p style="w-25"><%=participation.user.username%></p>
-            </div>
-          <% end %>
-        <% end %>
-            <p class="ps-3"><%= @event.max_players - @event.participations.count %> spots left!</p>
-      <% else %>
-        <p><%= @event.max_players %> spots left! </p>
+      <% if @event.status == "Open" %>
+        <h3>Participants</h3>
+          <div class="d-flex align-items-center">
+            <% if @event.participations != [] %>
+              <% @event.participations.each do |participation| %>
+                <% if participation.user == current_user %>
+                  <%= image_tag "https://cdn2.f-cdn.com/contestentries/1107446/20762621/599154bb89160_thumb900.jpg", crop: :fill_pad, class: "avatar", alt: "user participation" %>
+                <% else %>
+                  <div class="avatar">
+                  <% if participation.user.photo.key %>
+                    <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
+                  <% else %>
+                    <%= image_tag "https://cdn-icons-png.flaticon.com/512/1178/1178882.png", crop: :fill_pad, class: "avatar", alt: "other user" %>
+                  <% end %>
+                    <p style="w-25"><%=participation.user.username%></p>
+                  </div>
+                <% end %>
+              <% end %>
+                  <p class="ps-3"><%= @event.max_players - @event.participations.count %> spots left!</p>
+            <% else %>
+              <p><%= @event.max_players %> spots left! </p>
+            <% end %>
+          </div>
       <% end %>
-      </div>
     </div>
     <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
       <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
       <% if @registered == false %>
         <%= button_to "Register", event_participations_path(@event), method: :post, class: "register-button"  %>
       <% else %>
-        <%= button_to "Cancel my participation", event_participations_path(@event), method: :delete, class: "register-button"  %>
+        <% if current_user == @event.user %>
+          <%= button_to "Cancel this event", event_path(@event), method: :delete, class: "register-button"  %>
+        <% else %>
+          <%= button_to "Cancel my participation", event_participations_path(@event), method: :delete, class: "register-button"  %>
+        <% end %>
       <% end %>
     <% elsif @event.status == "Cancelled" %>
       <div class="text-danger">This event has been cancelled due to the cancellation of this event cancelling</div>
