@@ -11,8 +11,28 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-weight: bold;
   position: relative;
-  top: 85px;
+  top: 75px;
   font-size: large;
-  width: fit-content;
+  width: 90%;
   left: 1em;
+}
+
+.edit-event-game-name {
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+  position: relative;
+  top: 75px;
+  font-size: large;
+  width: 94%;
+  left: 11px;
+}
+
+.banner .edit-event {
+  position: relative;
+  top: 55px;
+  font-size: large;
+  left: 20em;
+  background: inherit;
+  border: inherit;
 }

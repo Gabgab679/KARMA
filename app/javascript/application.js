@@ -11,3 +11,5 @@ import "bootstrap"
 function goToProfile() {
   window.location.href = "/profile"; // Cette méthode redirige l'utilisateur vers la page de profil
 } */
+
+
