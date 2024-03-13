@@ -1,7 +1,6 @@
 .footer {
   position: fixed; /* Positionnement fixe */
   bottom: 20px; /* Alignement en bas de la page */
-  left: 20px; /* Marge à gauche */
   width: 350px; /* Largeur du footer */
   height: 50px; /* Hauteur du footer */
   background-color: #F72585; /* Couleur de fond du footer */
@@ -12,6 +11,8 @@
   padding: 5px;
   border-radius: 20px;
   z-index: 99; /* Centrage vertical */
+  left: 50%;
+  margin-left: -175px;
 
   .footer-nav {
     display: flex;
