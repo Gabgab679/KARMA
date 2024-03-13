@@ -9,7 +9,7 @@
           <%= text_field_tag :query,
                 params[:query],
                 class: "form-control col-10 search-bar",
-                placeholder: "Type an event name and/or game name"
+                placeholder: "Type an event/game"
           %>
           <%= submit_tag "Search", name: "", class: "karma-button-rose top-0 end-0 position-absolute", style: "width: fit-content; height: 45px" %>
         </div>
@@ -23,14 +23,23 @@
                                 %>
         </div>
       </div>
-      <div class="col-8 d-flex align-items-center">
-        <div class="col-3">
-          <%= link_to "Casual", map_path(event_type: "Casual"), class: "badge text-bg-secondary" %>
+      <div class="d-flex justify-content-evenly align-items-center">
+        <div class="flex-fill">
+          <%= link_to "Casual", map_path(event_type: "Casual"), class: "karma-button-rose top-0 end-0 p-1" %>
         </div>
 
-        <div class="col-3">
-          <%= link_to "Tournament", map_path(event_type: "Tournament"), class: "badge text-bg-secondary" %>
+        <div class=" flex-fill">
+          <%= link_to "Tournament", map_path(event_type: "Tournament"), class: "karma-button-rose top-0 end-0 p-1" %>
         </div>
+
+        <div class="flex-fill">
+          <%= link_to "My events", map_path(my_events: true), class: "karma-button-rose top-0 end-0 p-1" %>
+        </div>
+
+        <div class="flex-fill">
+          <%= link_to "x", map_path(), class: "btn top-0 end-0 p-1", style:"color: white" %>
+        </div>
+
       </div>
     <% end %>
 
@@ -42,7 +51,7 @@
         <%= text_field_tag :query,
               params[:query],
               class: "form-control col-10 search-bar",
-              placeholder: "Type an event name and/or game name"
+              placeholder: "Type an event/game"
         %>
         <%= submit_tag "Search", name: "", class: "karma-button-rose top-0 end-0 position-absolute", style: "width: fit-content; height: 45px" %>
       </div>

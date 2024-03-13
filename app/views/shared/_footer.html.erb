@@ -1,4 +1,4 @@
-<% unless controller_name == 'devise' || action_name == "home" %>
+<% unless controller_name == 'devise' || action_name == "home" ||  (@event = Event.find_by(id: params[:event_id])) && request.path == event_messages_path(@event) %>
     <footer class="footer">
       <nav class="footer-nav">
         <div class="footer-icon <%= "current-page-indicator" if action_name == "map" && controller_name == "pages" %>">

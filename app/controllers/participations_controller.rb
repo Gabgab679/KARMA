@@ -12,14 +12,22 @@ class ParticipationsController < ApplicationController
   end
 
   def update
-    redirect_to my_events, flash: { alert: 'You just registered to this event! Wait for the host confirmation' }
+    @participation = Participation.find(params[:id])
+    @participation.status = "Accepted"
+    @participation.save
+    redirect_to my_events_path, flash: { alert: 'Registration accepted! One more user joined your event' }
   end
 
   def destroy
     raise
     event = Event.find(params[:event_id])
+
+    @participation = Participation.find(params[:id])
+    @participation.destroy
     ## destroy à coder
 
-    redirect_to event, notice: "You've cancelled this registration"
+    redirect_to my_events_path, notice: "You've cancelled this registration"
   end
+
+
 end

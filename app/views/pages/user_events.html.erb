@@ -1,16 +1,41 @@
-<div class="text-warning">
-    <% unless current_user.events %>
-    <h2 class="karma-container"> Create a new event </h2>
-    <% else %>
-      <h2 class="karma-container"> Events you've created </h2>
-      <%= render "shared/cards-events", events: current_user.events %>
-  <% end %>
-  <% unless current_user.events_participations %>
-    <h2 class="karma-container"> You're not registered to any events! </h2>
-    <% else %>
-      <div>
-        <h2 class="karma-container"> Events you've registered to </h2>
-        <%= render "shared/cards-events", events: current_user.events_participations %>
+<% unless current_user.events || current_user.events_participations %> <!-- A moins que l'un des deux ne soit vrai -->
+  <h2 class="karma-container pt-1"> No upcoming events, register to one or create a new event !</h2>
+  <div class="karma-container" >
+    <%= link_to "Create an event", new_event_path, class: "register-button" %>
+  </div>
+<% else %>
+
+  <% unless current_user.events %>
+     <h2 class="karma-container pt-1"> Create a new event </h2>
+     <div class="karma-container">
+       <%= link_to "Create an event", new_event_path, class: "register-button" %>
       </div>
+    <% else %>
+      <h2 class="karma-container pt-1"> Events you've created </h2>
+      <% if @pending_request.any? %>
+      <div>
+      <%= render "shared/invitation"%>
+      </div>
+        </div>
+    <% else %>
+      <h6 class="karma-container pt-1"> You'll have new participations soon enough ! 🤞 </h6>
+    <% end %>
+     <div class="karma-container">
+        <%= link_to "Create an event", new_event_path, class: "register-button" %>
+      </div>
+    <%= render "shared/cards-events", events: current_user.events %>
   <% end %>
-</div>
+
+
+
+  <% unless current_user.events_participations %>
+   <h6 class="karma-container pt-1">  You're not registered to any events! <h6>
+  <% else %>
+    <div>
+      <h2 class="karma-container pt-1"> Events you've registered to </h2>
+      <%= render "shared/cards-events", events: current_user.events_participations %>
+    </div>
+  <% end %>
+
+  <% end %> <!-- Cas l'utilisateur n'a pas crée d'évènements-->
+  <!-- Cas l'utilisateur ne participe à aucun événements -->

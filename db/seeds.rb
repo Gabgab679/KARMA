@@ -7,6 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+require "open-uri"
 
 require_relative "seeds/paris_address_generator"
 
@@ -55,6 +56,8 @@ html_doc.root.xpath("item").first(10).each do |element|
     min_players: rand(2..4)
   )
 end
+
+
 
 # seeds.rb
 games_attributes = [
@@ -126,4 +129,11 @@ end
   fav.user = User.all.sample
   fav.game = Game.all.sample
   fav.save
+end
+
+100.times do
+  status = Participation::STATUS.sample
+  user = User.all.sample
+  event = Event.all.sample
+  Participation.create!(user: user, event: event, status: status)
 end

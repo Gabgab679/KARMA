@@ -14,11 +14,8 @@ class PagesController < ApplicationController
   end
 
   def user_events
-    #Récupérer les events de current_user
-    #Récupérer les participations qui concernent ces evenements et qui sont en pending
-    #Récupérer les utilisateurs qui ont proposés leurs participations
-    # @user_created_events = current_user.events
-    # @pending_participations.
+
+    @pending_request = current_user.request_participations.where(status: "Pending")
   end
 
   def map
@@ -35,6 +32,10 @@ class PagesController < ApplicationController
     end
 
     @events = @events.global_search(params[:location]) if params[:location].present?
+
+    if params[:my_events] == "true"
+      @events = @events.joins(:participations).where(participations: { user_id: current_user.id })
+    end
 
     @fav_markers = @favorite_events.geocoded.map do |event|
       {
