@@ -46,6 +46,9 @@
             <% end %>
           </div>
       <% end %>
+
+
+      
     </div>
     <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
     <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
