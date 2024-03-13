@@ -1,16 +1,20 @@
-<div class="text-warning">
-    <% unless current_user.events %>
-    <h2 class="karma-container"> Create a new event </h2>
-    <% else %>
-      <h2 class="karma-container"> Events you've created </h2>
-      <%= render "shared/cards-events", events: current_user.events %>
-  <% end %>
-  <% unless current_user.events_participations %>
-    <h2 class="karma-container"> You're not registered to any events! </h2>
-    <% else %>
-      <div>
-        <h2 class="karma-container"> Events you've registered to </h2>
-        <%= render "shared/cards-events", events: current_user.events_participations %>
-      </div>
-  <% end %>
-</div>
+ <% unless current_user.events %>
+   <h2 class="karma-container pt-1"> Create a new event </h2>
+     <div class="karma-container" >
+       <%= link_to "Create an event", new_event_path, class: "register-button" %>
+     </div>
+   <% else %>
+     <h2 class="karma-container pt-1"> Events you've created </h2>
+     <%= render "shared/cards-events", events: current_user.events %>
+     <div class="karma-container" >
+       <%= link_to "Create an event", new_event_path, class: "register-button" %>
+     </div>
+ <% end %>
+ <% unless current_user.events_participations %>
+   <h2 class="karma-container"> You're not registered to any events! </h2>
+   <% else %>
+     <div>
+       <h2 class="karma-container"> Events you've registered to </h2>
+       <%= render "shared/cards-events", events: current_user.events_participations %>
+     </div>
+ <% end %>
