@@ -30,11 +30,14 @@
   height: 33px;
   color: white;
   text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: #ffffff;
 }
 
 .karma-button-decline{
   width: 100%;
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(247, 37, 133);
   border: #ffffff;
   border: solid 2px;
   margin-top: 10px;
@@ -42,4 +45,6 @@
   height: 33px;
   color: #ffffff;
   text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
 }
