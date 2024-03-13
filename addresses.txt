@@ -1,40 +1,40 @@
-3, Rue des Grands Augustins
-6, Rue Barthélemy
-19, Rue Fernand Labori
-19, Rue de la Gare de Reuilly
-10, Impasse du Labrador
-16, Rue du Clos
-126, Rue de Javel
-82, Rue de la Fédération
-29, Rue Marbeuf
-15, 17, Rue Affre
-Les jardins de la Géode, 4-8, Rue de Cambrai
-9, Avenue Jean Jaurès
-Bâtiment 210, 11, Rue du Grain
-5, Rue Antoine Vollon
-4, Avenue du Stade de Coubertin
-185, Boulevard Voltaire
-8, Rue Toussaint-Féron
-15, Avenue de la Belle Gabrielle
-79, Boulevard Poniatowski
-5, Rue de Pontoise
-47, Rue de la Folie-Méricourt
+28, Rue de la Source
+24, Rue Scandicci
+60, Avenue Jean Lolive
+6, Rue Jeanne d'Arc
+14, Rue Bixio
+5, Avenue Théodore Rousseau
+Annexx, 78, Rue de Paris
+12, Rue Coustou
+1, Rue Lacretelle
+20, Rue Neuve Saint-Pierre
+Maison de la Vie Associative de Malakoff, 26, Rue Victor Hugo
+31, Quai d'Issy-les-Moulineaux
+10, Rue du Commandant Rivière
 163P, Avenue de Flandre
-43, Rue du Théâtre
-9, Rue des Pruniers
-32, Avenue Paul Doumer
-56, Rue Nicolo
-1, Avenue Brunetière
-Le Parisien, 25, Avenue Michelet
-9, Rue de la Néva
-94, Rue Réaumur
-61, Rue Bichat
-12, Rue Laurence Savart
-28, Rue de Paradis
-1, Avenue Hoche
-120, Rue Lauriston
+Stade Sébastien-Charléty, 99, Boulevard Kellermann
+1, Avenue de la Sœur Rosalie
+13, Rue Pierre Fontaine
+36, Rue Saint-Vincent
+41, Rue Fondary
+66, Avenue Émile Zola
+13, Rue du Nord
+2, Impasse Delaunay
+17, Rue Victor Duruy
+64, Rue Spontini
+3, Rue du Saint-Gothard
+80, Rue du Surmelin
+36, Rue du Général Brunet
+5, Avenue Théodore Rousseau
+29, Rue de Dunkerque
+5, Rue Lespagnol
+36, Rue Ampère
+9, Rue Boyer
+36, Rue Milton
+10, Rue Fabre d'Églantine
+36, Rue Milton
+26, Rue de la République
 15, Rue Belliard
-12, Rue du Saint-Gothard
-9, Rue Ruhmkorff
-14, Rue Beaurepaire
-12, Rue du Saint-Gothard
+43, Rue de Cîteaux
+2 à 10, Rue de la Concertation
+Paris Bercy Seine, 208, Quai de Bercy
