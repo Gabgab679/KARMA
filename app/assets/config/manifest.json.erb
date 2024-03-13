@@ -1,9 +1,11 @@
-
 {
-  "background_color": "white",
-  "description": "The social app to play games in real life with nearby people",
-  "display": "fullscreen",
   "name": "KARMA",
+  "background_color": "#32153F",
+  "theme_color": "#32153F",
+  "description": "An app that allows to find people and places to play",
+  "display": "standalone",
+  "id": "/",
+  "start_url": "/",
   "icons": [
     <% files = Dir.entries(Rails.root.join("app/assets/images/icons/")).select {|f| !File.directory? f} %>
     <% files.each_with_index do |file, index| %>
