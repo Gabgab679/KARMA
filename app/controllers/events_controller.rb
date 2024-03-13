@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   before_action :set_events, only: [:show, :edit, :update, :destroy]
 
   def index
-    @events = Event.all.sort_by(&:date)
+    @events = Event.all
     @games = current_user.games
     @favorite_events = get_events_for_favorite_games(@games)
 
@@ -12,6 +12,7 @@ class EventsController < ApplicationController
       @events = @events.where("date >= ?", first_date).where("date <= ?", last_date)
     end
     @events = @events.global_search(params[:location]) if params[:location].present?
+    @events = @events.sort_by(&:date)
   end
 
   def show
