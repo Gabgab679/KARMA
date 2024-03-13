@@ -1,7 +1,8 @@
+<h6 class="karma-container">Join Request</h6>
 <div style="width: 100vw; overflow: hidden">
   <div class="d-flex w-40" style="flex-wrap: nowrap; overflow-x: scroll;">
     <% @pending_request.each do |pending_request| %>
-      <div class="karma-container flex-shrink-0 p-3" style="border: solide #F72585; width: 387px">
+      <div class="karma-container flex-shrink-0 p-3 pt-0" style="border: solide #F72585; width: 387px">
         <div class="d-flex" style="border: solid #F72585;border-radius: 10px;">
           <img src="<%= pending_request.event.game.image_url %>" alt="" style="width: 33.33%; height: 150px; object-fit: cover; object-position: center">
           <div class="p-2" style="width: 65%">

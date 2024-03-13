@@ -12,7 +12,7 @@
     </div>
     <div class="event-info">
       <div class="event-description">
-        <p><%= @event.description %></p>
+        <p style="line-height: 120%;"><%= @event.description %></p>
       </div>
     </div>
     <ul style="padding-left: 0px;">
@@ -47,9 +47,14 @@
           </div>
       <% end %>
 
+  <div class="footer-links" style="display: flex; align-items: center; justify-content: space-evenly;  width: 100%; height: 50px;">
+    <a href="https://www.github.com/"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+  </div>
 
-      
-    </div>
     <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
     <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
       <% if @registered == false && current_user != @event.user %>
