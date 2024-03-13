@@ -2,12 +2,13 @@
   <div class="karma-container">
     <div class="card-container-grid", data-controller="favorites">
       <% games.each do |game| %>
-        <div class="card-games" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8)), url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
+        <div data-controller="favorites" data-game-value="<%= game.id %>" class="card-games" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8)), url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
          <div class="w-100 d-flex justify-content-end" data-favorites-target="card">
           <% if current_user.games.include?(game) %>
-            <%= button_to "🧡", favorite_path(game), method: :delete %>
+            <%= button_to "🧡", favorite_path(game), method: :delete, data: { action: "click->favorites#remove" } %>
           <% else %>
-            <%= button_to "🖤", favorite_path(game), data: { action: "click->favorites#add", game_value: game.id  } %>
+          <button data-action="click->favorites#add">🖤</button>
+            <%# <%= button_to "🖤", favorite_path(game), method: :post, data: { action: "click->favorites#add", favorites_game_value: game.id  } %>
           <% end %>
         </div>
           <h2> <%= game.name %></h2>
