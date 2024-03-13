@@ -131,7 +131,7 @@ end
   fav.save
 end
 
-30.times do
+100.times do
   status = Participation::STATUS.sample
   user = User.all.sample
   event = Event.all.sample
