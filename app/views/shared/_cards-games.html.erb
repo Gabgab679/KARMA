@@ -7,7 +7,7 @@
           <% if current_user.games.include?(game) %>
             <%= button_to "🧡", favorite_path(game), method: :delete %>
           <% else %>
-            <%= button_to "🖤", favorite_path(game), data: { action: "click->favorites#add", favorite_id: game.id  } %>
+            <%= button_to "🖤", favorite_path(game), data: { action: "click->favorites#add", game_value: game.id  } %>
           <% end %>
         </div>
           <h2> <%= game.name %></h2>
