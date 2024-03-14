@@ -4,3 +4,4 @@ module EventsHelper
     event.max_players - event.participations.count
   end
 end
+ 

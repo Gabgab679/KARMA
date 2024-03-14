@@ -12,7 +12,8 @@ class EventsController < ApplicationController
       @events = @events.where("date >= ?", first_date).where("date <= ?", last_date)
     end
     @events = @events.global_search(params[:location]) if params[:location].present?
-    @events = @events.sort_by(&:date)
+    @events = @events.sort_by(&:date).select { |event| @favorite_events.include?(event) }
+    @events = @events.reject {|event| event.status != "Open" }
   end
 
   def show
