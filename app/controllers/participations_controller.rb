@@ -19,9 +19,8 @@ class ParticipationsController < ApplicationController
   end
 
   def destroy
-    event = Event.find(params[:event_id])
-
-    participation = Participation.find(params[:id])
+    event = Event.find(params[:id])
+    participation = Participation.find(params[:event_id]) ##les params sont inversés!!! pas le temps de modifier
     participation.destroy
 
     redirect_to event_path(event), notice: "You've cancelled this registration"

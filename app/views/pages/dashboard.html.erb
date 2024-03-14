@@ -240,6 +240,9 @@
 
   <div class="col-12" data-dashboard-tabs-target="favoriteGameElement">
     <summary class="karma-container py-2" style="font-size: 24px"> Your favorite games </summary>
+    <% if current_user.games == [] %>
+    <p>No favorite yet!</p>
+    <% end %>
     <%= render "shared/cards-games", games: current_user.games %>
     <details>
       <summary class="karma-container py-2" style="font-size: 24px"> Other games </summary>
