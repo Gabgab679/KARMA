@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: :home
 
   def home
-    redirect_to events_path if user_signed_in?
+    # redirect_to events_path if user_signed_in?
   end
 
   def dashboard
@@ -14,7 +14,6 @@ class PagesController < ApplicationController
   end
 
   def user_events
-
     @pending_request = current_user.request_participations.where(status: "Pending")
   end
 

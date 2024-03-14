@@ -110,6 +110,7 @@ EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "E
   game = games.sample
   user = users.sample
 
+  # truncate pour limiter la taille des strings trunc(nomb de caract) + user name
   Event.create!(
     event_type: Event::EVENT_TYPE.sample,
     name: EVENT_NAME.sample,
