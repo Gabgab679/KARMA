@@ -1,5 +1,12 @@
 <%= render "shared/search_bar" %>
 
 <div style="padding-top: 10px">
+<% if @events == [] %>
+<div class="container">
+  <%= link_to " ⇨ Click to add favorites", dashboard_path, class:"container" %>
+</div>
+  <%= render "shared/cards-events", events: @all_events %>
+<% else %>
   <%= render "shared/cards-events", events:  @events %>
+<% end %>
 </div>

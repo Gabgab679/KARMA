@@ -14,6 +14,7 @@ class EventsController < ApplicationController
     @events = @events.global_search(params[:location]) if params[:location].present?
     @events = @events.sort_by(&:date).select { |event| @favorite_events.include?(event) }
     @events = @events.reject {|event| event.status != "Open" }
+    @all_events = Event.all
   end
 
   def show
