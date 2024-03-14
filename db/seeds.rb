@@ -77,7 +77,8 @@ users_attributes = [
   { username: "alexrz", email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
   { username: "toufik", email: "theophiledesaintbon@gmail.com", password: "123456"},
   { username: "ladyGab", email: "gabrielle.simha@gmail.com", password: "123456"},
-  { username: "anton1", email: "antonindanto@gmail.com", password: "123456"}
+  { username: "anton1", email: "antonindanto@gmail.com", password: "123456"},
+  { username: "fl0rian", email: "floriangomez@gmail.com", password: "123456"}
 ]
 
 users_attributes.each do |user_attribute|
@@ -128,7 +129,11 @@ end
   fav.save
 end
 
+events = Event.all
+
 100.times do
+  event = Event.all.sample
+  events.delete(event)
   status = Participation::STATUS.sample
   user = User.all.sample
   event = Event.all.sample
