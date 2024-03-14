@@ -14,3 +14,14 @@
   background-position: center;
 
 }
+
+.mapboxgl-marker svg {
+  width: 30px;
+  &.tournament path {
+    fill: $rose;
+  }
+}
+
+.karma-button-rose .active {
+  background-color: #9E13F9;
+}

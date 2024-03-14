@@ -25,11 +25,11 @@
       </div>
       <div class="d-flex justify-content-evenly align-items-center">
         <div class="flex-fill">
-          <%= link_to "Casual", map_path(event_type: "Casual"), class: "karma-button-rose top-0 end-0 p-1" %>
+          <%= link_to "Casual", map_path(event_type: "Casual"), class: "karma-button-violet top-0 end-0 p-1 #{"active" if params[:event_type] == "Casual"}" %>
         </div>
 
         <div class=" flex-fill">
-          <%= link_to "Tournament", map_path(event_type: "Tournament"), class: "karma-button-rose top-0 end-0 p-1" %>
+          <%= link_to "Tournament", map_path(event_type: "Tournament"), class: "karma-button-rose top-0 end-0 p-1 #{"active" if params[:event_type] == "Tournament"}" %>
         </div>
 
         <div class="flex-fill">

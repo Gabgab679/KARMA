@@ -9,7 +9,7 @@ class PagesController < ApplicationController
     @games = Game.all
     @other_games = @games.reject { |game| current_user.games.include?(game) }
   end
-  
+
   def leaderboard
   end
 
@@ -36,14 +36,14 @@ class PagesController < ApplicationController
       @events = @events.joins(:participations).where(participations: { user_id: current_user.id })
     end
 
-    @fav_markers = @favorite_events.geocoded.map do |event|
-      {
-        lat: event.latitude,
-        lng: event.longitude,
-        info_window_html: render_to_string(partial: 'info_window', locals: {event: event}),
-        marker_html: render_to_string(partial: 'marker', locals: {event: event})
-      }
-    end
+    # @fav_markers = @favorite_events.geocoded.map do |event|
+    #   {
+    #     lat: event.latitude,
+    #     lng: event.longitude,
+    #     info_window_html: render_to_string(partial: 'info_window', locals: {event: event}),
+    #     marker_html: render_to_string(partial: 'marker', locals: {event: event})
+    #   }
+    # end
 
     @markers = @events.geocoded.map do |event|
       {
