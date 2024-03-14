@@ -128,7 +128,11 @@ end
   fav.save
 end
 
+events = Event.all
+
 100.times do
+  event = Event.all.sample
+  events.delete(event)
   status = Participation::STATUS.sample
   user = User.all.sample
   event = Event.all.sample
