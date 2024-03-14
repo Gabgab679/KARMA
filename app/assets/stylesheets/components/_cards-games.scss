@@ -5,7 +5,6 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   width: 100%;
-  padding: 3px;
 }
 
 
@@ -13,20 +12,31 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 200px;
+  height: 150px;
   background-size: cover;
   background-position: center;
 }
 
-.card-games h2 {
+.card-games h3 {
   bottom: 10px;
   left: 10px;
   color: #fff;
   margin-left: 10px;
+  word-break: break-word;
 }
 
 .favori{
   border: none;
   font-size: 1.5em;
   background: none;
+}
+
+/* Sélectionne les enfants (les div avec la classe "card") impairs */
+.card-container-games > .card-games:nth-child(odd) {
+  grid-column: 1; /* Place ces cartes dans la première colonne */
+}
+
+/* Sélectionne les enfants (les div avec la classe "card") pairs */
+.card-container-games > .card-games:nth-child(even) {
+  grid-column: 2; /* Place ces cartes dans la deuxième colonne */
 }
