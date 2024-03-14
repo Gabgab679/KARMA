@@ -72,7 +72,6 @@ games_attributes.each do |game_attribute|
 end
 
 users = []
-
 users_attributes = [
   { username: "alexrz", email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
   { username: "toufik", email: "theophiledesaintbon@gmail.com", password: "123456"},
