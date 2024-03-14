@@ -15,6 +15,15 @@ Participation.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Participations"
 puts "------------------    ---------------------- "
+Event.find_each do |event|
+  # Supprimer tous les messages associés à l'événement
+  event.messages.destroy_all
+  # Supprimer l'événement
+  event.destroy
+end
+puts "------------------    ---------------------- "
+puts "               Delete Messages               "
+puts "------------------    ---------------------- "
 Event.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Events                 "
@@ -33,15 +42,6 @@ puts "               Delete Users"
 puts "------------------    ---------------------- "
 
 
-# # Uno
-# # Poker
-# # Monopoly
-# # Yu-gi-yoh
-# # Pokemon
-# # Werewolves
-# # Blood on the tower clock
-# #
-
 url = "https://api.geekdo.com/xmlapi/collection/mkgray"
 xml_file = URI.open(url).read
 html_doc = Nokogiri::XML.parse(xml_file)
@@ -57,9 +57,6 @@ html_doc.root.xpath("item").first(10).each do |element|
   )
 end
 
-
-
-# seeds.rb
 games_attributes = [
   { name: "Uno", description: "Uno is a classic card game where players aim to be the first to get rid of all their cards by matching colors or numbers.", image_url: "https://www.godisageek.com/wp-content/uploads/Uno-review1.jpg", min_players: 2 },
   { name: "Poker", description: "Poker is a popular card game that involves betting and strategy, with variations like Texas Hold'em and Omaha.", image_url: "https://monmouthjetcenter.com/wp-content/uploads/2015/04/cose-poker.jpg", min_players: 2 },
@@ -78,8 +75,8 @@ users = []
 
 users_attributes = [
   { username: "alexrz", email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
-  { username: "toufik2flex", email: "theophiledesaintbon@gmail.com", password: "123456"},
-  { username: "ladyGabGab", email: "gabrielle.simha@gmail.com", password: "123456"},
+  { username: "toufik", email: "theophiledesaintbon@gmail.com", password: "123456"},
+  { username: "ladyGab", email: "gabrielle.simha@gmail.com", password: "123456"},
   { username: "anton1", email: "antonindanto@gmail.com", password: "123456"}
 ]
 
@@ -116,13 +113,12 @@ EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "E
     name: EVENT_NAME.sample,
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
-    address: ADDRESSES.sample, # addresse a générer par faker autour de paris
-    description: Faker::Movies::StarWars.quote, # description à générer par faker
+    address: ADDRESSES.sample,
+    description: Faker::Movies::StarWars.quote,
     status: Event::STATUS.sample,
     game: game,
     max_players: rand(6..12)
   )
-  # creation d'event avec faker et "generate"
 end
 
 5.times do

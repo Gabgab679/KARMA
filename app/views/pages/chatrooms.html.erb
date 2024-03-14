@@ -1,18 +1,27 @@
 <%= render "shared/navbar" %>
 
 <div class="container">
-  <h1><strong>Chats for registered events</strong></h1>
+  <h1><strong>Chat with others</strong></h1>
   <pre></pre>
   <% current_user.events.each  do |event| %>
-    <h2 style="my-2"><strong><%= event.name %></strong></h2>
+
+    <div class="d-flex align-items-center gap-2">
+      <%= image_tag event.game.image_url, crop: :fill_pad, class: "avatar"%>
+      <div>
+        <h2 class="mb-0"><strong>  <%= event.name %></strong></h2>
+        <% if event.messages.last %>
+          <p class="mb-0"><%= event.messages.last.user.username%>: <%= event.messages.last.content%> at <%= event.messages.last.created_at.localtime.strftime("%I:%M %p") %></p>
+        <% else %>
+          <p class="mb-0">No messages yet!</p>
+        <% end %>
+      </div>
+    </div>
+
     <% if event.messages.last %>
-      <p style="margin-bottom: 0"><%= event.messages.last.user.username%>: <%= event.messages.last.content%> at <%= event.messages.last.created_at.localtime.strftime("%I:%M %p") %></p>
-      <%= button_to "See more messages", event_messages_path(event), method: :get, class: "register-button" %>
-      <br>
+      <%= button_to "See more messages", event_messages_path(event), method: :get, class: "register-button mb-4" %>
     <% else %>
-      <p style="my-3">No messages yet!</p>
-      <%= button_to "Send the first message!", event_messages_path(event), method: :get, class: "register-button" %>
-      <pre></pre>
+      <%= button_to "Send the first message!", event_messages_path(event), method: :get, class: "register-button mb-4" %>
     <% end %>
+
   <% end %>
 </div>
