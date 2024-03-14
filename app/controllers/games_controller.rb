@@ -9,6 +9,11 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
+    @favorite = Favorite.find_by(user: current_user, game: @game)
+    # raise
+    # favorite_game = current_user.games.select { |game| game if current_user.games.include?(@game)}
+    # raise
+    # Si game contient favorite alors @game.favorites
   end
 end
   # private

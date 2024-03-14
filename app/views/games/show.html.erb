@@ -15,10 +15,17 @@
     </div>
 
     <ul style="padding-left: 0px;padding-top: 10px;">
-        <li><i class="fa-solid fa fa-users" pe-2 m-2" style="color: #9e13f9;"></i>
+        <li><i class="fa-solid fa fa-users" style="color: #9e13f9;"></i>
         <%= @game.min_players %> players minimum
         </li>
     </ul>
 
-    <button type="button" class="karma-button-violet">Add to favorites</button>
+
+    <% unless @favorite %>
+      <%= button_to "Add to favorites", favorites_path(@game), class: " karma-button-rose", method: :post %>
+    <% else %>
+      <%= button_to "Delete favorite", favorite_path(@game), class: " karma-button-violet", method: :delete %>
+    <% end %>
+
+
     </div>

@@ -127,7 +127,7 @@ User.all.each do |user|
     fav.save
   end
 
-  5.times do
+  10.times do
     events = Event.all.reject { |event| event.user == user }
     status = Participation::STATUS.sample
     Participation.create!(user: user, event: events.sample, status: status)
