@@ -15,9 +15,9 @@
             <div class="d-flex p-1">
               <%# avater du la personne ne pas oublié de mettre la condition si  %>
                 <% if pending_request.user.photo.attached? %>
-                  <%= cl_image_tag pending_request.user.photo, crop: :fill_pad, class: "avatar rounded-circle"%>
+                  <%= cl_image_tag pending_request.user.photo.key, crop: :fill_pad, class: "avatar"%>
                 <% else %>
-                <img class="avatar rounded-circle" style=" margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/512/1178/1178882.png"></img>
+                <img class="avatar rounded-circle" style=" margin-right: 10px;" src="https://cdn-icons-png.flaticon.com/512/1178/1178882.png">
                 <% end %>
               <%# accepte nom + participation %>
               <p style="margin: auto"> <%= pending_request.user.username %>'s participation</p>

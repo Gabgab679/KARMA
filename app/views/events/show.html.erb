@@ -38,11 +38,11 @@
                 <% else %>
                   <div class="avatar">
                   <% if participation.user.photo.key %>
-                    <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
+                    <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", style: "margin-right: 5px", alt: "other user" %>
                   <% else %>
-                    <%= image_tag "https://cdn-icons-png.flaticon.com/512/1178/1178882.png", crop: :fill_pad, class: "avatar", alt: "other user" %>
+                    <%= image_tag "https://cdn-icons-png.flaticon.com/512/1178/1178882.png", crop: :fill_pad, class: "avatar", style: "margin-right: 5px", alt: "other user" %>
                   <% end %>
-                    <p style="w-25"><%=participation.user.username%></p>
+                    <p style="w-25"><%=participation.user.username.truncate(6)%></p>
                   </div>
                 <% end %>
               <% end %>

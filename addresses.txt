@@ -1,40 +1,40 @@
-Gamelle, 33, Avenue Daumesnil
-18, Impasse des Deux Nèthes
-4, Rue Jules Breton
-7, Rue Edgar Faure
-16, Rue de Paris
-14, Rue des Marronniers
-32, Quai d'Orléans
-16, Rue de Gergovie
-53, Rue Saint-Placide
-Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
-23, Impasse Marteau
-23, Rue Pierre Fontaine
-55, Rue d'Assas
-29, Rue de l'Université
+20, Rue Pétion
+9, Rue des Pruniers
 Paristade, 164, Rue Ambroise Croizat
-16, Rue George Eastman
-19, Rue du Docteur Blanche
-9, Rue Boyer
-21, Rue d'Odessa
-14, Rue Bixio
-5, Rue Lespagnol
-Hôpital Saint-Antoine, 184, Rue du Faubourg Saint-Antoine
-46, Rue des Haies
-85, Rue de Grenelle
-103, Rue de l'Abbé Groult
-8b, Rue Quentin Bauchart
+10, Rue du Delta
+121, Avenue des Champs-Élysées
+6, Rue Paul Bert
+31, Rue Erlanger
+74, Rue de Paris
+100, Rue de la Folie-Méricourt
+61, Avenue Jean Jaurès
+94, Quai Louis Blériot
+11b, Rue des Récollets
+LCL, 156, Rue Saint-Charles
+72, Rue du Moulin Vert
+17, Quai aux Fleurs
+22 Bis, Rue Bayen
+43, Rue du Théâtre
+11, Rue Gustave Courbet
+4, Rue Jules Breton
+24, Rue Scandicci
+47, Avenue de Wagram
+17, Rue Victor Duruy
 66, Rue de Longchamp
-87 bis, Rue Blomet
-169 ter, Boulevard Lefebvre
-145, Avenue Jean Jaurès
-60, Avenue de Gravelle
-5-23, Rue d'Alsace
-10, Rue du Commandant Rivière
-66, Avenue Émile Zola
-19, Quai d'Anjou
-83-85, Boulevard Vincent Auriol
-21b, Rue Michel le Comte
-4, Avenue du Stade de Coubertin
-8, Rue Nicolo
-9 - 25, Boulevard Romain Rolland
+Centre de secours Rousseau, 21, Rue du Jour
+Freemousse.bar, 76, Rue Marcadet
+4, Impasse Morlet
+Annexx, 78, Rue de Paris
+29, Rue du Mail
+108, Boulevard Haussmann
+55, Rue d'Assas
+3, Rue des Charmettes
+23, Rue Pierre Fontaine
+28, Rue Bois-le-Vent
+39, Rue de Babylone
+1b, Rue Vésale
+43, Rue de Cîteaux
+46, Rue de Turenne
+24, Rue Fabert
+25, Rue Vicq d'Azir
+23, Impasse Marteau

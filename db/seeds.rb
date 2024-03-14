@@ -102,7 +102,7 @@ event_addresses = ParisAddressGenerator.generate(number: 40)
 
 ADDRESSES = ["3 rue de rivoli 75001","3 rue des boulets 75011", "3 rue pouchet 75017", "3 rue de rivoli 75001", "3 rue de la paix 75002", "3 rue servan 75011", "3 boulevard voltaire 75011", "3 boulevard diderot 75012", "3 boulevard de Ménilmontant 75011", "3 boulevard beaumarchais 75004" ]
 EVENT_NAME = ["Let's play !", "Discovery", "Rally at my place!", "Who wants to lose?", "Winners only", "Grab your dice and follow me!"]
-30.times do
+150.times do
   game = games.sample
   user = User.all.sample
 
