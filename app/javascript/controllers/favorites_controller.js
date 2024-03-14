@@ -3,19 +3,24 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="event-type-search"
 export default class extends Controller {
   static targets = ["card"]
-  static values = { game: String }
+  static values = { game: Number }
 
-  remove() {
-    console.log("remove");
+  url = `favorites/${this.gameTarget}`
+
+  remove(event) {
+    event.preventDefault()
+    if (event.target.innerText == "🖤") {
+      event.target.innerText = "🧡";
+      fetch("favorites/#{}")
+    } else
+      event.target.innerText = "🖤";
   }
 
-  add() {
-  console.log(this.gameValue);
-
-  // fetch(this.cardTarget.action, { headers: { "Accept": "text/plain" }})
-  //   .then(response => response.text())
-  //   .then((data) => {
-  //     console.log(data);
-  //   })
+  add(event) {
+    event.preventDefault()
+    if (event.target.innerText == "🖤") {
+      event.target.innerText = "🧡";
+    } else
+      event.target.innerText = "🖤";
   }
 }
