@@ -1,40 +1,40 @@
-37, Rue de Varenne
-7, Rue Sainte-Isaure
-12, Rue Paul Belmondo
-24, Rue Dugommier
-Gare d'Austerlitz, 85, Quai d'Austerlitz
-6, Voie Poussin
-2b, Rue Scheffer
-44, Rue de l'Abbé Carton
-2, Rue Louis Delaporte
-3 bis, Cité du Palais-Royal de Belleville
-99, Rue des Amandiers
-22, Avenue de la Porte de Vitry
-Collège Aretha Franklin, 79, Rue Julian Grimau
-40, Rue de Paris
-10, Rue Edmond Guillout
-21, Rue Jenner
-45, Rue Washington
-19, Rue de Gergovie
-121, Avenue des Champs-Élysées
-192, Rue de Paris
-Les Bols de Jean, 2, Rue de Choiseul
-4, Rue du Pic-de-Barrette
-145, Avenue Jean Jaurès
-1, Avenue de Bouvines
-1, Villa Boléro
-13, Rue Buzelin
-12, Rue Faidherbe
-15, Rue Lord Byron
-9, Rue Ruhmkorff
-2, Rue de Civry
-19, Rue du Docteur Blanche
+5, Rue Fernand Foureau
+5, Rue Lespagnol
+10, Cour des Fabriques
+37 bis, Rue des Plantes
+Complexe sportif Géo-André - Stade Français, 2, Rue du Commandant Guilbaud
+66, Avenue Émile Zola
+79, Boulevard Poniatowski
+10, Rue Blondel
+27, Boulevard de l'Hôpital
 234, Rue Championnet
-EIB The Victor Hugo School, 23, Rue de Cronstadt
-Conservatoire National des Arts et Métiers, 292, Rue Saint-Martin
-16, Rue du Hameau
-100, Rue Regnault
-4, Rue Lamblardie
-15, Rue Belliard
-100, Rue de la Folie-Méricourt
-169 ter, Boulevard Lefebvre
+120, Rue Lauriston
+39, Rue de Babylone
+Centre de secours Rousseau, 21, Rue du Jour
+19, Rue de la Gare de Reuilly
+Chez Ami 2, 141, Rue Raymond Losserand
+55, Rue de l'Université
+55 Bis, Boulevard Pereire
+158, Rue de Charonne
+31, Rue de Romainville
+11-13, Route du Bassin n°6
+44, Rue de l'Abbé Carton
+22 Bis, Rue Bayen
+1, Rue de l'Église
+32, Quai d'Orléans
+32, Quai d'Orléans
+3, Rue Lauriston
+11, Rue du Surmelin
+120, Rue Lauriston
+3, Rue du Niger
+11, Impasse Reille
+32, Place du Marché Saint-Honoré
+2b, Rue Scheffer
+1, Villa Sonatine
+41, Rue Fondary
+55, Quai de Bourbon
+13, Rue Mendelssohn
+3, Rue Christian Dewet
+44, Boulevard Poniatowski
+29, Rue des Fougères
+16, Rue de Gergovie

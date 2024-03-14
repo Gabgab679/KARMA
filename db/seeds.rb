@@ -52,7 +52,7 @@ html_doc.root.xpath("item").first(10).each do |element|
   games << Game.create!(
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
-    image_url: element.xpath('image').text,
+    image_url: element.xpath('image').to_s,
     min_players: rand(2..4)
   )
 end
@@ -72,7 +72,6 @@ games_attributes.each do |game_attribute|
 end
 
 users = []
-
 users_attributes = [
   { username: "alexrz", email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
   { username: "toufik", email: "theophiledesaintbon@gmail.com", password: "123456"},

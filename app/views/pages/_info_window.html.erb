@@ -1,6 +1,7 @@
-<h2>Event : <%= event.name %></h2>
-<div class="map-info-window-game-img" style="background-image: url(<%= event.game.image_url %>)">
-</div>
-<p>Game : <%= event.game.name %></p>
-<p><%= event.address %></p>
-<p><%= event.date %></p>
+<%= link_to event_path(event) do%>
+  <h2>Event : <%= event.name %></h2>
+  <div class="map-info-window-game-img" style="background-image: url(<%= event.game.image_url %>)"></div>
+  <p>Game : <%= event.game.name %></p>
+  <p><%= event.address %></p>
+  <p><%= event.date %></p>
+<% end %>
