@@ -4,16 +4,12 @@
       <% games.each do |game| %>
         <%= link_to game_path(game) do %>
         <div data-controller="favorites" data-favorites-game-value="<%= game.id %>" class="card-games" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8)), url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
-         <div class="w-100 d-flex justify-content-end" data-favorites-target="card">
-          <% if current_user.games.include?(game) %>
-            <%= button_to "🧡", favorite_path(game), method: :delete, data: { action: "click->favorites#remove" }, notice: "Favorite removed" %>
-          <% else %>
-            <%= button_to "🖤", favorite_path(game), method: :post, data: { action: "click->favorites#add" } %>
-          <% end %>
+         <div class="w-100 d-flex justify-content-end">
+          <button data-action="click->favorites#toggle"><%= current_user.games.include?(game) ? "❤️" : "🖤" %></button>
         </div>
-          <h2> <%= game.name %></h2>
+          <h3><%= game.name.truncate(20) %></h3>
         </div>
-      <% end %>
+        <% end %>
       <% end %>
     </div>
   </div>
