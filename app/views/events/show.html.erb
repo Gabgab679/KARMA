@@ -24,29 +24,20 @@
     <div class="participations">
       <% if @event.status == "Open" %>
         <h3>Participants</h3>
-          <div class="d-flex align-items-center">
-            <% if @event.participations != [] %>
-              <% @event.participations.each do |participation| %>
-                <% if participation.user == current_user %>
-                  <%= image_tag "https://cdn2.f-cdn.com/contestentries/1107446/20762621/599154bb89160_thumb900.jpg", crop: :fill_pad, class: "avatar", alt: "user participation" %>
-                <% else %>
-                  <div class="avatar">
-                  <% if participation.user.photo.key %>
-                    <%= cl_image_tag participation.user.photo.key, crop: :fill_pad, class: "avatar", alt: "other user" %>
-                  <% else %>
-                    <%= image_tag "https://cdn-icons-png.flaticon.com/512/1178/1178882.png", crop: :fill_pad, class: "avatar", alt: "other user" %>
-                  <% end %>
-                    <p style="w-25"><%=participation.user.username%></p>
-                  </div>
-                <% end %>
-              <% end %>
-                  <p class="ps-3"><%= @event.max_players - @event.participations.count %> spots left!</p>
-            <% else %>
-              <p><%= @event.max_players %> spots left! </p>
+        <div class="d-flex align-items-center">
+          <% if @event.participations != [] %>
+            <% @event.participations.each do |participation| %>
+             <div class="p-2 align-items-center flex-wrap ">
+              <%= image_tag('joker.png') %>
+            </div>
             <% end %>
-          </div>
+        </div>
+            <p class="p-2"><%= @event.max_players - @event.participations.count %> spots left!</p>
+          <% else %>
+            <p><%= @event.max_players %> spots left! </p>
+          <% end %>
       <% end %>
-
+    </div>
   <div class="footer-links" style="display: flex; align-items: center; justify-content: space-evenly;  width: 100%; height: 50px;">
     <a href="https://www.github.com/"><i class="fab fa-github"></i></a>
     <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
