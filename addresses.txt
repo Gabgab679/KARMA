@@ -1,40 +1,40 @@
-28, Rue de la Source
-24, Rue Scandicci
-60, Avenue Jean Lolive
-6, Rue Jeanne d'Arc
-14, Rue Bixio
-5, Avenue Théodore Rousseau
-Annexx, 78, Rue de Paris
-12, Rue Coustou
-1, Rue Lacretelle
-20, Rue Neuve Saint-Pierre
-Maison de la Vie Associative de Malakoff, 26, Rue Victor Hugo
-31, Quai d'Issy-les-Moulineaux
-10, Rue du Commandant Rivière
-163P, Avenue de Flandre
-Stade Sébastien-Charléty, 99, Boulevard Kellermann
-1, Avenue de la Sœur Rosalie
-13, Rue Pierre Fontaine
-36, Rue Saint-Vincent
-41, Rue Fondary
-66, Avenue Émile Zola
+6, Cour Saint-Pierre
+19, Rue de Gergovie
+30, Rue Berthe
+55, Rue Émile Reynaud
+9, Rue de l'Ourcq
+16, Rue de Paris
+33, Rue Polonceau
+8, Rue Pelée
+123 bis, Avenue de Paris
+47, Avenue de Wagram
+1, Villa Sonatine
+2, Avenue Hoche
+55, Quai de Bourbon
+35, Avenue de la Dhuys
+29, Rue du Mail
+5, Rue Jean François Lépine
+2, Rue de Rungis
+24, Avenue des Canadiens
+16, Rue Armand Carrel
+35, Rue des Perchamps
+90, Rue Jeanne d'Arc
 13, Rue du Nord
-2, Impasse Delaunay
-17, Rue Victor Duruy
-64, Rue Spontini
-3, Rue du Saint-Gothard
-80, Rue du Surmelin
-36, Rue du Général Brunet
-5, Avenue Théodore Rousseau
-29, Rue de Dunkerque
-5, Rue Lespagnol
-36, Rue Ampère
-9, Rue Boyer
+10, Rue Suzanne Masson
+7, Rue Edgar Faure
+56, Rue Nicolo
+13 bis, Rue Curial
+6, Rue Marc Séguin
+84, Rue d'Aboukir
+4, Rue Nicolas Charlet
+3, Rue de Chablis
+31, Rue de Monceau
+35, Avenue de Paris
+29, Rue de la Tour
+Centre de Recherche des Cordeliers, 15, Rue de l'École de Médecine
+14, Quai d'Orléans
+29, Boulevard de Montmorency
+75, Rue d'Aboukir
+23, Rue François 1er
+22b, Rue Norvins
 36, Rue Milton
-10, Rue Fabre d'Églantine
-36, Rue Milton
-26, Rue de la République
-15, Rue Belliard
-43, Rue de Cîteaux
-2 à 10, Rue de la Concertation
-Paris Bercy Seine, 208, Quai de Bercy

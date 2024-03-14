@@ -66,7 +66,7 @@ games_attributes = [
   { name: "Monopoly", description: "Monopoly is a classic board game where players buy, sell, and trade properties to become the wealthiest player.", image_url: "https://vignette.wikia.nocookie.net/board-games-galore/images/6/66/Monopoly_cover.jpg/revision/latest/scale-to-width-down/2000?cb=20160719170933", min_players: 2 },
   { name: "Yu-gi-oh", description: "Yu-Gi-Oh! is a trading card game where players use decks of cards featuring monsters, spells, and traps to duel each other.", image_url: "https://assets.dicebreaker.com/yu-gi-oh-tcg-yugi-art.png/BROK/resize/1688%3E/format/jpg/quality/80/yu-gi-oh-tcg-yugi-art.png" , min_players: 2 },
   { name: "Pokemon", description: "Pokemon is a franchise that includes video games, trading card games, and animated series where players catch and train creatures called Pokemon to battle each other.", image_url: "https://getwallpapers.com/wallpaper/full/b/5/7/1458092-beautiful-pokemon-movie-wallpaper-3840x2160-for-android-50.jpg", min_players: 2 },
-  { name: "Werewolves", description: "Werewolves is a party game where players are assigned secret roles as villagers or werewolves, with the villagers trying to identify and eliminate the werewolves.", image_url: "https://th.bing.com/th/id/OIP.hHe4_xY_OZjXGvzJ4vGE0QHaHa?rs=1&pid=ImgDetMain", min_players: 5 },
+  { name: "Werewolves", description: "Werewolves is a party game where players are assigned secret roles as villagers or werewolves, with the villagers trying to identify and eliminate the werewolves.", image_url: "https://www.toutpoursortir.fr/images/events/2019/07/5031-les-loups-garous-thiercelieux.jpeg", min_players: 5 },
   { name: "Blood on the Clock Tower", description: "Blood on the Clock Tower is a mystery board game where players work together to solve a murder that has occurred in a clock tower.", image_url: "https://images.saymedia-content.com/.image/t_share/MTc0NDYxMTIwMzI0MjQ4OTM2/blood-on-the-clock-tower-review.png", min_players: 5 }
 ]
 
@@ -106,7 +106,8 @@ event_addresses = ParisAddressGenerator.generate(number: 40)
 ADDRESSES = ["3 rue de rivoli 75001","3 rue des boulets 75011", "3 rue pouchet 75017", "3 rue de rivoli 75001", "3 rue de la paix 75002", "3 rue servan 75011", "3 boulevard voltaire 75011", "3 boulevard diderot 75012", "3 boulevard de Ménilmontant 75011", "3 boulevard beaumarchais 75004" ]
 EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "Event"]
 
-30.times do
+30.times d
+
   game = games.sample
   user = users.sample
 

@@ -1,6 +1,7 @@
 <!-- _game.html.erb -->
   <div class="karma-container">
     <div class="card-container-grid">
+
       <% games.each do |game| %>
         <%= link_to game_path(game) do %>
         <div class="card-games" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8)), url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
