@@ -5,37 +5,25 @@
   </div>
 <% else %>
 
-  <% unless current_user.events %>
+  <% unless @future_events %>
      <h2 class="karma-container pt-1"> Create a new event </h2>
      <div class="karma-container">
        <%= link_to "Create an event", new_event_path, class: "register-button" %>
       </div>
     <% else %>
-      <h2 class="karma-container pt-1"> Events you've created </h2>
+      <h2 class="karma-container pt-1"> My events </h2>
       <% if @pending_request.any? %>
       <div>
       <%= render "shared/invitation"%>
       </div>
         </div>
-    <% else %>
-      <h6 class="karma-container pt-1"> You'll have new participations soon enough ! 🤞 </h6>
-    <% end %>
+      <% else %>
+        <h6 class="karma-container pt-1"> You'll have new participations soon enough ! 🤞 </h6>
+      <% end %>
      <div class="karma-container">
         <%= link_to "Create an event", new_event_path, class: "register-button" %>
       </div>
-    <%= render "shared/cards-events", events: current_user.events %>
+    <%= render "shared/cards-events", events: @future_events.sort_by(&:date) %>
   <% end %>
-
-
-
-  <% unless current_user.events_participations %>
-   <h6 class="karma-container pt-1">  You're not registered to any events! <h6>
-  <% else %>
-    <div>
-      <h2 class="karma-container pt-1"> Events you've registered to </h2>
-      <%= render "shared/cards-events", events: current_user.events_participations %>
-    </div>
-  <% end %>
-
-  <% end %> <!-- Cas l'utilisateur n'a pas crée d'évènements-->
+<% end %> <!-- Cas l'utilisateur n'a pas crée d'évènements-->
   <!-- Cas l'utilisateur ne participe à aucun événements -->

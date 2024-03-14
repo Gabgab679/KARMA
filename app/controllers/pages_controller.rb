@@ -9,11 +9,12 @@ class PagesController < ApplicationController
     @games = Game.all
     @other_games = @games.reject { |game| current_user.games.include?(game) }
   end
-  
+
   def leaderboard
   end
 
   def user_events
+    @future_events = (current_user.events + current_user.events_participations).select { |event| event.status != "Cancelled" }
     @pending_request = current_user.request_participations.where(status: "Pending")
   end
 
