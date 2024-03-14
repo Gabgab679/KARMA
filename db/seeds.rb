@@ -52,7 +52,7 @@ html_doc.root.xpath("item").first(10).each do |element|
   games << Game.create!(
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
-    image_url: element.xpath('image').to_s,
+    image_url: element.xpath('image').text,
     min_players: rand(2..4)
   )
 end

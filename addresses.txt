@@ -1,40 +1,40 @@
-5, Rue Fernand Foureau
-5, Rue Lespagnol
-10, Cour des Fabriques
-37 bis, Rue des Plantes
-Complexe sportif Géo-André - Stade Français, 2, Rue du Commandant Guilbaud
-66, Avenue Émile Zola
-79, Boulevard Poniatowski
-10, Rue Blondel
-27, Boulevard de l'Hôpital
-234, Rue Championnet
-120, Rue Lauriston
-39, Rue de Babylone
-Centre de secours Rousseau, 21, Rue du Jour
-19, Rue de la Gare de Reuilly
-Chez Ami 2, 141, Rue Raymond Losserand
-55, Rue de l'Université
-55 Bis, Boulevard Pereire
-158, Rue de Charonne
-31, Rue de Romainville
-11-13, Route du Bassin n°6
-44, Rue de l'Abbé Carton
-22 Bis, Rue Bayen
-1, Rue de l'Église
-32, Quai d'Orléans
-32, Quai d'Orléans
-3, Rue Lauriston
-11, Rue du Surmelin
-120, Rue Lauriston
-3, Rue du Niger
-11, Impasse Reille
-32, Place du Marché Saint-Honoré
-2b, Rue Scheffer
-1, Villa Sonatine
-41, Rue Fondary
-55, Quai de Bourbon
-13, Rue Mendelssohn
+61, Avenue Jean Jaurès
+50, Rue Chapon
+100, Rue Regnault
+19, Rue Alain Chartier
+8, Rue Lacretelle
+13, Rue de la Banque
+9, Rue Ruhmkorff
+16, Rue de Torcy
+8, Rue Courat
+Stade des Fillettes, 54, Boulevard Ney
+1, Avenue de Bouvines
 3, Rue Christian Dewet
-44, Boulevard Poniatowski
+238, Rue du Faubourg Saint-Antoine
+63, Boulevard Auguste Blanqui
 29, Rue des Fougères
-16, Rue de Gergovie
+36, Rue Ampère
+9, Rue du Professeur Hyacinthe Vincent
+34, Rue des Maronites
+44, Rue Hermel
+32, Rue Nationale
+20, Rue Saint-Blaise
+26, Rue de Londres
+19, Rue Désirée
+311, Rue de Vaugirard
+180, Rue de l'Université
+3, Rue du Niger
+63, Boulevard Auguste Blanqui
+Chez Ami 2, 141, Rue Raymond Losserand
+1, Rue du Faubourg Saint-Denis
+35, Avenue de Paris
+4, Rue Nicolas Charlet
+43, Rue du Théâtre
+4, Rue Nicolas Charlet
+4, Rue Jules Breton
+20, Rue Neuve Saint-Pierre
+12, Rue Orfila
+2, Avenue Hoche
+Paris Bercy Seine, 208, Quai de Bercy
+3, Rue Lamennais
+13, Rue Pierre Fontaine

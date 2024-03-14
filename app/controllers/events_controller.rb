@@ -54,7 +54,7 @@ class EventsController < ApplicationController
   def destroy
     @event = Event.find(params[:id])
     if @event.update(status: 'Cancelled')
-      redirect_to @event, notice: "Your cancelled this event 😢"
+      redirect_to @event, notice: "You cancelled this event 😢"
     else
       render :new, notice: "Oops, something went wrong"
     end
