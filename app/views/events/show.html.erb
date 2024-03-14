@@ -1,16 +1,18 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%=@event.game.image_url%>');">
     <h3><%= @event.game.name %></h3>
     <% if current_user == @event.user %>
-      <%= button_to "", edit_event_path(@event), method: :get, class: "fa-regular fa-pen-to-square edit-event", style: "color: #F72585;" %>
+      <%= button_to "", edit_event_path(@event), method: :get, class: "fa-regular fa-pen-to-square edit-event fa-2xl", style: "color: #9e13f9;" %>
     <% end %>
 </div>
 <div class="container">
   <div class="container-event">
-    <div class="title" >
-      <h1><%= @event.name %></h1>
-      <p>proposed by <%=@event.user.username%></p>
+    <div class="title d-flex" style="justify-content: space-between; align-items: baseline;">
+      <div>
+        <h1><%= @event.name %></h1>
+        <p>proposed by <%=@event.user.username%></p>
+      </div>
       <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-        <a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa-solid fa-square-share-nodes" alt="Share"></i></a>
+        <a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa-solid fa-square-share-nodes fa-xl" alt="Share"></i></a>
       </div>
       <script async src="https://static.addtoany.com/menu/page.js"></script>
     </div>
@@ -50,14 +52,6 @@
             <% end %>
           </div>
       <% end %>
-
-  <div class="footer-links" style="display: flex; align-items: center; justify-content: space-evenly;  width: 100%; height: 50px;">
-    <a href="https://www.github.com/"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-  </div>
 
     <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
     <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
