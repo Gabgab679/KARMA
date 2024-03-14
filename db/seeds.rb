@@ -52,7 +52,7 @@ html_doc.root.xpath("item").first(10).each do |element|
   games << Game.create!(
     name: element.xpath('name').text,
     description: element.xpath('comment').text,
-    image_url: element.xpath('image').to_s,
+    image_url: element.xpath('image').text,
     min_players: rand(2..4)
   )
 end
@@ -101,12 +101,10 @@ end
 event_addresses = ParisAddressGenerator.generate(number: 40)
 
 ADDRESSES = ["3 rue de rivoli 75001","3 rue des boulets 75011", "3 rue pouchet 75017", "3 rue de rivoli 75001", "3 rue de la paix 75002", "3 rue servan 75011", "3 boulevard voltaire 75011", "3 boulevard diderot 75012", "3 boulevard de Ménilmontant 75011", "3 boulevard beaumarchais 75004" ]
-EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "Event"]
-
+EVENT_NAME = ["Let's play !", "Discovery", "Rally at my place!", "Who wants to lose?", "Winners only", "Grab your dice and follow me!"]
 30.times do
-
   game = games.sample
-  user = users.sample
+  user = User.all.sample
 
   Event.create!(
     event_type: Event::EVENT_TYPE.sample,
@@ -117,20 +115,21 @@ EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "E
     description: Faker::Movies::StarWars.quote,
     status: Event::STATUS.sample,
     game: game,
-    max_players: rand(6..12)
+    max_players: rand(4..12)
   )
 end
 
-5.times do
-  fav = Favorite.new
-  fav.user = User.all.sample
-  fav.game = Game.all.sample
-  fav.save
-end
+User.all.each do |user|
+  5.times do
+    fav = Favorite.new
+    fav.user = user
+    fav.game = Game.all.sample
+    fav.save
+  end
 
-100.times do
-  status = Participation::STATUS.sample
-  user = User.all.sample
-  event = Event.all.sample
-  Participation.create!(user: user, event: event, status: status)
+  5.times do
+    events = Event.all.reject { |event| event.user == user }
+    status = Participation::STATUS.sample
+    Participation.create!(user: user, event: events.sample, status: status)
+  end
 end

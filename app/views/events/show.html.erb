@@ -34,7 +34,7 @@
             <% if @event.participations != [] %>
               <% @event.participations.each do |participation| %>
                 <% if participation.user == current_user %>
-                  <%= image_tag "https://cdn2.f-cdn.com/contestentries/1107446/20762621/599154bb89160_thumb900.jpg", crop: :fill_pad, class: "avatar", alt: "user participation" %>
+                  <%= image_tag "avatar.jpg", crop: :fill_pad, class: "avatar", alt: "user participation" %>
                 <% else %>
                   <div class="avatar">
                   <% if participation.user.photo.key %>
@@ -52,18 +52,21 @@
             <% end %>
           </div>
       <% end %>
-
-    <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
-    <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
-      <% if @registered == false && current_user != @event.user %>
-        <%= button_to "Register", event_participations_path(@event), method: :post, class: "register-button"  %>
-      <% elsif current_user != @event.user %>
-          <%= button_to "Cancel my participation", event_participations_path(@event), method: :delete, class: "register-button"  %>
-      <% end %>
-    <% elsif @event.status == "Cancelled" %>
-        <div class="text-danger">This event has been cancelled due to the cancellation of this event cancelling</div>
-    <% elsif @event.status == "Fully booked" && current_user != @event.user %>
-        <div class="text-danger">This event is fully booked! Comeback later or register to a new one!</div>
-    <% end %>
   </div>
+  <%= link_to "Game details", game_path(@event.game), class: "game-details" %>
+      <% if @event.status != "Cancelled" && @event.status != "Fully booked" %>
+        <% if @registered == false && current_user != @event.user %>
+          <%= button_to "Register", event_participations_path(@event), method: :post, class: "register-button"  %>
+        <% elsif current_user != @event.user %>
+          <% @event.participations.each do |participation| %>
+            <% if participation.user == current_user %>
+              <%= button_to "Cancel my participation", event_participation_path(participation), method: :delete, class: "register-button"  %>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% elsif @event.status == "Cancelled" %>
+          <div class="text-danger">This event has been cancelled due to the cancellation of this event cancelling</div>
+      <% elsif @event.status == "Fully booked" && current_user != @event.user %>
+          <div class="text-danger">This event is fully booked! Comeback later or register to a new one!</div>
+      <% end %>
 </div>

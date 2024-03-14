@@ -1,40 +1,40 @@
-5, Rue Fernand Foureau
-5, Rue Lespagnol
-10, Cour des Fabriques
-37 bis, Rue des Plantes
-Complexe sportif Géo-André - Stade Français, 2, Rue du Commandant Guilbaud
-66, Avenue Émile Zola
-79, Boulevard Poniatowski
-10, Rue Blondel
-27, Boulevard de l'Hôpital
-234, Rue Championnet
-120, Rue Lauriston
-39, Rue de Babylone
-Centre de secours Rousseau, 21, Rue du Jour
-19, Rue de la Gare de Reuilly
-Chez Ami 2, 141, Rue Raymond Losserand
-55, Rue de l'Université
-55 Bis, Boulevard Pereire
-158, Rue de Charonne
-31, Rue de Romainville
-11-13, Route du Bassin n°6
-44, Rue de l'Abbé Carton
-22 Bis, Rue Bayen
-1, Rue de l'Église
+Gamelle, 33, Avenue Daumesnil
+18, Impasse des Deux Nèthes
+4, Rue Jules Breton
+7, Rue Edgar Faure
+16, Rue de Paris
+14, Rue des Marronniers
 32, Quai d'Orléans
-32, Quai d'Orléans
-3, Rue Lauriston
-11, Rue du Surmelin
-120, Rue Lauriston
-3, Rue du Niger
-11, Impasse Reille
-32, Place du Marché Saint-Honoré
-2b, Rue Scheffer
-1, Villa Sonatine
-41, Rue Fondary
-55, Quai de Bourbon
-13, Rue Mendelssohn
-3, Rue Christian Dewet
-44, Boulevard Poniatowski
-29, Rue des Fougères
 16, Rue de Gergovie
+53, Rue Saint-Placide
+Cité Internationale des Arts, 18, Rue de l'Hôtel de Ville
+23, Impasse Marteau
+23, Rue Pierre Fontaine
+55, Rue d'Assas
+29, Rue de l'Université
+Paristade, 164, Rue Ambroise Croizat
+16, Rue George Eastman
+19, Rue du Docteur Blanche
+9, Rue Boyer
+21, Rue d'Odessa
+14, Rue Bixio
+5, Rue Lespagnol
+Hôpital Saint-Antoine, 184, Rue du Faubourg Saint-Antoine
+46, Rue des Haies
+85, Rue de Grenelle
+103, Rue de l'Abbé Groult
+8b, Rue Quentin Bauchart
+66, Rue de Longchamp
+87 bis, Rue Blomet
+169 ter, Boulevard Lefebvre
+145, Avenue Jean Jaurès
+60, Avenue de Gravelle
+5-23, Rue d'Alsace
+10, Rue du Commandant Rivière
+66, Avenue Émile Zola
+19, Quai d'Anjou
+83-85, Boulevard Vincent Auriol
+21b, Rue Michel le Comte
+4, Avenue du Stade de Coubertin
+8, Rue Nicolo
+9 - 25, Boulevard Romain Rolland
