@@ -12,8 +12,6 @@
     <% end %>
     </div>
 
-
-
     <%= simple_form_for [@event, @message],
       html: { data: {"event-subscription-target": "form", action: "turbo:submit-end->event-subscription#resetForm" }, class: "d-flex" } do |f|
     %>
@@ -27,8 +25,3 @@
       </div>
     <% end %>
 </div>
-
-<%# <form class="simple_form d-flex" id="new_message" data-event-subscription-target="form" data-action="turbo:submit-end->event-subscription#resetForm" novalidate="novalidate" action="/events/140/messages" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="C4idbNHz5nHT2t2nuJbOokCJcnTJSikF_w3IXfVANgfy3F0m8Kkl_E_Lk0EuSJFNDTERdTU8z_Fn26HN74YFkg" autocomplete="off">
-      <div class="mb-3 string required message_content flex-grow-1"><input class="form-control string required" placeholder="Write a message" type="text" name="message[content]" id="message_content"></div>
-      <input type="submit" name="commit" value="Send" class="btn btn-primary mb-3" data-disable-with="Send">
-</form> %>

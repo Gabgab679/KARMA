@@ -1,14 +1,15 @@
-<div class="karma-container">
-  <div class="card-container-grid">
+  <div class="card-container-grid p-3">
     <% return if events == nil %>
       <% events.each do |event| %>
         <%= link_to event_path(event), class: "card-event-link-2" do %>
           <div class="card-event-2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8)), url('<%= event.game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
             <div class="w-100 d-flex justify-content-end">
-            <p class="place-restante-2"> Places :<%= remaining_spots(event) %> </p>
+              <div class="place-restante-2">
+                <i class="fa-solid fa-user-plus" style="color: white"> <%= event.participations.count %> / <%= event.max_players  %> </i>
+              </div>
             </div>
             <div style="margin-left: 10px;">
-              <h2  class="card-event-games-2-h2"><%= event.name %></h2>
+              <h2  class="card-event-games-2-h2"><%= event.name.slice(0,16) %></h2>
               <p><%= event.date.strftime("%d %b") %></p>
             </div>
           </div>

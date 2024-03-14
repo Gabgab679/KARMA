@@ -15,6 +15,15 @@ Participation.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Participations"
 puts "------------------    ---------------------- "
+Event.find_each do |event|
+  # Supprimer tous les messages associés à l'événement
+  event.messages.destroy_all
+  # Supprimer l'événement
+  event.destroy
+end
+puts "------------------    ---------------------- "
+puts "               Delete Messages               "
+puts "------------------    ---------------------- "
 Event.delete_all
 puts "------------------    ---------------------- "
 puts "               Delete Events                 "
@@ -33,15 +42,6 @@ puts "               Delete Users"
 puts "------------------    ---------------------- "
 
 
-# # Uno
-# # Poker
-# # Monopoly
-# # Yu-gi-yoh
-# # Pokemon
-# # Werewolves
-# # Blood on the tower clock
-# #
-
 url = "https://api.geekdo.com/xmlapi/collection/mkgray"
 xml_file = URI.open(url).read
 html_doc = Nokogiri::XML.parse(xml_file)
@@ -57,16 +57,13 @@ html_doc.root.xpath("item").first(10).each do |element|
   )
 end
 
-
-
-# seeds.rb
 games_attributes = [
   { name: "Uno", description: "Uno is a classic card game where players aim to be the first to get rid of all their cards by matching colors or numbers.", image_url: "https://www.godisageek.com/wp-content/uploads/Uno-review1.jpg", min_players: 2 },
   { name: "Poker", description: "Poker is a popular card game that involves betting and strategy, with variations like Texas Hold'em and Omaha.", image_url: "https://monmouthjetcenter.com/wp-content/uploads/2015/04/cose-poker.jpg", min_players: 2 },
   { name: "Monopoly", description: "Monopoly is a classic board game where players buy, sell, and trade properties to become the wealthiest player.", image_url: "https://vignette.wikia.nocookie.net/board-games-galore/images/6/66/Monopoly_cover.jpg/revision/latest/scale-to-width-down/2000?cb=20160719170933", min_players: 2 },
   { name: "Yu-gi-oh", description: "Yu-Gi-Oh! is a trading card game where players use decks of cards featuring monsters, spells, and traps to duel each other.", image_url: "https://assets.dicebreaker.com/yu-gi-oh-tcg-yugi-art.png/BROK/resize/1688%3E/format/jpg/quality/80/yu-gi-oh-tcg-yugi-art.png" , min_players: 2 },
   { name: "Pokemon", description: "Pokemon is a franchise that includes video games, trading card games, and animated series where players catch and train creatures called Pokemon to battle each other.", image_url: "https://getwallpapers.com/wallpaper/full/b/5/7/1458092-beautiful-pokemon-movie-wallpaper-3840x2160-for-android-50.jpg", min_players: 2 },
-  { name: "Werewolves", description: "Werewolves is a party game where players are assigned secret roles as villagers or werewolves, with the villagers trying to identify and eliminate the werewolves.", image_url: "https://th.bing.com/th/id/OIP.hHe4_xY_OZjXGvzJ4vGE0QHaHa?rs=1&pid=ImgDetMain", min_players: 5 },
+  { name: "Werewolves", description: "Werewolves is a party game where players are assigned secret roles as villagers or werewolves, with the villagers trying to identify and eliminate the werewolves.", image_url: "https://www.toutpoursortir.fr/images/events/2019/07/5031-les-loups-garous-thiercelieux.jpeg", min_players: 5 },
   { name: "Blood on the Clock Tower", description: "Blood on the Clock Tower is a mystery board game where players work together to solve a murder that has occurred in a clock tower.", image_url: "https://images.saymedia-content.com/.image/t_share/MTc0NDYxMTIwMzI0MjQ4OTM2/blood-on-the-clock-tower-review.png", min_players: 5 }
 ]
 
@@ -78,8 +75,8 @@ users = []
 
 users_attributes = [
   { username: "alexrz", email: "alexandre.rodriguez.arz@gmail.com", password: "123456"},
-  { username: "toufik2flex", email: "theophiledesaintbon@gmail.com", password: "123456"},
-  { username: "ladyGabGab", email: "gabrielle.simha@gmail.com", password: "123456"},
+  { username: "toufik", email: "theophiledesaintbon@gmail.com", password: "123456"},
+  { username: "ladyGab", email: "gabrielle.simha@gmail.com", password: "123456"},
   { username: "anton1", email: "antonindanto@gmail.com", password: "123456"}
 ]
 
@@ -107,6 +104,7 @@ ADDRESSES = ["3 rue de rivoli 75001","3 rue des boulets 75011", "3 rue pouchet 7
 EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "Event"]
 
 30.times do
+
   game = games.sample
   user = users.sample
 
@@ -115,13 +113,12 @@ EVENT_NAME = ["Let's play !", "Discovery", "Tournament", "Intermediate game", "E
     name: EVENT_NAME.sample,
     user: user,
     date: (Date.today + rand(0..60)).to_datetime,
-    address: ADDRESSES.sample, # addresse a générer par faker autour de paris
-    description: Faker::Movies::StarWars.quote, # description à générer par faker
+    address: ADDRESSES.sample,
+    description: Faker::Movies::StarWars.quote,
     status: Event::STATUS.sample,
     game: game,
     max_players: rand(6..12)
   )
-  # creation d'event avec faker et "generate"
 end
 
 5.times do

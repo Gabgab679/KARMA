@@ -24,3 +24,16 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+// Override bg color
+$accordion-border-width: 0px;
+$accordion-bg: $back-ground-color;
+$accordion-color: white;
+$accordion-button-color: white;
+
+// Override active colors
+$accordion-button-active-bg: $rose;
+$accordion-button-active-color: white;
+$accordion-icon-active-color: white;
+$accordion-button-focus-box-shadow: none;
+// $accordion-button
+// $accordion-button-active-color: $rose;

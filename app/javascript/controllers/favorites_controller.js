@@ -26,7 +26,7 @@ export default class extends Controller {
         }
       })
       .then(response => {
-        event.target.innerText = "🧡";
+        event.target.innerText = "❤️";
         $.jnotify()
       })
       .catch(error => console.error("Error:", error));

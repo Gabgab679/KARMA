@@ -5,7 +5,7 @@
         <%= link_to game_path(game) do %>
         <div data-controller="favorites" data-favorites-game-value="<%= game.id %>" class="card-games" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8)), url('<%= game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
          <div class="w-100 d-flex justify-content-end">
-          <button data-action="click->favorites#toggle"><%= current_user.games.include?(game) ? "❤️" : "🖤" %></button>
+          <button style="border: none; background: none" data-action="click->favorites#toggle"><%= current_user.games.include?(game) ? "❤️" : "🖤" %></button>
         </div>
           <h3><%= game.name.truncate(20) %></h3>
         </div>
