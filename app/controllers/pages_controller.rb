@@ -14,6 +14,7 @@ class PagesController < ApplicationController
   end
 
   def user_events
+    @future_events = (current_user.events + current_user.events_participations).select { |event| event.status != "Cancelled" }
     @pending_request = current_user.request_participations.where(status: "Pending")
   end
 
