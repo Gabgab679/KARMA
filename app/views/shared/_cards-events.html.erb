@@ -4,9 +4,15 @@
         <%= link_to event_path(event), class: "card-event-link-2" do %>
           <div class="card-event-2" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0,0,0,0.8)), url('<%= event.game.image_url.presence || "https://c.clc2l.com/t/m/o/monopoly-cgwI69.png" %>')">
             <div class="w-100 d-flex justify-content-end">
-              <div class="place-restante-2">
-                <i class="fa-solid fa-user-plus" style="color: white"> <%= event.participations.count %> / <%= event.max_players  %></i>
-              </div>
+              <% if event.status == "Fully booked" %>
+                <div class="place-restante-2">
+                  <p style="color: white; font-size: larger"><strong>Full</strong></p>
+                </div>
+              <% else %>
+                <div class="place-restante-2">
+                  <i class="fa-solid fa-user-plus" style="color: white"> <%= event.participations.count %> / <%= event.max_players  %></i>
+                </div>
+              <% end %>
             </div>
             <div style="margin-left: 10px;">
               <h2  class="card-event-games-2-h2"><%= event.name.slice(0,16) %></h2>

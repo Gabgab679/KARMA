@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
   resources :events do
     resources :participations, only: %i[create update destroy]
+    get 'participations/:id', to: 'participations#cancel', as: :participation_cancel
     resources :messages, only: %i[index create]
   end
 

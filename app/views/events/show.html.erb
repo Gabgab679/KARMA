@@ -4,7 +4,7 @@
       <%= button_to "", edit_event_path(@event), method: :get, class: "fa-regular fa-pen-to-square edit-event fa-2xl", style: "color: #9e13f9;" %>
     <% end %>
 </div>
-<div class="container">
+<div class="container" style="margin-bottom: 60px">
   <div class="container-event">
     <div class="title d-flex" style="justify-content: space-between; align-items: baseline;">
       <div>
@@ -60,7 +60,7 @@
         <% elsif current_user != @event.user %>
           <% @event.participations.each do |participation| %>
             <% if participation.user == current_user %>
-              <%= button_to "Cancel my participation", event_participation_path(participation), method: :delete, class: "register-button"  %>
+              <%= button_to "Cancel my participation", event_participation_cancel_path(participation), method: :get, class: "register-button"  %>
             <% end %>
           <% end %>
         <% end %>
